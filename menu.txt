@@ -1,0 +1,1363 @@
+<ul class="sidebar-nav" id="side-menu">
+<li class="sidebar-item">
+<a data-bs-target="#mi_1840914047" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Persistence</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-1" id="mi_1840914047">
+<li class="sidebar-item">
+<a data-bs-target="#mi_1379707751" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Connections</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1379707751">
+<li class="sidebar-item"><a data-bs-target="#mi_1812272571" href="index.php?class=SetupTransactionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Database Transactions</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1720129594" href="index.php?class=ManualPrepareQueryView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Manual Prepared Query</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1475499014" href="index.php?class=FakeTransactionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Readonly transactions</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1030199895" href="index.php?class=TransactionInfoView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Transaction information</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1429991813" href="index.php?class=ManualConnectionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Manual connection</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1762060594" href="index.php?class=ManualDDLCommandsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Low level DDL commands</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1041910185" href="index.php?class=ManualDMLCommandsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Low level DML commands</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1750293716" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Objects</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1750293716">
+<li class="sidebar-item"><a data-bs-target="#mi_1089731817" href="index.php?class=SetupActiveRecordView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Active Records</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1030112743" href="index.php?class=ObjectStoreView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-download fa-fw"></i>
+<span>Object Store</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1503211245" href="index.php?class=ObjectCreateView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-download fa-fw"></i>
+<span>Alternative Object Store</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1819835087" href="index.php?class=ObjectLoadView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Object Load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1449827243" href="index.php?class=ObjectLoad2View" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Object Static Load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1325434944" href="index.php?class=ObjectLazyView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Lazy Load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1966745453" href="index.php?class=ObjectRenderView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Object Render and evaluate</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1130679260" href="index.php?class=ObjectUpdateView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-edit fa-fw"></i>
+<span>Object Update</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1374910794" href="index.php?class=RegisterLogView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-film fa-fw"></i>
+<span>Transaction class log</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1927595104" href="index.php?class=RegisterLogFunctionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-film fa-fw"></i>
+<span>Transaction logger function</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1401098706" href="index.php?class=RegisterLogDumpView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-film fa-fw"></i>
+<span>Transaction log dump</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1435396353" href="index.php?class=EncapsulationView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-shield-alt fa-fw"></i>
+<span>Encapsulation</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1972729759" href="index.php?class=ObjectDeleteView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-times fa-fw"></i>
+<span>Object Delete</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1920539436" href="index.php?class=ObjectFirstLastView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>First and Last ID</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1315475440" href="index.php?class=ObjectFromArrayView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-exchange-alt fa-fw"></i>
+<span>Array conversion</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1544914600" href="index.php?class=ObjectToJsonView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-exchange-alt fa-fw"></i>
+<span>JSON conversion</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1054613911" href="index.php?class=HookMethodView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-paperclip fa-fw"></i>
+<span>Hook methods</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1300710202" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Collections</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1300710202">
+<li class="sidebar-item"><ul class="dropdown-menu col-wrapper level-3" id="mi_1732373421">
+<li class="sidebar-item"><a data-bs-target="#mi_1169560974" href="index.php?class=CriteriaView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-filter fa-fw"></i>
+<span>Criteria API</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1360565538" href="index.php?class=CollectionLoadView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Collection load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1671779408" href="index.php?class=CollectionStaticSimpleLoadView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Collection static simple load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1520453825" href="index.php?class=CollectionLoadPropertyView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Collection paginated load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1743150378" href="index.php?class=CollectionSimpleLoadPropertyView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Collection simple paginated load</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1968294187" href="index.php?class=CollectionGetObjectsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Collection get objects</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1790121234" href="index.php?class=CollectionSubQueryView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-upload fa-fw"></i>
+<span>Collections with subquery</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1295744388" href="index.php?class=CollectionUpdateView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-edit fa-fw"></i>
+<span>Collection update</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1108505065" href="index.php?class=CollectionBatchUpdateView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-edit fa-fw"></i>
+<span>Collection batch update</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1944411541" href="index.php?class=CollectionStaticBatchUpdateView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-edit fa-fw"></i>
+<span>Collection static batch update</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item"><ul class="dropdown-menu col-wrapper level-3" id="mi_1429270707">
+<li class="sidebar-item"><a data-bs-target="#mi_1311692944" href="index.php?class=CollectionAggregationView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-filter fa-fw"></i>
+<span>Collection aggregations</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1890872657" href="index.php?class=CollectionArrayView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-filter fa-fw"></i>
+<span>Collection as array</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1498907760" href="index.php?class=CollectionTransformView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-exchange-alt fa-fw"></i>
+<span>Collection transform</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1151215856" href="index.php?class=CollectionFilterView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-filter fa-fw"></i>
+<span>Collection filter</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1735603271" href="index.php?class=CollectionDeleteView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-times fa-fw"></i>
+<span>Collection delete</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1237768121" href="index.php?class=CollectionStaticSimpleDeleteView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-times fa-fw"></i>
+<span>Collection static simple delete</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1801470705" href="index.php?class=CollectionCountView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Collection count</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1920438206" href="index.php?class=CollectionStaticSimpleCountView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Collection static simple count</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1414934470" href="index.php?class=CollectionCountObjectsView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Collection count objects</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1477490847" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Relationships</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1477490847">
+<li class="sidebar-item"><a data-bs-target="#mi_1891399341" href="index.php?class=RelationShortcutsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Relationships shortcuts</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1147699865" href="index.php?class=AssociationView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Object Association</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1652544539" href="index.php?class=CompositionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Object Composition</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1691138186" href="index.php?class=CompositionSimpleView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Object Simple Composition</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1683573393" href="index.php?class=AggregationView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Object Aggregation</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1895421370" href="index.php?class=AggregationSimpleView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Object Simple Aggregation</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1269513819" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Presentation</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-1" id="mi_1269513819">
+<li class="sidebar-item">
+<a data-bs-target="#mi_1452888191" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Pages</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1452888191">
+<li class="sidebar-item"><a data-bs-target="#mi_1728237098" href="index.php?class=SinglePageView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Common page</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1083954832" href="index.php?class=SidePageView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Side curtain</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1928188490" href="index.php?class=EmbeddedPDFView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Page with embedded PDF</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1497447075" href="index.php?class=EmbeddedVideoView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Page with embedded video</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1671682694" href="index.php?class=ExternalPageView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Page with external content</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1814240736" href="index.php?class=SingleWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Common window</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1159463079" href="index.php?class=ModalWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Modal window</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1461445693" href="index.php?class=WindowPDFView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Window with embedded PDF</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1956848814" href="index.php?class=ExternalSystemWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Window with external system</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1390505205" href="index.php?class=OnDemandWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>On demand window</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1832518131" href="index.php?class=PageCenterView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Page center</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1864514904" href="index.php?class=InboxView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-envelope fa-fw"></i>
+<span>Internal pages (inbox)</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1069496267" href="index.php?class=MultiStepMultiFormView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Multi Step Form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1490716479" href="index.php?class=MultiStepRegistration1View" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Multi Step Wizard</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1573736562" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Containers</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1573736562">
+<li class="sidebar-item"><a data-bs-target="#mi_1204584326" href="index.php?class=ContainerTableView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Table</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1550178531" href="index.php?class=ContainerTableColumnsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Table Columns</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1630654649" href="index.php?class=ContainerPanelView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-object-group fa-fw"></i>
+<span>Panel</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1834891677" href="index.php?class=ContainerNotebookView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-book fa-fw"></i>
+<span>Notebook</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1877497739" href="index.php?class=ContainerNotebookBootstrapView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-book fa-fw"></i>
+<span>Bootstrap Notebook Wrapper</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1045898179" href="index.php?class=ContainerNotebookVerticalBootstrapView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-book fa-fw"></i>
+<span>Bootstrap Notebook Vertical</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1186770776" href="index.php?class=ContainerNotebookStyleView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-book fa-fw"></i>
+<span>Notebook events</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1211197584" href="index.php?class=ContainerPanelGroupView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Panel group</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1561887661" href="index.php?class=ContainerScrollView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-sort fa-fw"></i>
+<span>Scroll</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1905863833" href="index.php?class=ContainerFrameView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-square fa-fw"></i>
+<span>Frame</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1849408752" href="index.php?class=ContainerVBoxView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bars fa-rotate-90 fa-fw"></i>
+<span>Vertical Box</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1037641868" href="index.php?class=ContainerHBoxView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bars fa-fw"></i>
+<span>Horizontal Box</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1130928987" href="index.php?class=ContainerPageFrame" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-square fa-fw"></i>
+<span>Page Frame</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1326570636" href="index.php?class=ContainerPageWrapper" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-square fa-fw"></i>
+<span>Page Wrapper</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1210586375" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Dialogs</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1210586375">
+<li class="sidebar-item"><a data-bs-target="#mi_1133697554" href="index.php?class=DialogInformationView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-info-circle fa-fw"></i>
+<span>Information dialog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1410820860" href="index.php?class=DialogWarningView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-exclamation-triangle fa-fw"></i>
+<span>Warning dialog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1677726292" href="index.php?class=DialogErrorView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-exclamation-circle fa-fw"></i>
+<span>Error dialog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1827887918" href="index.php?class=DialogQuestionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-question-circle fa-fw"></i>
+<span>Question dialog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1651977548" href="index.php?class=DialogInputView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Input dialog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1586266908" href="index.php?class=DialogToastView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-info-circle fa-fw"></i>
+<span>Toast</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1886519675" href="index.php?class=AlertView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-exclamation-triangle fa-fw"></i>
+<span>Alerts</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1221635978" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Forms</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1221635978">
+<li class="sidebar-item"><ul class="dropdown-menu col-wrapper level-3" id="mi_1051734918">
+<li class="sidebar-item"><a data-bs-target="#mi_1361627962" href="index.php?class=FormCustomView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Manual form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1292012674" href="index.php?class=FormBuilderView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Bootstrap form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1448449214" href="index.php?class=FormComponentsView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Form components</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1484430779" href="index.php?class=FormBuilderGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Bootstrap form grid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1894454371" href="index.php?class=FormVerticalBuilderView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Bootstrap vertical form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1018218916" href="index.php?class=ModalForm" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Modal form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1104163631" href="index.php?class=FormNestedBuilderView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Bootstrap nested form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1718304637" href="index.php?class=FormStaticBuilderView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Form with static post</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1920952726" href="index.php?class=FormFieldListView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Form field list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1403328878" href="index.php?class=FormCheckListView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Check list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1886796881" href="index.php?class=FormMaskView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-square fa-fw"></i>
+<span>Input masks</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1349258192" href="index.php?class=FormValidationView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-exclamation-triangle fa-fw"></i>
+<span>Form validation</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1616691305" href="index.php?class=FormSeekButtonView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-search fa-fw"></i>
+<span>Seek button</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item"><ul class="dropdown-menu col-wrapper level-3" id="mi_1403709355">
+<li class="sidebar-item"><a data-bs-target="#mi_1941608369" href="index.php?class=FormStaticSelectionView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Static selections</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1161673039" href="index.php?class=FormDBAutoSelectionView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Automatic database selections</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1862640031" href="index.php?class=FormLikertScaleView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Likert scale</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1284212939" href="index.php?class=FormClientInteractionsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bolt fa-fw"></i>
+<span>Client interactions</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1487868091" href="index.php?class=FormInteractionsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bolt fa-fw"></i>
+<span>Dynamic interactions</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1220649776" href="index.php?class=FormEnableDisableView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bolt fa-fw"></i>
+<span>Enable/disable interactions</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1012468244" href="index.php?class=FormShowHideRowsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bolt fa-fw"></i>
+<span>Show/hide rows</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1467236700" href="index.php?class=FormSortView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-sort fa-fw"></i>
+<span>Sort List</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1489545798" href="index.php?class=FormDBSortView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-sort fa-fw"></i>
+<span>Sort DB List</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1726322060" href="index.php?class=FormHtmlEditorView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Html Editor</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1056641397" href="index.php?class=FormCodeReader" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-barcode fa-fw"></i>
+<span>Barcode, QRCode reader</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1387103193" href="index.php?class=FormImageUploader" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-image fa-fw"></i>
+<span>Image upload and cropper</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1141131727" href="index.php?class=FormSignaturePad" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-file-signature fa-fw"></i>
+<span>Signature area</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1547940673" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Datagrids</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1547940673">
+<li class="sidebar-item"><ul class="dropdown-menu col-wrapper level-3" id="mi_1214192538">
+<li class="sidebar-item"><a data-bs-target="#mi_1292399946" href="index.php?class=DatagridCustomView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Native datagrid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1505896262" href="index.php?class=DatagridBootstrapView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Bootstrap Datagrid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1343575973" href="index.php?class=DatagridActionGroupView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrids Actions group</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1696601369" href="index.php?class=DatagridColumnGroupView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrids Columns group</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1375348213" href="index.php?class=DatagridConditionalActionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrids Conditional actions</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1102408648" href="index.php?class=DatagridHScrollView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Horizontal Scrollable Datagrids</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1057076444" href="index.php?class=DatagridScrollView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Vertical Scrollable Datagrids</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1186433630" href="index.php?class=DatagridHiddableView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrid with hiddable columns</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1489091770" href="index.php?class=DatagridDatatableView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datatables</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1626880467" href="index.php?class=DatagridSearchView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-search fa-fw"></i>
+<span>Datagrid search</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1070624199" href="index.php?class=DatagridRestView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Datagrid Rest query</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item"><ul class="dropdown-menu col-wrapper level-3" id="mi_1716181681">
+<li class="sidebar-item"><a data-bs-target="#mi_1200540244" href="index.php?class=DatagridTransformView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-tag fa-fw"></i>
+<span>Datagrid formatting</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1478545392" href="index.php?class=DatagridLinkView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-link fa-fw"></i>
+<span>Datagrid with links</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1331434559" href="index.php?class=DatagridMathView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-calculator fa-fw"></i>
+<span>Datagrid calculations</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1473093148" href="index.php?class=DatagridImageView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-image fa-fw"></i>
+<span>Datagrid with image</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1912831364" href="index.php?class=DatagridLabelView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-flag fa-fw"></i>
+<span>Datagrid with label</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1479054231" href="index.php?class=DatagridProgressView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-battery-half fa-fw"></i>
+<span>Datagrid with progress bar</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1440599932" href="index.php?class=DatagridExportView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-save fa-fw"></i>
+<span>Datagrid export</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1409356429" href="index.php?class=DatagridInputView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-square fa-fw"></i>
+<span>Datagrid with input fields</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1800177638" href="index.php?class=DatagridInputDialogView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Datagrids with input dialog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1340911890" href="index.php?class=DatagridWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Datagrids with new Window</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1254499737" href="index.php?class=DatagridQueryView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-database fa-fw"></i>
+<span>Datagrid SQL query</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1453260138" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Utilities</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1453260138">
+<li class="sidebar-item"><a data-bs-target="#mi_1007317677" href="index.php?class=FullCalendarStaticView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Calendar</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1240938390" href="index.php?class=GanttView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Gantt</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1946918410" href="index.php?class=IconView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-th fa-fw"></i>
+<span>Icon View</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1467796003" href="index.php?class=FilesystemIconView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-th fa-fw"></i>
+<span>Filesystem Icon View</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1709599668" href="index.php?class=TimelineView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-clock fa-fw"></i>
+<span>Timeline</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1705821665" href="index.php?class=KanbanView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-columns fa-fw"></i>
+<span>Kanban</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1194389097" href="index.php?class=KanbanCustomView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-columns fa-fw"></i>
+<span>Kanban Custom</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1735192356" href="index.php?class=CardView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-address-card fa-fw"></i>
+<span>Cards</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1388952969" href="index.php?class=VideoCardView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-address-card fa-fw"></i>
+<span>Video Cards</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1444864462" href="index.php?class=TreeView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-indent fa-fw"></i>
+<span>Tree View</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1117739587" href="index.php?class=DropdownView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-list fa-fw"></i>
+<span>Dropdown</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1886325591" href="index.php?class=StepView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-arrow-circle-right fa-fw"></i>
+<span>Steps</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1711378143" href="index.php?class=ArrowStepView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-arrow-circle-right fa-fw"></i>
+<span>Arrow steps</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1603538473" href="index.php?class=SourceCodeView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>SourceCode</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1647630981" href="index.php?class=CalendarView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Simple calendar</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1971429507" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Reports</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1971429507">
+<li class="sidebar-item"><a data-bs-target="#mi_1112104350" href="index.php?class=TabularReport" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-pdf fa-fw"></i>
+<span>Tabular report</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1716061225" href="index.php?class=TabularReportQueryView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-pdf fa-fw"></i>
+<span>Report with manual query</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1171906967" href="index.php?class=TabularReportView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-pdf fa-fw"></i>
+<span>Tabular report over view</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1938292317" href="index.php?class=TemplateInvoiceView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Invoice</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1601912021" href="index.php?class=DatagridCashRegisterView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-alt fa-fw"></i>
+<span>Cash entries</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1090103331" href="index.php?class=DocumentHtmlPdfView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-pdf fa-fw"></i>
+<span>Document HTML->PDF</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1924046320" href="index.php?class=PDFDesignShapesView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-pdf fa-fw"></i>
+<span>Designed shapes</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1635522085" href="index.php?class=PDFDesignNFEView&method=onShow" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-file-pdf fa-fw"></i>
+<span>Designed Danfe</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1069320526" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Charts</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1069320526">
+<li class="sidebar-item"><a data-bs-target="#mi_1093296428" href="index.php?class=LineChartView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-chart-line fa-fw"></i>
+<span>Line chart</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1846544889" href="index.php?class=BarChartView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-chart-bar fa-fw"></i>
+<span>Bar chart</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1550757344" href="index.php?class=ColumnChartView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-chart-bar fa-fw"></i>
+<span>Column chart</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1451022633" href="index.php?class=PieChartView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-chart-pie fa-fw"></i>
+<span>Pie chart</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1893713405" href="index.php?class=DashboardView" generator="adianti" class="sidebar-link collapsed">
+<i class="fas fa-chart-pie fa-fw"></i>
+<span>Dashboard</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1316532250" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Labels</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1316532250">
+<li class="sidebar-item"><a data-bs-target="#mi_1500471382" href="index.php?class=FormBarcodeView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-barcode fa-fw"></i>
+<span>Barcode</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1316808513" href="index.php?class=FormQrcodeView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-qrcode fa-fw"></i>
+<span>QRCode</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1469550405" href="index.php?class=FormScreenLabelsView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-qrcode fa-fw"></i>
+<span>Screen labels</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1549735603" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Templates</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1549735603">
+<li class="sidebar-item"><a data-bs-target="#mi_1743123648" href="index.php?class=TemplateViewBasicView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Template View basic</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1510174678" href="index.php?class=TemplateViewMaskView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Template View masks</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1269605061" href="index.php?class=TemplateRepeatView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Template View repeated</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1541149764" href="index.php?class=CircleView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Circle plugin</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1545567128" href="index.php?class=CarouselView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Carousel</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1132785043" href="index.php?class=AccordionView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Creating new components</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1323972394" href="index.php?class=TemplateHtmlManualForm" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>HTML manual form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1674186640" href="index.php?class=JumbotronView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-code fa-fw"></i>
+<span>Jumbotron</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1411113969" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Extras</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1411113969">
+<li class="sidebar-item"><a data-bs-target="#mi_1987657977" href="index.php?class=FormEventsView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Form events</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1475523961" href="index.php?class=FormFieldListEventsView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Field list events</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1901137278" href="index.php?class=FormButtonStyleView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-heart fa-fw"></i>
+<span>Styled buttons</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1234629319" href="index.php?class=TextLinkView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-font fa-fw"></i>
+<span>Texts and links</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1951699833" href="index.php?class=FormDBManualSelectionView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Manual database selections</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1379643314" href="index.php?class=FormWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Form opening window</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1188368685" href="index.php?class=FormFieldListDashedView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Form bordered field list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1946384223" href="index.php?class=FormConfirmationView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Form confirmation</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1900112488" href="index.php?class=FormExpanderView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-expand fa-fw"></i>
+<span>Expander</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1882557346" href="index.php?class=FormSelectionBreakView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Selection breaks</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1599889648" href="index.php?class=FormInsidePopoverView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Form inside Popover</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1284918956" href="index.php?class=FormConditionalView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Conditional submission</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1368052245" href="index.php?class=FormReusableControl" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Reusable MVC Forms</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1732046212" href="index.php?class=DatagridPopView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrids with popover</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1037180817" href="index.php?class=DatagridWindowForm" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrid Window Form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1026324351" href="index.php?class=DatagridDetailView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Datagrid details</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1329362539" href="index.php?class=DatagridTransformObjectView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Datagrid date conversion</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1596874908" href="index.php?class=DatagridCheckView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Datagrids with Checkbutton</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1774522124" href="index.php?class=ContainerWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-desktop fa-fw"></i>
+<span>Window events</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1544944689" href="index.php?class=FormCopyMemoryView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-copy fa-fw"></i>
+<span>Copy button</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1658990645" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Organization</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-1" id="mi_1658990645">
+<li class="sidebar-item">
+<a data-bs-target="#mi_1037255134" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Standard controls</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1037255134">
+<li class="sidebar-item"><a data-bs-target="#mi_1233182767" href="index.php?class=StandardFormView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Standard Form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1692398583" href="index.php?class=StandardDataGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Standard DataGrid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1982113337" href="index.php?class=StandardFormDataGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Standard Form/DataGrid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1689186801" href="index.php?class=StandardFormDataGridCurtainView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Standard Form/DataGrid with curtain</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1698856699" href="index.php?class=StandardFormDataGridWindowView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Standard Form/DataGrid with window</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1080964773" href="index.php?class=SplitRegisterView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Side by side Form/DataGrid</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1487898506" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Manual controls</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1487898506">
+<li class="sidebar-item"><a data-bs-target="#mi_1787463269" href="index.php?class=CompleteFormView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Manual form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1284647567" href="index.php?class=CompleteDataGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Manual DataGrid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1478876326" href="index.php?class=CompleteFormDataGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Manual Form/DataGrid</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1159454686" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Complete registrations</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1159454686">
+<li class="sidebar-item"><a data-bs-target="#mi_1131233364" href="index.php?class=CustomerDataGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Customer list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1015160605" href="index.php?class=ProductList" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Product list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1128573156" href="index.php?class=SaleList" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Sale list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1809205445" href="index.php?class=CustomerCurtainFilterList" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Curtain filters</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1041950441" href="index.php?class=CustomerWindowFilterList" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Window filters</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1103739708" href="index.php?class=SaleForm" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-shopping-cart fa-fw"></i>
+<span>Sale master-detail form I</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1517236399" href="index.php?class=SaleMultiValueForm&method=onClear" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-shopping-cart fa-fw"></i>
+<span>Sale master-detail form II</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1398851569" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Query screens</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1398851569">
+<li class="sidebar-item"><a data-bs-target="#mi_1068173650" href="index.php?class=CustomerStatusView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Customer Status</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1893097174" href="index.php?class=SalesChartView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-chart-bar fa-fw"></i>
+<span>Sales chart</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1738396589" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Batch operations</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1738396589">
+<li class="sidebar-item"><a data-bs-target="#mi_1377018083" href="index.php?class=InlineDataGridView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-table fa-fw"></i>
+<span>Inline editing datagrid</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1288547085" href="index.php?class=ProductUpdateList" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-edit fa-fw"></i>
+<span>Batch update list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1411593577" href="index.php?class=ProductInstantUpdateList" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-edit fa-fw"></i>
+<span>Batch instant update list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1387517784" href="index.php?class=MassiveDeleteView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-times fa-fw"></i>
+<span>Batch delete list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1335449804" href="index.php?class=ProductSelectionList" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Batch selection list</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1695477478" href="index.php?class=MultiCheckView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-check-square fa-fw"></i>
+<span>Multi check form</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1521167827" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Checkout screens</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1521167827">
+<li class="sidebar-item"><a data-bs-target="#mi_1958276102" href="index.php?class=CheckoutFormView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-shopping-cart fa-fw"></i>
+<span>Checkout form</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1457964499" href="index.php?class=POSFormView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-shopping-cart fa-fw"></i>
+<span>POS form (Master/detail)</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1557435408" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Field interactions</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1557435408">
+<li class="sidebar-item"><a data-bs-target="#mi_1812305372" href="index.php?class=FormHierarchicalComboView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Hierarchical combo</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1336252462" href="index.php?class=FormDynamicSessionCriteriaView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-list-alt fa-fw"></i>
+<span>Dynamic criteria with session variable</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1048855862" href="index.php?class=FormDynamicFilterView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-bolt fa-fw"></i>
+<span>Dynamic filtering</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<a data-bs-target="#mi_1307247167" data-bs-toggle="collapse" href="#" class="sidebar-link collapsed">
+<i class="far fa-circle fa-fw"></i>
+<span>Utilities</span>
+</a>
+<ul class="sidebar-dropdown list-unstyled collapse level-2" id="mi_1307247167">
+<li class="sidebar-item"><a data-bs-target="#mi_1708549417" href="index.php?class=FullCalendarDatabaseView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Data calendar</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1406101857" href="index.php?class=FullCalendarSplitView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Calendar Split View</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1679437798" href="index.php?class=GanttDatabaseView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Gantt with data</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1061422418" href="index.php?class=KanbanDatabaseView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-columns fa-fw"></i>
+<span>Kanban</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1334635983" href="index.php?class=ProductCardView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-address-card fa-fw"></i>
+<span>Cards</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1462510434" href="index.php?class=ProductCatalogView" generator="adianti" class="sidebar-link collapsed">
+<i class="fa fa-shopping-cart fa-fw"></i>
+<span>Product catalog</span>
+</a>
+</li>
+<li class="sidebar-item"><a data-bs-target="#mi_1985848846" href="index.php?class=AgendaView" generator="adianti" class="sidebar-link collapsed">
+<i class="far fa-calendar-alt fa-fw"></i>
+<span>Manual agenda</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>

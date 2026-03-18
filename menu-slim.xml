@@ -1,0 +1,137 @@
+<menu>
+    <menuitem label='Shadcn UI Showcase'>
+        <icon>lucide-layout-dashboard</icon>
+        <action>ShadcnShowcase</action>
+    </menuitem>
+    <menuitem label='_t{Persistence}'>
+        <icon>lucide-database</icon>
+        <menu>
+            <menuitem label='_t{Connections}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Connections</action>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Objects}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Objects</action>
+            </menuitem>
+            
+            <menuitem label='_t{Collections}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Collections</action>
+            </menuitem>
+            
+            <menuitem label='_t{Relationships}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Relationships</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+            
+    <menuitem label='_t{Presentation}'>
+        <icon>lucide-monitor</icon>
+        <menu>
+            <menuitem label='_t{Pages}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Pages</action>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Containers}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Containers</action>
+            </menuitem>
+            
+            <menuitem label='_t{Dialogs}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Dialogs</action>
+            </menuitem>
+            
+            <menuitem label='_t{Forms}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Forms</action>
+            </menuitem>
+        
+            <menuitem label='_t{Datagrids}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Datagrids</action>
+            </menuitem>
+            
+            <menuitem label='_t{Utilities}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Utilities</action>
+            </menuitem>
+            
+            <menuitem label='_t{Reports}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Reports</action>
+            </menuitem>
+            
+            <menuitem label='_t{Charts}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Charts</action>
+            </menuitem>
+            
+            <menuitem label='_t{Labels}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Labels</action>
+            </menuitem>
+            
+            <menuitem label='_t{Templates}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Templates</action>
+            </menuitem>
+            
+            <menuitem label='_t{Extras}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Extras</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Organization}'>
+        <icon>lucide-list</icon>
+        <menu>
+            <menuitem label='_t{Standard controls}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Standard controls</action>
+            </menuitem>
+            
+            <menuitem label='_t{Manual controls}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Manual controls</action>
+            </menuitem>
+
+            <menuitem label='_t{Complete registrations}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Complete registrations</action>
+            </menuitem>
+            
+            <menuitem label='_t{Query screens}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Query screens</action>
+            </menuitem>
+            
+            <menuitem label='_t{Batch operations}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Batch operations</action>
+            </menuitem>
+            
+            <menuitem label='_t{Checkout screens}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Checkout screens</action>
+            </menuitem>
+            
+            <menuitem label='_t{Field interactions}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Field interactions</action>
+            </menuitem>
+            
+            <menuitem label='_t{Utilities}'>
+                <icon>lucide-circle</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Utilities</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+</menu>

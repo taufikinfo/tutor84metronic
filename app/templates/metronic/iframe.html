@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="notranslate" translate="no" data-bs-theme="light" data-menu-theme="dark">
+<head>
+    <title>{title}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="manifest.json?appver=800">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+    {LIBRARIES}
+    {HEAD}
+    
+    <!-- Metronic Global Fonts & Bundles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+    <link href="app/templates/{template}/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="app/templates/{template}/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    
+    <script src="app/lib/include/admin.js?appver=800" type="text/javascript"></script>
+    <link href="app/lib/include/admin.css?appver=800" rel="stylesheet" type="text/css" media="screen">
+    
+    <script src="app/templates/{template}/js/theme.js?appver={buildid}"></script>
+    <link rel="stylesheet" href="app/templates/{template}/theme.css?appver={buildid}">
+    <link rel="stylesheet" href="app/templates/{template}/custom.css?appver={buildid}">
+    
+    <style>
+    html[data-menu-theme=light][data-bs-theme=light] {
+        background: var(--bs-light-bg-subtle);
+    }
+    html[data-menu-theme=dark], [data-bs-theme=dark] {
+        background: var(--bs-dark-bg-subtle);
+    }
+    </style>
+    <script>
+        $(function() {
+            Adianti.start();
+            Adianti.configure(parent.Adianti.getConfigureOptions());
+            
+            Template.configure(parent.Template.getConfigureOptions());
+            Template.startIframe();
+        });
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: {
+          preflight: false,
+        }
+      }
+    </script>
+</head>
+
+<body style="background:transparent;overflow:auto" class="content px-3 py-2">
+    <div id="adianti_div_content"></div>
+    <div id="adianti_online_content"></div>
+    <div id="adianti_right_panel" class="right-panel"></div>
+</body>
+</html>

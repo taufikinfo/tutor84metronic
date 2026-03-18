@@ -1,0 +1,1093 @@
+<menu>
+    <menuitem label='Shadcn UI Showcase'>
+        <icon>lucide-layout-dashboard</icon>
+        <action>ShadcnShowcase</action>
+    </menuitem>
+    <menuitem label='_t{Persistence}'>
+        <icon>lucide-database</icon>
+        <menu>
+            <menuitem label='_t{Connections}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Database Transactions}'>
+                        <icon>lucide-database</icon>
+                        <action>SetupTransactionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual Prepared Query}'>
+                        <icon>lucide-database</icon>
+                        <action>ManualPrepareQueryView</action>
+                    </menuitem>
+                    <menuitem label='_t{Readonly transactions}'>
+                        <icon>lucide-database</icon>
+                        <action>FakeTransactionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction information}'>
+                        <icon>lucide-database</icon>
+                        <action>TransactionInfoView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual connection}'>
+                        <icon>lucide-database</icon>
+                        <action>ManualConnectionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Low level DDL commands}'>
+                        <icon>lucide-database</icon>
+                        <action>ManualDDLCommandsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Low level DML commands}'>
+                        <icon>lucide-database</icon>
+                        <action>ManualDMLCommandsView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Objects}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Active Records}'>
+                        <icon>lucide-database</icon>
+                        <action>SetupActiveRecordView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Store}'>
+                        <icon>lucide-download</icon>
+                        <action>ObjectStoreView</action>
+                    </menuitem>
+                    <menuitem label='_t{Alternative Object Store}'>
+                        <icon>lucide-download</icon>
+                        <action>ObjectCreateView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Load}'>
+                        <icon>lucide-upload</icon>
+                        <action>ObjectLoadView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Static Load}'>
+                        <icon>lucide-upload</icon>
+                        <action>ObjectLoad2View</action>
+                    </menuitem>
+                    <menuitem label='_t{Lazy Load}'>
+                        <icon>lucide-upload</icon>
+                        <action>ObjectLazyView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Render and evaluate}'>
+                        <icon>lucide-circle</icon>
+                        <action>ObjectRenderView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Update}'>
+                        <icon>lucide-edit-3</icon>
+                        <action>ObjectUpdateView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction class log}'>
+                        <icon>lucide-film</icon>
+                        <action>RegisterLogView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction logger function}'>
+                        <icon>lucide-film</icon>
+                        <action>RegisterLogFunctionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction log dump}'>
+                        <icon>lucide-film</icon>
+                        <action>RegisterLogDumpView</action>
+                    </menuitem>
+                    <menuitem label='_t{Encapsulation}'>
+                        <icon>lucide-shield</icon>
+                        <action>EncapsulationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Delete}'>
+                        <icon>lucide-x</icon>
+                        <action>ObjectDeleteView</action>
+                    </menuitem>
+                    <menuitem label='_t{First and Last ID}'>
+                        <icon>lucide-upload</icon>
+                        <action>ObjectFirstLastView</action>
+                    </menuitem>
+                    <menuitem label='_t{Array conversion}'>
+                        <icon>lucide-arrow-right-left</icon>
+                        <action>ObjectFromArrayView</action>
+                    </menuitem>
+                    <menuitem label='_t{JSON conversion}'>
+                        <icon>lucide-arrow-right-left</icon>
+                        <action>ObjectToJsonView</action>
+                    </menuitem>
+                    <menuitem label='_t{Hook methods}'>
+                        <icon>lucide-paperclip</icon>
+                        <action>HookMethodView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Collections}'>
+                <icon>lucide-circle</icon>
+                <menu class="dropdown-menu col-wrapper">
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Criteria API}'>
+                                <icon>lucide-filter</icon>
+                                <action>CriteriaView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection load}'>
+                                <icon>lucide-upload</icon>
+                                <action>CollectionLoadView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static simple load}'>
+                                <icon>lucide-upload</icon>
+                                <action>CollectionStaticSimpleLoadView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection paginated load}'>
+                                <icon>lucide-upload</icon>
+                                <action>CollectionLoadPropertyView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection simple paginated load}'>
+                                <icon>lucide-upload</icon>
+                                <action>CollectionSimpleLoadPropertyView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection get objects}'>
+                                <icon>lucide-upload</icon>
+                                <action>CollectionGetObjectsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collections with subquery}'>
+                                <icon>lucide-upload</icon>
+                                <action>CollectionSubQueryView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection update}'>
+                                <icon>lucide-edit-3</icon>
+                                <action>CollectionUpdateView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection batch update}'>
+                                <icon>lucide-edit-3</icon>
+                                <action>CollectionBatchUpdateView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static batch update}'>
+                                <icon>lucide-edit-3</icon>
+                                <action>CollectionStaticBatchUpdateView</action>
+                            </menuitem>
+                         </menu>
+                    </menuitem>
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Collection aggregations}'>
+                                <icon>lucide-filter</icon>
+                                <action>CollectionAggregationView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection as array}'>
+                                <icon>lucide-filter</icon>
+                                <action>CollectionArrayView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection transform}'>
+                                <icon>lucide-arrow-right-left</icon>
+                                <action>CollectionTransformView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection filter}'>
+                                <icon>lucide-filter</icon>
+                                <action>CollectionFilterView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection delete}'>
+                                <icon>lucide-x</icon>
+                                <action>CollectionDeleteView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static simple delete}'>
+                                <icon>lucide-x</icon>
+                                <action>CollectionStaticSimpleDeleteView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection count}'>
+                                <icon>lucide-circle</icon>
+                                <action>CollectionCountView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static simple count}'>
+                                <icon>lucide-circle</icon>
+                                <action>CollectionStaticSimpleCountView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection count objects}'>
+                                <icon>lucide-circle</icon>
+                                <action>CollectionCountObjectsView</action>
+                            </menuitem>
+                         </menu>
+                     </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Relationships}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Relationships shortcuts}'>
+                        <icon>lucide-link</icon>
+                        <action>RelationShortcutsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Association}'>
+                        <icon>lucide-link</icon>
+                        <action>AssociationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Composition}'>
+                        <icon>lucide-link</icon>
+                        <action>CompositionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Simple Composition}'>
+                        <icon>lucide-link</icon>
+                        <action>CompositionSimpleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Aggregation}'>
+                        <icon>lucide-link</icon>
+                        <action>AggregationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Simple Aggregation}'>
+                        <icon>lucide-link</icon>
+                        <action>AggregationSimpleView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
+            
+    <menuitem label='_t{Presentation}'>
+        <icon>lucide-monitor</icon>
+        <menu>
+            <menuitem label='_t{Pages}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Common page}'>
+                        <icon>lucide-monitor</icon>
+                        <action>SinglePageView</action>
+                    </menuitem>
+                    <menuitem label='_t{Side curtain}'>
+                        <icon>lucide-monitor</icon>
+                        <action>SidePageView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page with embedded PDF}'>
+                        <icon>lucide-monitor</icon>
+                        <action>EmbeddedPDFView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page with embedded video}'>
+                        <icon>lucide-monitor</icon>
+                        <action>EmbeddedVideoView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page with external content}'>
+                        <icon>lucide-monitor</icon>
+                        <action>ExternalPageView</action>
+                    </menuitem>
+                    <menuitem label='_t{Common window}'>
+                        <icon>lucide-monitor</icon>
+                        <action>SingleWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Modal window}'>
+                        <icon>lucide-monitor</icon>
+                        <action>ModalWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Window with embedded PDF}'>
+                        <icon>lucide-monitor</icon>
+                        <action>WindowPDFView</action>
+                    </menuitem>
+                    <menuitem label='_t{Window with external system}'>
+                        <icon>lucide-monitor</icon>
+                        <action>ExternalSystemWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{On demand window}'>
+                        <icon>lucide-monitor</icon>
+                        <action>OnDemandWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page center}'>
+                        <icon>lucide-monitor</icon>
+                        <action>PageCenterView</action>
+                    </menuitem>
+                    <menuitem label='_t{Internal pages (inbox)}'>
+                        <icon>lucide-mail</icon>
+                        <action>InboxView</action>
+                    </menuitem>
+                    <menuitem label='_t{Multi Step Form}'>
+                        <icon>lucide-list</icon>
+                        <action>MultiStepMultiFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Multi Step Wizard}'>
+                        <icon>lucide-list</icon>
+                        <action>MultiStepRegistration1View</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Containers}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Table}'>
+                        <icon>lucide-table</icon>
+                        <action>ContainerTableView</action>
+                    </menuitem>
+                    <menuitem label='_t{Table Columns}'>
+                        <icon>lucide-table</icon>
+                        <action>ContainerTableColumnsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Panel}'>
+                        <icon>lucide-package</icon>
+                        <action>ContainerPanelView</action>
+                    </menuitem>
+                    <menuitem label='_t{Notebook}'>
+                        <icon>lucide-book</icon>
+                        <action>ContainerNotebookView</action>
+                    </menuitem>
+                    <menuitem label='_t{Bootstrap Notebook Wrapper}'>
+                        <icon>lucide-book</icon>
+                        <action>ContainerNotebookBootstrapView</action>
+                    </menuitem>
+                    <menuitem label='_t{Bootstrap Notebook Vertical}'>
+                        <icon>lucide-book</icon>
+                        <action>ContainerNotebookVerticalBootstrapView</action>
+                    </menuitem>
+                    <menuitem label='_t{Notebook events}'>
+                        <icon>lucide-book</icon>
+                        <action>ContainerNotebookStyleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Panel group}'>
+                        <icon>lucide-monitor</icon>
+                        <action>ContainerPanelGroupView</action>
+                    </menuitem>
+                    <menuitem label='_t{Scroll}'>
+                        <icon>lucide-arrow-up-down</icon>
+                        <action>ContainerScrollView</action>
+                    </menuitem>
+                    <menuitem label='_t{Frame}'>
+                        <icon>lucide-square</icon>
+                        <action>ContainerFrameView</action>
+                    </menuitem>
+                    <menuitem label='_t{Vertical Box}'>
+                        <icon>lucide-menu</icon>
+                        <action>ContainerVBoxView</action>
+                    </menuitem>
+                    <menuitem label='_t{Horizontal Box}'>
+                        <icon>lucide-menu</icon>
+                        <action>ContainerHBoxView</action>
+                    </menuitem>
+                    <menuitem label='Page Frame'>
+                        <icon>lucide-square</icon>
+                        <action>ContainerPageFrame</action>
+                    </menuitem>
+                    <menuitem label='Page Wrapper'>
+                        <icon>lucide-square</icon>
+                        <action>ContainerPageWrapper</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Dialogs}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Information dialog}'>
+                        <icon>lucide-info</icon>
+                        <action>DialogInformationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Warning dialog}'>
+                        <icon>lucide-triangle-alert</icon>
+                        <action>DialogWarningView</action>
+                    </menuitem>
+                    <menuitem label='_t{Error dialog}'>
+                        <icon>lucide-circle-alert</icon>
+                        <action>DialogErrorView</action>
+                    </menuitem>
+                    <menuitem label='_t{Question dialog}'>
+                        <icon>lucide-help-circle</icon>
+                        <action>DialogQuestionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Input dialog}'>
+                        <icon>lucide-list</icon>
+                        <action>DialogInputView</action>
+                    </menuitem>
+                    <menuitem label='Toast'>
+                        <icon>lucide-info</icon>
+                        <action>DialogToastView</action>
+                    </menuitem>
+                    <menuitem label='_t{Alerts}'>
+                        <icon>lucide-triangle-alert</icon>
+                        <action>AlertView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Forms}'>
+                <icon>lucide-circle</icon>
+                <menu class="dropdown-menu col-wrapper">
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Manual form}'>
+                                <icon>lucide-list</icon>
+                                <action>FormCustomView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap form}'>
+                                <icon>lucide-list</icon>
+                                <action>FormBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form components}'>
+                                <icon>lucide-list</icon>
+                                <action>FormComponentsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap form grid}'>
+                                <icon>lucide-list</icon>
+                                <action>FormBuilderGridView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap vertical form}'>
+                                <icon>lucide-list</icon>
+                                <action>FormVerticalBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Modal form}'>
+                                <icon>lucide-list</icon>
+                                <action>ModalForm</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap nested form}'>
+                                <icon>lucide-list</icon>
+                                <action>FormNestedBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form with static post}'>
+                                <icon>lucide-list</icon>
+                                <action>FormStaticBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form field list}'>
+                                <icon>lucide-list</icon>
+                                <action>FormFieldListView</action>
+                            </menuitem>
+                            <menuitem label='_t{Check list}'>
+                                <icon>lucide-check-square</icon>
+                                <action>FormCheckListView</action>
+                            </menuitem>
+                            <menuitem label='_t{Input masks}'>
+                                <icon>lucide-square</icon>
+                                <action>FormMaskView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form validation}'>
+                                <icon>lucide-triangle-alert</icon>
+                                <action>FormValidationView</action>
+                            </menuitem>
+                            <menuitem label='_t{Seek button}'>
+                                <icon>lucide-search</icon>
+                                <action>FormSeekButtonView</action>
+                            </menuitem>
+                         </menu>
+                    </menuitem>
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Static selections}'>
+                                <icon>lucide-check-square</icon>
+                                <action>FormStaticSelectionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Automatic database selections}'>
+                                <icon>lucide-check-square</icon>
+                                <action>FormDBAutoSelectionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Likert scale}'>
+                                <icon>lucide-circle</icon>
+                                <action>FormLikertScaleView</action>
+                            </menuitem>
+                            <menuitem label='_t{Client interactions}'>
+                                <icon>lucide-zap</icon>
+                                <action>FormClientInteractionsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Dynamic interactions}'>
+                                <icon>lucide-zap</icon>
+                                <action>FormInteractionsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Enable/disable interactions}'>
+                                <icon>lucide-zap</icon>
+                                <action>FormEnableDisableView</action>
+                            </menuitem>
+                            <menuitem label='_t{Show/hide rows}'>
+                                <icon>lucide-zap</icon>
+                                <action>FormShowHideRowsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Sort List}'>
+                                <icon>lucide-arrow-up-down</icon>
+                                <action>FormSortView</action>
+                            </menuitem>
+                            <menuitem label='_t{Sort DB List}'>
+                                <icon>lucide-arrow-up-down</icon>
+                                <action>FormDBSortView</action>
+                            </menuitem>
+                            <menuitem label='_t{Html Editor}'>
+                                <icon>lucide-code</icon>
+                                <action>FormHtmlEditorView</action>
+                            </menuitem>
+                            <menuitem label='_t{Barcode, QRCode reader}'>
+                                <icon>lucide-barcode</icon>
+                                <action>FormCodeReader</action>
+                            </menuitem>
+                            <menuitem label='_t{Image upload and cropper}'>
+                                <icon>lucide-image</icon>
+                                <action>FormImageUploader</action>
+                            </menuitem>
+                            <menuitem label='_t{Signature area}'>
+                                <icon>lucide-pen-tool</icon>
+                                <action>FormSignaturePad</action>
+                            </menuitem>
+                        </menu>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        
+            <menuitem label='_t{Datagrids}'>
+                <icon>lucide-circle</icon>
+                <menu class="dropdown-menu col-wrapper">
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Native datagrid}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridCustomView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap Datagrid}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridBootstrapView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids Actions group}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridActionGroupView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids Columns group}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridColumnGroupView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids Conditional actions}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridConditionalActionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Horizontal Scrollable Datagrids}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridHScrollView</action>
+                            </menuitem>
+                            <menuitem label='_t{Vertical Scrollable Datagrids}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridScrollView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with hiddable columns}'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridHiddableView</action>
+                            </menuitem>
+                            <menuitem label='Datatables'>
+                                <icon>lucide-table</icon>
+                                <action>DatagridDatatableView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid search}'>
+                                <icon>lucide-search</icon>
+                                <action>DatagridSearchView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid Rest query}'>
+                                <icon>lucide-code</icon>
+                                <action>DatagridRestView</action>
+                            </menuitem>
+                         </menu>
+                    </menuitem>
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Datagrid formatting}'>
+                                <icon>lucide-tag</icon>
+                                <action>DatagridTransformView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with links}'>
+                                <icon>lucide-link</icon>
+                                <action>DatagridLinkView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid calculations}'>
+                                <icon>lucide-calculator</icon>
+                                <action>DatagridMathView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with image}'>
+                                <icon>lucide-image</icon>
+                                <action>DatagridImageView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with label}'>
+                                <icon>lucide-flag</icon>
+                                <action>DatagridLabelView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with progress bar}'>
+                                <icon>lucide-battery-medium</icon>
+                                <action>DatagridProgressView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid export}'>
+                                <icon>lucide-save</icon>
+                                <action>DatagridExportView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with input fields}'>
+                                <icon>lucide-square</icon>
+                                <action>DatagridInputView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids with input dialog}'>
+                                <icon>lucide-list</icon>
+                                <action>DatagridInputDialogView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids with new Window}'>
+                                <icon>lucide-monitor</icon>
+                                <action>DatagridWindowView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid SQL query}'>
+                                <icon>lucide-database</icon>
+                                <action>DatagridQueryView</action>
+                            </menuitem>
+                        </menu>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Utilities}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Calendar}'>
+                        <icon>lucide-calendar</icon>
+                        <action>FullCalendarStaticView</action>
+                    </menuitem>
+                    <menuitem label='Gantt'>
+                        <icon>lucide-calendar</icon>
+                        <action>GanttView</action>
+                    </menuitem>
+                    <menuitem label='_t{Icon View}'>
+                        <icon>lucide-layout-grid</icon>
+                        <action>IconView</action>
+                    </menuitem>
+                    <menuitem label='_t{Filesystem Icon View}'>
+                        <icon>lucide-layout-grid</icon>
+                        <action>FilesystemIconView</action>
+                    </menuitem>
+                    <menuitem label='_t{Timeline}'>
+                        <icon>lucide-clock</icon>
+                        <action>TimelineView</action>
+                    </menuitem>
+                    <menuitem label='Kanban'>
+                        <icon>lucide-columns-3</icon>
+                        <action>KanbanView</action>
+                    </menuitem>
+                    <menuitem label='Kanban Custom'>
+                        <icon>lucide-columns-3</icon>
+                        <action>KanbanCustomView</action>
+                    </menuitem>
+                    <menuitem label='Cards'>
+                        <icon>lucide-contact</icon>
+                        <action>CardView</action>
+                    </menuitem>
+                    <menuitem label='Video Cards'>
+                        <icon>lucide-contact</icon>
+                        <action>VideoCardView</action>
+                    </menuitem>
+                    <menuitem label='_t{Tree View}'>
+                        <icon>lucide-indent</icon>
+                        <action>TreeView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dropdown}'>
+                        <icon>lucide-list</icon>
+                        <action>DropdownView</action>
+                    </menuitem>
+                    <menuitem label='_t{Steps}'>
+                        <icon>lucide-arrow-right-circle</icon>
+                        <action>StepView</action>
+                    </menuitem>
+                    <menuitem label='_t{Arrow steps}'>
+                        <icon>lucide-arrow-right-circle</icon>
+                        <action>ArrowStepView</action>
+                    </menuitem>
+                    <menuitem label='_t{SourceCode}'>
+                        <icon>lucide-code</icon>
+                        <action>SourceCodeView</action>
+                    </menuitem>
+                    <menuitem label='_t{Simple calendar}'>
+                        <icon>lucide-calendar</icon>
+                        <action>CalendarView</action>
+                    </menuitem>
+                </menu>
+                
+            </menuitem>
+            
+            <menuitem label='_t{Reports}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Tabular report}'>
+                        <icon>lucide-file-text</icon>
+                        <action>TabularReport</action>
+                    </menuitem>
+                    <menuitem label='_t{Report with manual query}'>
+                        <icon>lucide-file-text</icon>
+                        <action>TabularReportQueryView</action>
+                    </menuitem>
+                    <menuitem label='_t{Tabular report over view}'>
+                        <icon>lucide-file-text</icon>
+                        <action>TabularReportView</action>
+                    </menuitem>
+                    <menuitem label='_t{Invoice}'>
+                        <icon>lucide-code</icon>
+                        <action>TemplateInvoiceView</action>
+                    </menuitem>
+                    <menuitem label='_t{Cash entries}'>
+                        <icon>lucide-file-text</icon>
+                        <action>DatagridCashRegisterView</action>
+                    </menuitem>
+                    <menuitem label='_t{Document HTML->PDF}'>
+                        <icon>lucide-file-text</icon>
+                        <action>DocumentHtmlPdfView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed shapes}'>
+                        <icon>lucide-file-text</icon>
+                        <action>PDFDesignShapesView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed Danfe}'>
+                        <icon>lucide-file-text</icon>
+                        <action>PDFDesignNFEView#method=onShow</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Charts}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Line chart}'>
+                        <icon>lucide-line-chart</icon>
+                        <action>LineChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Bar chart}'>
+                        <icon>lucide-bar-chart</icon>
+                        <action>BarChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Column chart}'>
+                        <icon>lucide-bar-chart</icon>
+                        <action>ColumnChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Pie chart}'>
+                        <icon>lucide-pie-chart</icon>
+                        <action>PieChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dashboard}'>
+                        <icon>lucide-pie-chart</icon>
+                        <action>DashboardView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Labels}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Barcode}'>
+                        <icon>lucide-barcode</icon>
+                        <action>FormBarcodeView</action>
+                    </menuitem>
+                    <menuitem label='_t{QRCode}'>
+                        <icon>lucide-qr-code</icon>
+                        <action>FormQrcodeView</action>
+                    </menuitem>
+                    <menuitem label='_t{Screen labels}'>
+                        <icon>lucide-qr-code</icon>
+                        <action>FormScreenLabelsView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Templates}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Template View basic}'>
+                        <icon>lucide-code</icon>
+                        <action>TemplateViewBasicView</action>
+                    </menuitem>
+                    <menuitem label='_t{Template View masks}'>
+                        <icon>lucide-code</icon>
+                        <action>TemplateViewMaskView</action>
+                    </menuitem>
+                    <menuitem label='_t{Template View repeated}'>
+                        <icon>lucide-code</icon>
+                        <action>TemplateRepeatView</action>
+                    </menuitem>
+                    <menuitem label='_t{Circle plugin}'>
+                        <icon>lucide-code</icon>
+                        <action>CircleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Carousel}'>
+                        <icon>lucide-code</icon>
+                        <action>CarouselView</action>
+                    </menuitem>
+                    <menuitem label='_t{Creating new components}'>
+                        <icon>lucide-code</icon>
+                        <action>AccordionView</action>
+                    </menuitem>
+                    <menuitem label='_t{HTML manual form}'>
+                        <icon>lucide-code</icon>
+                        <action>TemplateHtmlManualForm</action>
+                    </menuitem>
+                    <menuitem label='Jumbotron'>
+                        <icon>lucide-code</icon>
+                        <action>JumbotronView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Extras}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Form events}'>
+                        <icon>lucide-list</icon>
+                        <action>FormEventsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Field list events}'>
+                        <icon>lucide-list</icon>
+                        <action>FormFieldListEventsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Styled buttons}'>
+                        <icon>lucide-heart</icon>
+                        <action>FormButtonStyleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Texts and links}'>
+                        <icon>lucide-font</icon>
+                        <action>TextLinkView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual database selections}'>
+                        <icon>lucide-check-square</icon>
+                        <action>FormDBManualSelectionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form opening window}'>
+                        <icon>lucide-monitor</icon>
+                        <action>FormWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form bordered field list}'>
+                        <icon>lucide-list</icon>
+                        <action>FormFieldListDashedView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form confirmation}'>
+                        <icon>lucide-list</icon>
+                        <action>FormConfirmationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Expander}'>
+                        <icon>lucide-expand</icon>
+                        <action>FormExpanderView</action>
+                    </menuitem>
+                    <menuitem label='_t{Selection breaks}'>
+                        <icon>lucide-check-square</icon>
+                        <action>FormSelectionBreakView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form inside Popover}'>
+                        <icon>lucide-monitor</icon>
+                        <action>FormInsidePopoverView</action>
+                    </menuitem>
+                    <menuitem label='_t{Conditional submission}'>
+                        <icon>lucide-list</icon>
+                        <action>FormConditionalView</action>
+                    </menuitem>
+                    <menuitem label='_t{Reusable MVC Forms}'>
+                        <icon>lucide-list</icon>
+                        <action>FormReusableControl</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrids with popover}'>
+                        <icon>lucide-table</icon>
+                        <action>DatagridPopView</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrid Window Form}'>
+                        <icon>lucide-table</icon>
+                        <action>DatagridWindowForm</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrid details}'>
+                        <icon>lucide-table</icon>
+                        <action>DatagridDetailView</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrid date conversion}'>
+                        <icon>lucide-calendar</icon>
+                        <action>DatagridTransformObjectView</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrids with Checkbutton}'>
+                        <icon>lucide-check-square</icon>
+                        <action>DatagridCheckView</action>
+                    </menuitem>
+                    <menuitem label='_t{Window events}'>
+                        <icon>lucide-monitor</icon>
+                        <action>ContainerWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Copy button}'>
+                        <icon>lucide-copy</icon>
+                        <action>FormCopyMemoryView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Organization}'>
+        <icon>lucide-list</icon>
+        <menu>
+            <menuitem label='_t{Standard controls}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Standard Form}'>
+                        <icon>lucide-list</icon>
+                        <action>StandardFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Standard DataGrid}'>
+                        <icon>lucide-table</icon>
+                        <action>StandardDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Standard Form/DataGrid}'>
+                        <icon>lucide-table</icon>
+                        <action>StandardFormDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Standard Form/DataGrid with curtain}'>
+                        <icon>lucide-table</icon>
+                        <action>StandardFormDataGridCurtainView</action>
+                    </menuitem>
+                    <menuitem label='_t{Standard Form/DataGrid with window}'>
+                        <icon>lucide-table</icon>
+                        <action>StandardFormDataGridWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Side by side Form/DataGrid}'>
+                        <icon>lucide-table</icon>
+                        <action>SplitRegisterView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Manual controls}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Manual form}'>
+                        <icon>lucide-list</icon>
+                        <action>CompleteFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual DataGrid}'>
+                        <icon>lucide-table</icon>
+                        <action>CompleteDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual Form/DataGrid}'>
+                        <icon>lucide-table</icon>
+                        <action>CompleteFormDataGridView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+
+            <menuitem label='_t{Complete registrations}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Customer list}'>
+                        <icon>lucide-table</icon>
+                        <action>CustomerDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Product list}'>
+                        <icon>lucide-table</icon>
+                        <action>ProductList</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale list}'>
+                        <icon>lucide-table</icon>
+                        <action>SaleList</action>
+                    </menuitem>
+                    <menuitem label='_t{Curtain filters}'>
+                        <icon>lucide-table</icon>
+                        <action>CustomerCurtainFilterList</action>
+                    </menuitem>
+                    <menuitem label='_t{Window filters}'>
+                        <icon>lucide-table</icon>
+                        <action>CustomerWindowFilterList</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale master-detail form I}'>
+                        <icon>lucide-shopping-cart</icon>
+                        <action>SaleForm</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale master-detail form II}'>
+                        <icon>lucide-shopping-cart</icon>
+                        <action>SaleMultiValueForm#method=onClear</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Query screens}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Customer Status}'>
+                        <icon>lucide-table</icon>
+                        <action>CustomerStatusView</action>
+                    </menuitem>
+                    <menuitem label='_t{Sales chart}'>
+                        <icon>lucide-bar-chart</icon>
+                        <action>SalesChartView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Batch operations}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Inline editing datagrid}'>
+                        <icon>lucide-table</icon>
+                        <action>InlineDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch update list}'>
+                        <icon>lucide-edit-3</icon>
+                        <action>ProductUpdateList</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch instant update list}'>
+                        <icon>lucide-edit-3</icon>
+                        <action>ProductInstantUpdateList</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch delete list}'>
+                        <icon>lucide-x</icon>
+                        <action>MassiveDeleteView</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch selection list}'>
+                        <icon>lucide-check-square</icon>
+                        <action>ProductSelectionList</action>
+                    </menuitem>
+                    <menuitem label='_t{Multi check form}'>
+                        <icon>lucide-check-square</icon>
+                        <action>MultiCheckView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Checkout screens}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Checkout form}'>
+                        <icon>lucide-shopping-cart</icon>
+                        <action>CheckoutFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{POS form (Master/detail)}'>
+                        <icon>lucide-shopping-cart</icon>
+                        <action>POSFormView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Field interactions}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Hierarchical combo}'>
+                        <icon>lucide-list</icon>
+                        <action>FormHierarchicalComboView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dynamic criteria with session variable}'>
+                        <icon>lucide-list</icon>
+                        <action>FormDynamicSessionCriteriaView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dynamic filtering}'>
+                        <icon>lucide-zap</icon>
+                        <action>FormDynamicFilterView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Utilities}'>
+                <icon>lucide-circle</icon>
+                <menu>
+                    <menuitem label='_t{Data calendar}'>
+                        <icon>lucide-calendar</icon>
+                        <action>FullCalendarDatabaseView</action>
+                    </menuitem>
+                    <menuitem label='_t{Calendar Split View}'>
+                        <icon>lucide-calendar</icon>
+                        <action>FullCalendarSplitView</action>
+                    </menuitem>
+                    <menuitem label='_t{Gantt with data}'>
+                        <icon>lucide-calendar</icon>
+                        <action>GanttDatabaseView</action>
+                    </menuitem>
+                    <menuitem label='Kanban'>
+                        <icon>lucide-columns-3</icon>
+                        <action>KanbanDatabaseView</action>
+                    </menuitem>
+                    <menuitem label='Cards'>
+                        <icon>lucide-contact</icon>
+                        <action>ProductCardView</action>
+                    </menuitem>
+                    <menuitem label='_t{Product catalog}'>
+                        <icon>lucide-shopping-cart</icon>
+                        <action>ProductCatalogView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual agenda}'>
+                        <icon>lucide-calendar</icon>
+                        <action>AgendaView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
+</menu>

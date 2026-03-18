@@ -1,0 +1,1363 @@
+<ul class="menu menu-column menu-rounded menu-sub-indention px-3" id="kt_app_sidebar_menu">
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1935408332" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-database"></i>
+<span>Persistence</span>
+</a>
+<ul class="tree level-1" id="mi_1935408332">
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1388109976" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Connections</span>
+</a>
+<ul class="tree level-2" id="mi_1388109976">
+<li><a data-bs-target="#mi_1461477461" href="index.php?class=SetupTransactionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Database Transactions</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1286036327" href="index.php?class=ManualPrepareQueryView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Manual Prepared Query</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1568839839" href="index.php?class=FakeTransactionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Readonly transactions</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1495090837" href="index.php?class=TransactionInfoView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Transaction information</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1158373407" href="index.php?class=ManualConnectionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Manual connection</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1253568375" href="index.php?class=ManualDDLCommandsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Low level DDL commands</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1645079143" href="index.php?class=ManualDMLCommandsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Low level DML commands</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1631620899" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Objects</span>
+</a>
+<ul class="tree level-2" id="mi_1631620899">
+<li><a data-bs-target="#mi_1504744333" href="index.php?class=SetupActiveRecordView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Active Records</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1010273162" href="index.php?class=ObjectStoreView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-download"></i>
+<span>Object Store</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1564228979" href="index.php?class=ObjectCreateView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-download"></i>
+<span>Alternative Object Store</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1213192101" href="index.php?class=ObjectLoadView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Object Load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1555821579" href="index.php?class=ObjectLoad2View" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Object Static Load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1592452401" href="index.php?class=ObjectLazyView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Lazy Load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1602836734" href="index.php?class=ObjectRenderView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-circle"></i>
+<span>Object Render and evaluate</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1123839260" href="index.php?class=ObjectUpdateView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-edit-3"></i>
+<span>Object Update</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1015891682" href="index.php?class=RegisterLogView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-film"></i>
+<span>Transaction class log</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1601991857" href="index.php?class=RegisterLogFunctionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-film"></i>
+<span>Transaction logger function</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1943084110" href="index.php?class=RegisterLogDumpView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-film"></i>
+<span>Transaction log dump</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1988893031" href="index.php?class=EncapsulationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-shield"></i>
+<span>Encapsulation</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1829015990" href="index.php?class=ObjectDeleteView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-x"></i>
+<span>Object Delete</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1207433127" href="index.php?class=ObjectFirstLastView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>First and Last ID</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1155971263" href="index.php?class=ObjectFromArrayView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-right-left"></i>
+<span>Array conversion</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1345642797" href="index.php?class=ObjectToJsonView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-right-left"></i>
+<span>JSON conversion</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1979010220" href="index.php?class=HookMethodView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-paperclip"></i>
+<span>Hook methods</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1184572535" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Collections</span>
+</a>
+<ul class="tree level-2" id="mi_1184572535">
+<li class="dropdown-submenu"><ul class="dropdown-menu col-wrapper level-3" id="mi_1403351670">
+<li><a data-bs-target="#mi_1147271056" href="index.php?class=CriteriaView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-filter"></i>
+<span>Criteria API</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1703449573" href="index.php?class=CollectionLoadView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Collection load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1180172329" href="index.php?class=CollectionStaticSimpleLoadView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Collection static simple load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1023990261" href="index.php?class=CollectionLoadPropertyView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Collection paginated load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1619733419" href="index.php?class=CollectionSimpleLoadPropertyView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Collection simple paginated load</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1052159706" href="index.php?class=CollectionGetObjectsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Collection get objects</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1447756664" href="index.php?class=CollectionSubQueryView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-upload"></i>
+<span>Collections with subquery</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1286100523" href="index.php?class=CollectionUpdateView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-edit-3"></i>
+<span>Collection update</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1577679887" href="index.php?class=CollectionBatchUpdateView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-edit-3"></i>
+<span>Collection batch update</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1832730242" href="index.php?class=CollectionStaticBatchUpdateView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-edit-3"></i>
+<span>Collection static batch update</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu"><ul class="dropdown-menu col-wrapper level-3" id="mi_1500131174">
+<li><a data-bs-target="#mi_1053526286" href="index.php?class=CollectionAggregationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-filter"></i>
+<span>Collection aggregations</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1886165859" href="index.php?class=CollectionArrayView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-filter"></i>
+<span>Collection as array</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1199949596" href="index.php?class=CollectionTransformView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-right-left"></i>
+<span>Collection transform</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1800870112" href="index.php?class=CollectionFilterView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-filter"></i>
+<span>Collection filter</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1247377847" href="index.php?class=CollectionDeleteView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-x"></i>
+<span>Collection delete</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1023250467" href="index.php?class=CollectionStaticSimpleDeleteView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-x"></i>
+<span>Collection static simple delete</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1426208455" href="index.php?class=CollectionCountView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-circle"></i>
+<span>Collection count</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1109284310" href="index.php?class=CollectionStaticSimpleCountView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-circle"></i>
+<span>Collection static simple count</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1412675381" href="index.php?class=CollectionCountObjectsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-circle"></i>
+<span>Collection count objects</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1914040352" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Relationships</span>
+</a>
+<ul class="tree level-2" id="mi_1914040352">
+<li><a data-bs-target="#mi_1012494027" href="index.php?class=RelationShortcutsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Relationships shortcuts</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1283941342" href="index.php?class=AssociationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Object Association</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1365215317" href="index.php?class=CompositionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Object Composition</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1774908473" href="index.php?class=CompositionSimpleView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Object Simple Composition</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1857458235" href="index.php?class=AggregationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Object Aggregation</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1328511030" href="index.php?class=AggregationSimpleView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Object Simple Aggregation</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1086537566" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-monitor"></i>
+<span>Presentation</span>
+</a>
+<ul class="tree level-1" id="mi_1086537566">
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1270593993" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Pages</span>
+</a>
+<ul class="tree level-2" id="mi_1270593993">
+<li><a data-bs-target="#mi_1178291690" href="index.php?class=SinglePageView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Common page</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1147964553" href="index.php?class=SidePageView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Side curtain</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1049903120" href="index.php?class=EmbeddedPDFView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Page with embedded PDF</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1441519795" href="index.php?class=EmbeddedVideoView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Page with embedded video</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1064066944" href="index.php?class=ExternalPageView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Page with external content</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1280581043" href="index.php?class=SingleWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Common window</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1294471589" href="index.php?class=ModalWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Modal window</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1282055113" href="index.php?class=WindowPDFView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Window with embedded PDF</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1350539506" href="index.php?class=ExternalSystemWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Window with external system</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1730389137" href="index.php?class=OnDemandWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>On demand window</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1313364056" href="index.php?class=PageCenterView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Page center</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1176742710" href="index.php?class=InboxView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-mail"></i>
+<span>Internal pages (inbox)</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1389669859" href="index.php?class=MultiStepMultiFormView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Multi Step Form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1726515599" href="index.php?class=MultiStepRegistration1View" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Multi Step Wizard</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1269857220" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Containers</span>
+</a>
+<ul class="tree level-2" id="mi_1269857220">
+<li><a data-bs-target="#mi_1449758721" href="index.php?class=ContainerTableView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Table</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1916822540" href="index.php?class=ContainerTableColumnsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Table Columns</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1229640043" href="index.php?class=ContainerPanelView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-package"></i>
+<span>Panel</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1540418944" href="index.php?class=ContainerNotebookView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-book"></i>
+<span>Notebook</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1124251596" href="index.php?class=ContainerNotebookBootstrapView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-book"></i>
+<span>Bootstrap Notebook Wrapper</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1039327221" href="index.php?class=ContainerNotebookVerticalBootstrapView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-book"></i>
+<span>Bootstrap Notebook Vertical</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1162940596" href="index.php?class=ContainerNotebookStyleView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-book"></i>
+<span>Notebook events</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1702666306" href="index.php?class=ContainerPanelGroupView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Panel group</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1962061980" href="index.php?class=ContainerScrollView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-up-down"></i>
+<span>Scroll</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1502220225" href="index.php?class=ContainerFrameView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-square"></i>
+<span>Frame</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1254423330" href="index.php?class=ContainerVBoxView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-menu"></i>
+<span>Vertical Box</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1109904007" href="index.php?class=ContainerHBoxView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-menu"></i>
+<span>Horizontal Box</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1527234326" href="index.php?class=ContainerPageFrame" generator="adianti" class="dropdown-toggle">
+<i class="lucide-square"></i>
+<span>Page Frame</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1262088121" href="index.php?class=ContainerPageWrapper" generator="adianti" class="dropdown-toggle">
+<i class="lucide-square"></i>
+<span>Page Wrapper</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1841263690" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Dialogs</span>
+</a>
+<ul class="tree level-2" id="mi_1841263690">
+<li><a data-bs-target="#mi_1004506339" href="index.php?class=DialogInformationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-info"></i>
+<span>Information dialog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1902693537" href="index.php?class=DialogWarningView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-triangle-alert"></i>
+<span>Warning dialog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1281905226" href="index.php?class=DialogErrorView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-circle-alert"></i>
+<span>Error dialog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1398483419" href="index.php?class=DialogQuestionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-help-circle"></i>
+<span>Question dialog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1196616586" href="index.php?class=DialogInputView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Input dialog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1144504825" href="index.php?class=DialogToastView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-info"></i>
+<span>Toast</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1437231896" href="index.php?class=AlertView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-triangle-alert"></i>
+<span>Alerts</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1099327569" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Forms</span>
+</a>
+<ul class="tree level-2" id="mi_1099327569">
+<li class="dropdown-submenu"><ul class="dropdown-menu col-wrapper level-3" id="mi_1074392504">
+<li><a data-bs-target="#mi_1722771412" href="index.php?class=FormCustomView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Manual form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1027563372" href="index.php?class=FormBuilderView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Bootstrap form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1160856866" href="index.php?class=FormComponentsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Form components</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1628755541" href="index.php?class=FormBuilderGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Bootstrap form grid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1335545700" href="index.php?class=FormVerticalBuilderView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Bootstrap vertical form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1172122572" href="index.php?class=ModalForm" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Modal form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1237625523" href="index.php?class=FormNestedBuilderView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Bootstrap nested form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1614068062" href="index.php?class=FormStaticBuilderView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Form with static post</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1724883040" href="index.php?class=FormFieldListView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Form field list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1228755094" href="index.php?class=FormCheckListView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Check list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1788232484" href="index.php?class=FormMaskView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-square"></i>
+<span>Input masks</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1580827638" href="index.php?class=FormValidationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-triangle-alert"></i>
+<span>Form validation</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1928534020" href="index.php?class=FormSeekButtonView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-search"></i>
+<span>Seek button</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu"><ul class="dropdown-menu col-wrapper level-3" id="mi_1055343653">
+<li><a data-bs-target="#mi_1471573835" href="index.php?class=FormStaticSelectionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Static selections</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1895135009" href="index.php?class=FormDBAutoSelectionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Automatic database selections</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1234893601" href="index.php?class=FormLikertScaleView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-circle"></i>
+<span>Likert scale</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1978356419" href="index.php?class=FormClientInteractionsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-zap"></i>
+<span>Client interactions</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1107729453" href="index.php?class=FormInteractionsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-zap"></i>
+<span>Dynamic interactions</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1222503511" href="index.php?class=FormEnableDisableView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-zap"></i>
+<span>Enable/disable interactions</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1897435911" href="index.php?class=FormShowHideRowsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-zap"></i>
+<span>Show/hide rows</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1040326295" href="index.php?class=FormSortView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-up-down"></i>
+<span>Sort List</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1645382185" href="index.php?class=FormDBSortView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-up-down"></i>
+<span>Sort DB List</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1857587309" href="index.php?class=FormHtmlEditorView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Html Editor</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1687665343" href="index.php?class=FormCodeReader" generator="adianti" class="dropdown-toggle">
+<i class="lucide-barcode"></i>
+<span>Barcode, QRCode reader</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1726311061" href="index.php?class=FormImageUploader" generator="adianti" class="dropdown-toggle">
+<i class="lucide-image"></i>
+<span>Image upload and cropper</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1274419408" href="index.php?class=FormSignaturePad" generator="adianti" class="dropdown-toggle">
+<i class="lucide-pen-tool"></i>
+<span>Signature area</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1516965669" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Datagrids</span>
+</a>
+<ul class="tree level-2" id="mi_1516965669">
+<li class="dropdown-submenu"><ul class="dropdown-menu col-wrapper level-3" id="mi_1389198515">
+<li><a data-bs-target="#mi_1427312696" href="index.php?class=DatagridCustomView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Native datagrid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1126627470" href="index.php?class=DatagridBootstrapView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Bootstrap Datagrid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1941367399" href="index.php?class=DatagridActionGroupView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrids Actions group</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1715766000" href="index.php?class=DatagridColumnGroupView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrids Columns group</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1798307178" href="index.php?class=DatagridConditionalActionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrids Conditional actions</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1032951825" href="index.php?class=DatagridHScrollView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Horizontal Scrollable Datagrids</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1221652875" href="index.php?class=DatagridScrollView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Vertical Scrollable Datagrids</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1417353416" href="index.php?class=DatagridHiddableView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrid with hiddable columns</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1088703576" href="index.php?class=DatagridDatatableView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datatables</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1077606444" href="index.php?class=DatagridSearchView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-search"></i>
+<span>Datagrid search</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1698439307" href="index.php?class=DatagridRestView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Datagrid Rest query</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu"><ul class="dropdown-menu col-wrapper level-3" id="mi_1059116813">
+<li><a data-bs-target="#mi_1323437474" href="index.php?class=DatagridTransformView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-tag"></i>
+<span>Datagrid formatting</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1508705844" href="index.php?class=DatagridLinkView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-link"></i>
+<span>Datagrid with links</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1005738927" href="index.php?class=DatagridMathView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calculator"></i>
+<span>Datagrid calculations</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1880063049" href="index.php?class=DatagridImageView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-image"></i>
+<span>Datagrid with image</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1321874017" href="index.php?class=DatagridLabelView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-flag"></i>
+<span>Datagrid with label</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1434487174" href="index.php?class=DatagridProgressView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-battery-medium"></i>
+<span>Datagrid with progress bar</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1962413598" href="index.php?class=DatagridExportView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-save"></i>
+<span>Datagrid export</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1559084144" href="index.php?class=DatagridInputView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-square"></i>
+<span>Datagrid with input fields</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1305362118" href="index.php?class=DatagridInputDialogView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Datagrids with input dialog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1877253819" href="index.php?class=DatagridWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Datagrids with new Window</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1567487527" href="index.php?class=DatagridQueryView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-database"></i>
+<span>Datagrid SQL query</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1069126672" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Utilities</span>
+</a>
+<ul class="tree level-2" id="mi_1069126672">
+<li><a data-bs-target="#mi_1730461012" href="index.php?class=FullCalendarStaticView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Calendar</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1812251944" href="index.php?class=GanttView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Gantt</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1965924345" href="index.php?class=IconView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-layout-grid"></i>
+<span>Icon View</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1770151472" href="index.php?class=FilesystemIconView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-layout-grid"></i>
+<span>Filesystem Icon View</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1476813959" href="index.php?class=TimelineView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-clock"></i>
+<span>Timeline</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1024272845" href="index.php?class=KanbanView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-columns-3"></i>
+<span>Kanban</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1785027288" href="index.php?class=KanbanCustomView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-columns-3"></i>
+<span>Kanban Custom</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1191090055" href="index.php?class=CardView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-contact"></i>
+<span>Cards</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1007487041" href="index.php?class=VideoCardView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-contact"></i>
+<span>Video Cards</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1053797770" href="index.php?class=TreeView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-indent"></i>
+<span>Tree View</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1788328430" href="index.php?class=DropdownView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Dropdown</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1711403508" href="index.php?class=StepView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-right-circle"></i>
+<span>Steps</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1191140208" href="index.php?class=ArrowStepView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-arrow-right-circle"></i>
+<span>Arrow steps</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1310172124" href="index.php?class=SourceCodeView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>SourceCode</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1368451412" href="index.php?class=CalendarView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Simple calendar</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1887738918" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Reports</span>
+</a>
+<ul class="tree level-2" id="mi_1887738918">
+<li><a data-bs-target="#mi_1720214612" href="index.php?class=TabularReport" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Tabular report</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1283063760" href="index.php?class=TabularReportQueryView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Report with manual query</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1705716870" href="index.php?class=TabularReportView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Tabular report over view</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1602749781" href="index.php?class=TemplateInvoiceView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Invoice</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1376819824" href="index.php?class=DatagridCashRegisterView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Cash entries</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1821480512" href="index.php?class=DocumentHtmlPdfView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Document HTML->PDF</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1137160005" href="index.php?class=PDFDesignShapesView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Designed shapes</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1654051498" href="index.php?class=PDFDesignNFEView&method=onShow" generator="adianti" class="dropdown-toggle">
+<i class="lucide-file-text"></i>
+<span>Designed Danfe</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1963954644" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Charts</span>
+</a>
+<ul class="tree level-2" id="mi_1963954644">
+<li><a data-bs-target="#mi_1152464490" href="index.php?class=LineChartView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-line-chart"></i>
+<span>Line chart</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1675031632" href="index.php?class=BarChartView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-bar-chart"></i>
+<span>Bar chart</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1900722340" href="index.php?class=ColumnChartView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-bar-chart"></i>
+<span>Column chart</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1461284084" href="index.php?class=PieChartView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-pie-chart"></i>
+<span>Pie chart</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1474794112" href="index.php?class=DashboardView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-pie-chart"></i>
+<span>Dashboard</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1186478629" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Labels</span>
+</a>
+<ul class="tree level-2" id="mi_1186478629">
+<li><a data-bs-target="#mi_1834698292" href="index.php?class=FormBarcodeView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-barcode"></i>
+<span>Barcode</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1916457453" href="index.php?class=FormQrcodeView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-qr-code"></i>
+<span>QRCode</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1906832231" href="index.php?class=FormScreenLabelsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-qr-code"></i>
+<span>Screen labels</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1157040518" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Templates</span>
+</a>
+<ul class="tree level-2" id="mi_1157040518">
+<li><a data-bs-target="#mi_1368370756" href="index.php?class=TemplateViewBasicView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Template View basic</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1589230456" href="index.php?class=TemplateViewMaskView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Template View masks</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1470523235" href="index.php?class=TemplateRepeatView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Template View repeated</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1897068662" href="index.php?class=CircleView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Circle plugin</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1026492510" href="index.php?class=CarouselView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Carousel</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1397759766" href="index.php?class=AccordionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Creating new components</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1236452514" href="index.php?class=TemplateHtmlManualForm" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>HTML manual form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1245819301" href="index.php?class=JumbotronView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-code"></i>
+<span>Jumbotron</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1166281506" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Extras</span>
+</a>
+<ul class="tree level-2" id="mi_1166281506">
+<li><a data-bs-target="#mi_1247335495" href="index.php?class=FormEventsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Form events</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1249409841" href="index.php?class=FormFieldListEventsView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Field list events</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1882873936" href="index.php?class=FormButtonStyleView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-heart"></i>
+<span>Styled buttons</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1901688371" href="index.php?class=TextLinkView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-font"></i>
+<span>Texts and links</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1760228593" href="index.php?class=FormDBManualSelectionView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Manual database selections</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1218015300" href="index.php?class=FormWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Form opening window</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1860967776" href="index.php?class=FormFieldListDashedView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Form bordered field list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1959767850" href="index.php?class=FormConfirmationView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Form confirmation</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1061841842" href="index.php?class=FormExpanderView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-expand"></i>
+<span>Expander</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1195092900" href="index.php?class=FormSelectionBreakView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Selection breaks</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1754986156" href="index.php?class=FormInsidePopoverView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Form inside Popover</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1944836893" href="index.php?class=FormConditionalView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Conditional submission</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1060054857" href="index.php?class=FormReusableControl" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Reusable MVC Forms</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1604209577" href="index.php?class=DatagridPopView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrids with popover</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1416872866" href="index.php?class=DatagridWindowForm" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrid Window Form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1784104313" href="index.php?class=DatagridDetailView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Datagrid details</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1842020946" href="index.php?class=DatagridTransformObjectView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Datagrid date conversion</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1513855400" href="index.php?class=DatagridCheckView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Datagrids with Checkbutton</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1700790750" href="index.php?class=ContainerWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-monitor"></i>
+<span>Window events</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1727177603" href="index.php?class=FormCopyMemoryView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-copy"></i>
+<span>Copy button</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1531077844" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-list"></i>
+<span>Organization</span>
+</a>
+<ul class="tree level-1" id="mi_1531077844">
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1883680651" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Standard controls</span>
+</a>
+<ul class="tree level-2" id="mi_1883680651">
+<li><a data-bs-target="#mi_1717105033" href="index.php?class=StandardFormView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Standard Form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1275111777" href="index.php?class=StandardDataGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Standard DataGrid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1076374502" href="index.php?class=StandardFormDataGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Standard Form/DataGrid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1261203882" href="index.php?class=StandardFormDataGridCurtainView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Standard Form/DataGrid with curtain</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1352094711" href="index.php?class=StandardFormDataGridWindowView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Standard Form/DataGrid with window</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1370505629" href="index.php?class=SplitRegisterView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Side by side Form/DataGrid</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1181944852" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Manual controls</span>
+</a>
+<ul class="tree level-2" id="mi_1181944852">
+<li><a data-bs-target="#mi_1669979487" href="index.php?class=CompleteFormView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Manual form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1327008541" href="index.php?class=CompleteDataGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Manual DataGrid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1018746583" href="index.php?class=CompleteFormDataGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Manual Form/DataGrid</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1724847549" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Complete registrations</span>
+</a>
+<ul class="tree level-2" id="mi_1724847549">
+<li><a data-bs-target="#mi_1401466591" href="index.php?class=CustomerDataGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Customer list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1906582627" href="index.php?class=ProductList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Product list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1099292038" href="index.php?class=SaleList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Sale list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1108611378" href="index.php?class=CustomerCurtainFilterList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Curtain filters</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1089879272" href="index.php?class=CustomerWindowFilterList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Window filters</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1112169454" href="index.php?class=SaleForm" generator="adianti" class="dropdown-toggle">
+<i class="lucide-shopping-cart"></i>
+<span>Sale master-detail form I</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1418163415" href="index.php?class=SaleMultiValueForm&method=onClear" generator="adianti" class="dropdown-toggle">
+<i class="lucide-shopping-cart"></i>
+<span>Sale master-detail form II</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1466232652" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Query screens</span>
+</a>
+<ul class="tree level-2" id="mi_1466232652">
+<li><a data-bs-target="#mi_1702410087" href="index.php?class=CustomerStatusView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Customer Status</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1087877713" href="index.php?class=SalesChartView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-bar-chart"></i>
+<span>Sales chart</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1279180780" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Batch operations</span>
+</a>
+<ul class="tree level-2" id="mi_1279180780">
+<li><a data-bs-target="#mi_1858769490" href="index.php?class=InlineDataGridView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-table"></i>
+<span>Inline editing datagrid</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1892699227" href="index.php?class=ProductUpdateList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-edit-3"></i>
+<span>Batch update list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1814618698" href="index.php?class=ProductInstantUpdateList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-edit-3"></i>
+<span>Batch instant update list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1349863283" href="index.php?class=MassiveDeleteView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-x"></i>
+<span>Batch delete list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1671417720" href="index.php?class=ProductSelectionList" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Batch selection list</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1891926979" href="index.php?class=MultiCheckView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-check-square"></i>
+<span>Multi check form</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1253386078" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Checkout screens</span>
+</a>
+<ul class="tree level-2" id="mi_1253386078">
+<li><a data-bs-target="#mi_1630304424" href="index.php?class=CheckoutFormView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-shopping-cart"></i>
+<span>Checkout form</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1151029224" href="index.php?class=POSFormView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-shopping-cart"></i>
+<span>POS form (Master/detail)</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1727112609" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Field interactions</span>
+</a>
+<ul class="tree level-2" id="mi_1727112609">
+<li><a data-bs-target="#mi_1962026316" href="index.php?class=FormHierarchicalComboView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Hierarchical combo</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1283822993" href="index.php?class=FormDynamicSessionCriteriaView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-list"></i>
+<span>Dynamic criteria with session variable</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1963771909" href="index.php?class=FormDynamicFilterView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-zap"></i>
+<span>Dynamic filtering</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a data-bs-target="#mi_1389098986" href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="lucide-circle"></i>
+<span>Utilities</span>
+</a>
+<ul class="tree level-2" id="mi_1389098986">
+<li><a data-bs-target="#mi_1934262160" href="index.php?class=FullCalendarDatabaseView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Data calendar</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1412964584" href="index.php?class=FullCalendarSplitView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Calendar Split View</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1825400072" href="index.php?class=GanttDatabaseView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Gantt with data</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1600861450" href="index.php?class=KanbanDatabaseView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-columns-3"></i>
+<span>Kanban</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1809134027" href="index.php?class=ProductCardView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-contact"></i>
+<span>Cards</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1820509159" href="index.php?class=ProductCatalogView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-shopping-cart"></i>
+<span>Product catalog</span>
+</a>
+</li>
+<li><a data-bs-target="#mi_1960351763" href="index.php?class=AgendaView" generator="adianti" class="dropdown-toggle">
+<i class="lucide-calendar"></i>
+<span>Manual agenda</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
