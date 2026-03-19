@@ -24,6 +24,7 @@ $content     = str_replace('{MENUTOP}', AdiantiMenuBuilder::parseNavBar('menu-to
 $content     = str_replace('{MENUBOTTOM}', AdiantiMenuBuilder::parseNavBar('menu-bottom-public.xml', $theme), $content);
 $content     = str_replace('{username}', 'User name here', $content);
 $content     = str_replace('{usermail}', 'user@mail', $content);
+$content     = str_replace('{login}', TSession::getValue('login') ?? 'admin', $content);
 $content     = str_replace('{lang}', $ini['general']['language'], $content);
 $content     = str_replace('{title}', $ini['general']['title'] ?? '', $content);
 $content     = str_replace('{template_options}',  json_encode($ini['template'] ?? []), $content);

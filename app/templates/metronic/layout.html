@@ -539,18 +539,7 @@
             <!--end::Menu wrapper-->
           </div>
           <!--end::sidebar menu-->
-          <!--begin::Footer-->
-          <div class="app-sidebar-footer flex-column-auto pt-2 pb-6 px-6" id="kt_app_sidebar_footer">
-            <span class="sidebar-menu-title">
-              <div id="has_menu_mode_switch" class="form-check form-switch" title="_t{Dark mode}"
-                style="display: inline;position: absolute;right: 0;margin-right: 15px; display:none">
-                <input class="form-check-input" type="checkbox" role="switch" id="menu_theme_switch" checked=""
-                  style="cursor:pointer" onclick="Template.toggleMenuTheme(this)">
-                <i class="fa-solid fa-circle-half-stroke"></i>
-              </div>
-            </span>
-          </div>
-          <!--end::Footer-->
+        
         </div>
         <!--end::Sidebar-->
         <!--begin::Main-->
@@ -580,65 +569,7 @@
               <div class="row text-muted">
                 <div class="col-12 text-start">
 
-                  <span class="hide-mobile"
-                    style="font-weight:bold;display: block;padding: 5px;float: left;">{userunitname}</span>
-
-                  <div style="text-align:right">
-                    {MENUBOTTOM}
-
-                    <!-- Removed SystemUpdateList -->
-
-                    <!--[IFADMIN]-->
-                    <button class="btn superlight hide-mobile" type="button" data-bs-toggle="offcanvas"
-                      data-bs-target="#debug-panel" aria-controls="debug-panel">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                      Trace
-                    </button>
-                    <a class="btn superlight hide-mobile" generator="adianti"
-                      href="index.php?class=SystemDatabaseExplorer">
-                      <i class="fa-solid fa-database"></i>
-                      DB
-                    </a>
-                    <a class="btn superlight hide-mobile" generator="adianti"
-                      href="index.php?class=SystemModulesCheckView&register_state=false">
-                      <i class="fab fa-php" aria-hidden="true"></i>
-                      PHP
-                    </a>
-                    <a class="btn superlight hide-mobile" generator="adianti"
-                      href="index.php?class=SystemFilesDiff&register_state=false">
-                      <i class="fa fa-sitemap" aria-hidden="true"></i>
-                      Framework
-                    </a>
-                    <a class="btn superlight hide-mobile" generator="adianti"
-                      href="index.php?class=SystemInformationView&register_state=false">
-                      <i class="fa fa-microchip" aria-hidden="true"></i>
-                      _t{System}
-                    </a>
-                    <!--[/IFADMIN]-->
-                    <a id="has_news" class="btn superlight" generator="adianti"
-                      href="index.php?class=SystemPostFeedView" style="display:none;padding:5px">
-                      <i class="fa fa-rss"></i>
-                      _t{News}
-                    </a>
-                    <a id="has_wiki" class="btn superlight" generator="adianti"
-                      href="index.php?class=SystemWikiSearchList" style="display:none;padding:5px">
-                      <i class="fab fa-wikipedia-w"></i>
-                      _t{Manuals}
-                    </a>
-                    <a id="has_support_form" class="btn superlight" generator="adianti"
-                      href="index.php?class=SystemSupportForm&register_state=false" style="display:none;padding:5px">
-                      <i class="far fa-life-ring"></i>
-                      _t{Open ticket}
-                    </a>
-
-                    <div id="has_main_mode_switch" class="form-check form-switch" title="_t{Dark mode}"
-                      style="margin-left: 10px;padding-top:5px;display:none">
-                      <input class="form-check-input" type="checkbox" role="switch" id="global_theme_switch" checked=""
-                        style="cursor:pointer" onclick="Template.toggleGlobalTheme(this)">
-                      <i class="fa-solid fa-circle-half-stroke"></i>
-                    </div>
-                  </div>
-
+                  
 
                 </div>
               </div>
