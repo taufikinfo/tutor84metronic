@@ -71,8 +71,8 @@ class POSFormView extends TPage
         // add the form fields
         $this->form->addFields([$lab_pro], [$product_id], [$lab_pri], [$sale_price]);
         $this->form->addFields([$lab_amo], [$amount], [$lab_tot], [$total]);
-        $this->form->addAction('Add Item', $a1=new TAction(array($this, 'onAddItem')), 'fa:plus green');
-        $this->form->addAction('Clear',    $a2=new TAction(array($this, 'onClear')),   'far:trash-alt red');
+        $this->form->addAction('Add Item', $a1=new TAction(array($this, 'onAddItem')), 'ki-plus green');
+        $this->form->addAction('Clear',    $a2=new TAction(array($this, 'onClear')),   'ki-trash red');
         $this->form->addActionLink('Save',     $a3=new TAction(array($this, 'onCustomer')),'fa:save blue');
         
         $a1->setParameter('register_state', 'false');
@@ -104,7 +104,7 @@ class POSFormView extends TPage
         $total->setTransformer($format_value);
         
         $action = new TDataGridAction([$this, 'onDelete'],   ['product_id'=>'{product_id}' ] );
-        $this->datagrid->addAction($action, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action, 'Delete', 'ki-trash red');
         $this->datagrid->createModel();
         $a3->setParameter('register_state', 'false');
         

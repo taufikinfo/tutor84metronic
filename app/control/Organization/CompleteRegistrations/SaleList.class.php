@@ -67,8 +67,8 @@ class SaleList extends TPage
         $this->form->setData( TSession::getValue('SaleList_filter_data') );
         
         // add the search form actions
-        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'fa:search');
-        $this->form->addActionLink('New',  new TAction(['SaleForm', 'onEdit'], ['register_state' => 'false']), 'fa:plus green');
+        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'ki-magnifier');
+        $this->form->addActionLink('New',  new TAction(['SaleForm', 'onEdit'], ['register_state' => 'false']), 'ki-plus green');
         
         // creates a DataGrid
         $this->datagrid = new BootstrapDatagridWrapper(new TDataGrid);
@@ -137,9 +137,9 @@ class SaleList extends TPage
         $action_edit   = new TDataGridAction(['SaleForm', 'onEdit'],   ['key' => '{id}', 'register_state' => 'false'] );
         $action_delete = new TDataGridAction([$this, 'onDelete'],   ['key' => '{id}'] );
         
-        $this->datagrid->addAction($action_view, _t('View details'), 'fa:search green fa-fw');
-        $this->datagrid->addAction($action_edit, 'Edit',   'far:edit blue fa-fw');
-        $this->datagrid->addAction($action_delete, 'Delete', 'far:trash-alt red fa-fw');
+        $this->datagrid->addAction($action_view, _t('View details'), 'ki-magnifier green fa-fw');
+        $this->datagrid->addAction($action_edit, 'Edit',   'ki-pencil blue fa-fw');
+        $this->datagrid->addAction($action_delete, 'Delete', 'ki-trash red fa-fw');
         
         // create the datagrid model
         $this->datagrid->createModel();

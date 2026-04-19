@@ -32,9 +32,9 @@ class IconView extends TPage
         
         $this->iconview->addContextMenuOption('Options');
         $this->iconview->addContextMenuOption('');
-        $this->iconview->addContextMenuOption('Acao 1', new TAction([$this, 'onAction']), 'far:folder blue');
-        $this->iconview->addContextMenuOption('Acao 2', new TAction([$this, 'onAction']), 'far:check-circle green');
-        $this->iconview->addContextMenuOption('Acao 3', new TAction([$this, 'onAction']), 'far:trash-alt red', $display_condition);
+        $this->iconview->addContextMenuOption('Acao 1', new TAction([$this, 'onAction']), 'ki-folder blue');
+        $this->iconview->addContextMenuOption('Acao 2', new TAction([$this, 'onAction']), 'ki-check-circle green');
+        $this->iconview->addContextMenuOption('Acao 3', new TAction([$this, 'onAction']), 'ki-trash red', $display_condition);
         
         // wrap the page content using vertical box
         $vbox = new TVBox;
@@ -64,7 +64,7 @@ class IconView extends TPage
         $item->type     = 'folder';
         $item->path     = '/folder-a';
         $item->name     = 'Folder A';
-        $item->icon     = 'far:folder blue fa-4x';
+        $item->icon     = 'ki-folder blue fa-4x';
         $this->iconview->addItem($item);
         
         // add an regular object to the datagrid

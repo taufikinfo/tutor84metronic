@@ -71,7 +71,7 @@ class ProductForm extends TPage
         // add the actions
         $this->form->addAction( 'Save', new TAction([$this, 'onSave']), 'fa:save green');
         $this->form->addActionLink( 'Clear', new TAction([$this, 'onEdit']), 'fa:eraser red');
-        $this->form->addActionLink( 'List', new TAction(['ProductList', 'onReload']), 'fa:table blue');
+        $this->form->addActionLink( 'List', new TAction(['ProductList', 'onReload']), 'ki-row-horizontal blue');
 
         $vbox = new TVBox;
         $vbox->style = 'width: 100%';

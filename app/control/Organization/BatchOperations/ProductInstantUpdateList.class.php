@@ -37,7 +37,7 @@ class ProductInstantUpdateList extends TPage
         $description = new TEntry('description');
         $this->form->addFields( [new TLabel('Description')], [$description] );
         
-        $this->form->addAction(_t('Find'), new TAction(array($this, 'onSearch')), 'fa:search');
+        $this->form->addAction(_t('Find'), new TAction(array($this, 'onSearch')), 'ki-magnifier');
         
         // keep the form filled with session data
         $this->form->setData( TSession::getValue('Product_filter_data') );
@@ -118,7 +118,7 @@ class ProductInstantUpdateList extends TPage
             }
             
             TToast::show('success', '<b>'.$object->description . '</b> updated',
-                         'bottom center', 'far:check-circle');
+                         'bottom center', 'ki-check-circle');
             
             // close transaction
             TTransaction::close();

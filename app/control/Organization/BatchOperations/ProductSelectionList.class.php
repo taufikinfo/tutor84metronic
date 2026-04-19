@@ -42,7 +42,7 @@ class ProductSelectionList extends TPage
         $this->form->setData( TSession::getValue('ProductSelectionList_filter_data') );
         
         // add the search form actions
-        $this->form->addAction( 'Find', new TAction([$this, 'onSearch']), 'fa:search');
+        $this->form->addAction( 'Find', new TAction([$this, 'onSearch']), 'ki-magnifier');
         
         // creates a DataGrid
         $this->datagrid = new BootstrapDatagridWrapper(new TDataGrid);
@@ -63,7 +63,7 @@ class ProductSelectionList extends TPage
         // creates the datagrid actions
         $action1 = new TDataGridAction([$this, 'onSelect'], ['id' => '{id}', 'register_state' => 'false']);
         // add the actions to the datagrid
-        $this->datagrid->addAction($action1, 'Select', 'far:square fa-fw black');
+        $this->datagrid->addAction($action1, 'Select', 'ki-abstract-28 fa-fw black');
         
         // create the datagrid model
         $this->datagrid->createModel();
@@ -75,7 +75,7 @@ class ProductSelectionList extends TPage
         $panel = new TPanelGroup;
         $panel->add($this->datagrid);
         $panel->addFooter($this->pageNavigation);
-        $panel->addHeaderActionLink( 'Show results', new TAction([$this, 'showResults']), 'far:check-circle' );
+        $panel->addHeaderActionLink( 'Show results', new TAction([$this, 'showResults']), 'ki-check-circle' );
         
         // vertical box container
         $container = new TVBox;

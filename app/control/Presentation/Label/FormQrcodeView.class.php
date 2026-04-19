@@ -42,7 +42,7 @@ class FormQrcodeView extends TPage
         $template->setValue($label);
         
         // define the form action 
-        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

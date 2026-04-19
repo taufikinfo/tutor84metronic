@@ -25,7 +25,7 @@ class FormReusableControl extends TPage
         $this->form = new FormReusableView;
         
         // add a form action
-        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'far:check-circle');
+        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'ki-check-circle');
                                
         // wrap the page content using vertical box
         $vbox = new TVBox;

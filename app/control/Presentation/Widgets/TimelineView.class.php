@@ -23,10 +23,10 @@ class TimelineView extends TPage
 		$obj4 = (object) [ 'name' => 'DDD' ];
 		$obj5 = (object) [ 'name' => 'EEE' ];
 		
-		$timeline->addItem(1, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-11 12:01:00',  'fa:arrow-left bg-success',  'left',  $obj1 );
-		$timeline->addItem(2, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-11 12:02:00',  'fa:arrow-left bg-success',  'left',  $obj2 );
-		$timeline->addItem(3, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-13 12:03:00',  'fa:arrow-right bg-primary',  'right', $obj3 );
-		$timeline->addItem(4, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-14 12:04:00',  'fa:arrow-right bg-primary',  'right', $obj4 );
+		$timeline->addItem(1, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-11 12:01:00',  'ki-arrow-left bg-success',  'left',  $obj1 );
+		$timeline->addItem(2, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-11 12:02:00',  'ki-arrow-left bg-success',  'left',  $obj2 );
+		$timeline->addItem(3, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-13 12:03:00',  'ki-arrow-right bg-primary',  'right', $obj3 );
+		$timeline->addItem(4, 'Event {id}',  'This is the event id: <b>{id}</b> name: <b>{name}</b>', '2017-12-14 12:04:00',  'ki-arrow-right bg-primary',  'right', $obj4 );
 		
 		$timeline->setUseBothSides();
 		$timeline->setTimeDisplayMask('dd/mm/yyyy');

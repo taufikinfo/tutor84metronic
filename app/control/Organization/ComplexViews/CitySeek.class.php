@@ -39,7 +39,7 @@ class CitySeek extends TWindow
         $this->form->addQuickField('Name', $name,  '80%');
 
         // define the form action
-        $this->form->addQuickAction('Find', new TAction(array($this, 'onSearch')), 'fa:search');
+        $this->form->addQuickAction('Find', new TAction(array($this, 'onSearch')), 'ki-magnifier');
         
         // creates a DataGrid
         $this->datagrid = new TQuickGrid;
@@ -51,7 +51,7 @@ class CitySeek extends TWindow
         $this->datagrid->addQuickColumn('Name', 'name', 'left', '90%');
 
         // creates two datagrid actions
-        $this->datagrid->addQuickAction('Select', new TDataGridAction(array($this, 'onSelect')), 'id', 'far:check-circle green');
+        $this->datagrid->addQuickAction('Select', new TDataGridAction(array($this, 'onSelect')), 'id', 'ki-check-circle green');
         
         // create the datagrid model
         $this->datagrid->createModel();

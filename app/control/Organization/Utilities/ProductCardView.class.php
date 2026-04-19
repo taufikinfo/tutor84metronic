@@ -34,8 +34,8 @@ class ProductCardView extends TPage
         $description = new TEntry('description');
         $this->form->addFields( [new TLabel('Description:')], [$description] );
         
-        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'fa:search blue');
-        $this->form->addActionLink('New',  new TAction(['ProductForm', 'onEdit']), 'fa:plus green');
+        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'ki-magnifier blue');
+        $this->form->addActionLink('New',  new TAction(['ProductForm', 'onEdit']), 'ki-plus green');
 
         // keep the form filled with the search data
         $description->setValue( TSession::getValue( 'Product_description' ) );
@@ -59,8 +59,8 @@ class ProductCardView extends TPage
         $edit_action   = new TAction(['ProductForm', 'onEdit'], ['id'=> '{id}']);
         $delete_action = new TAction([$this, 'onDelete'], ['id'=> '{id}', 'register_state' => 'false']);
         
-		$this->cards->addAction($edit_action,   'Edit',   'far:edit blue');
-		$this->cards->addAction($delete_action, 'Delete', 'far:trash-alt red');
+		$this->cards->addAction($edit_action,   'Edit',   'ki-pencil blue');
+		$this->cards->addAction($delete_action, 'Delete', 'ki-trash red');
 		
         // creates the page navigation
         $this->pageNavigation = new TPageNavigation;

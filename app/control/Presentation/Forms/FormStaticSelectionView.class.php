@@ -112,7 +112,7 @@ class FormStaticSelectionView extends TPage
         $this->form->addFields( [new TLabel('TMultiEntry:')],  [$multi] );
         $this->form->addFields( [new TLabel('Autocomplete:')], [$autocomp] );
         
-        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         $this->form->addAction('Change options', new TAction(array($this, 'onChangeOptions')), 'fas:sync orange');
         
         // wrap the page content using vertical box

@@ -37,7 +37,7 @@ class NewWindowForm extends TWindow
         $this->form->addQuickField('Name', $name, '70%');
         
         // define the form action 
-        $this->form->addQuickAction('Save', new TAction(array($this, 'onSave')), 'far:check-circle green');
+        $this->form->addQuickAction('Save', new TAction(array($this, 'onSave')), 'ki-check-circle green');
         
         parent::add($this->form);
     }

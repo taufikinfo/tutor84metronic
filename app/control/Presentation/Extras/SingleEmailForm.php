@@ -44,7 +44,7 @@ class SingleEmailForm extends TWindow
         $this->form->addFields( [new TLabel('Message')], [$message] );
         
         // add the search form actions
-        $btn = $this->form->addAction('Send message', new TAction(array($this, 'onSendEmail')), 'far:envelope');
+        $btn = $this->form->addAction('Send message', new TAction(array($this, 'onSendEmail')), 'ki-sms');
         $btn->class = 'btn btn-sm btn-primary';
         
         parent::add($this->form);

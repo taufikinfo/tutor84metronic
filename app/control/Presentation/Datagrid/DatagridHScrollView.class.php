@@ -32,7 +32,7 @@ class DatagridHScrollView extends TPage
         $this->datagrid->addColumn( new TDataGridColumn('country',   'Country',   'left') );
         
         $action1 = new TDataGridAction([$this, 'onView'],   ['code'=>'{code}',  'name' => '{name}'] );
-        $this->datagrid->addAction($action1, 'View', 'fa:search blue');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier blue');
         
         // creates the datagrid model
         $this->datagrid->createModel();

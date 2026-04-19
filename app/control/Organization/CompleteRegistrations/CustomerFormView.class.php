@@ -50,7 +50,7 @@ class CustomerFormView extends TPage
         $status      = new TCombo('status');
         $category_id = new TDBCombo('category_id', 'samples', 'Category', 'id', 'name');
         
-        $button = new TActionLink('', new TAction(['CityWindow', 'onClear']), 'green', null, null, 'fa:plus-circle');
+        $button = new TActionLink('', new TAction(['CityWindow', 'onClear']), 'green', null, null, 'ki-plus-circle');
         $button->class = 'btn btn-default inline-button';
         $button->title = _t('New');
         $city_id->after($button);
@@ -117,7 +117,7 @@ class CustomerFormView extends TPage
         if (!$this->embedded)
         {
             $this->form->addActionLink( 'Clear', new TAction([$this, 'onClear']), 'fa:eraser red' );
-            $this->form->addHeaderActionLink( _t('Close'), new TAction([$this, 'onClose']), 'fa:times red');
+            $this->form->addHeaderActionLink( _t('Close'), new TAction([$this, 'onClose']), 'ki-cross red');
         }
         
         // add the form inside the page

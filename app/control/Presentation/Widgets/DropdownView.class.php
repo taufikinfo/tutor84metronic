@@ -20,14 +20,14 @@ class DropdownView extends TPage
         parent::__construct();
         
         // creates the dropdown
-        $dropdown = new TDropDown('Dropdown test', 'fa:list');
+        $dropdown = new TDropDown('Dropdown test', 'ki-burger-menu');
         //$dropdown->setButtonClass('btn btn-info waves-effect dropdown-toggle');
         $dropdown->addAction( 'Show a message', new TAction(array($this, 'onMessage') ));
         $dropdown->addAction( 'Customer list', new TAction(array('CustomerDataGridView', 'onReload') ));
         
         $actions = [];
-        $actions[] = ['Sub Action 1', new TAction(array($this, 'onMessage')), 'fa:list' ];
-        $actions[] = ['Sub Action 2', new TAction(array($this, 'onMessage')), 'fa:cog' ];
+        $actions[] = ['Sub Action 1', new TAction(array($this, 'onMessage')), 'ki-burger-menu' ];
+        $actions[] = ['Sub Action 2', new TAction(array($this, 'onMessage')), 'ki-setting-2' ];
         $dropdown->addActionGroup('Another group', $actions, '');
         
         // wrap the page content using vertical box

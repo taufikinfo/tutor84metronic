@@ -46,7 +46,7 @@ class FormImageUploader extends TPage
         $this->form->addFields( [new TLabel('Image Uploader')],[$imageupload] );
         $this->form->addFields( [new TLabel('Image Capture')], [$imagecapture] );
         
-        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'far:check-circle green');
+        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

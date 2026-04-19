@@ -40,7 +40,7 @@ class DialogInputView extends TPage
         $form->addFields( [new TLabel('Password')], [$pass]);
         
         $form->addAction('Confirm 1', new TAction([__CLASS__, 'onConfirm1']), 'fa:save green');
-        $form->addAction('Confirm 2', new TAction([__CLASS__, 'onConfirm2']), 'far:check-circle blue');
+        $form->addAction('Confirm 2', new TAction([__CLASS__, 'onConfirm2']), 'ki-check-circle blue');
         
         // show the input dialog
         new TInputDialog('Input dialog title', $form);

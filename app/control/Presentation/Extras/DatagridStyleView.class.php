@@ -36,9 +36,9 @@ class DatagridStyleView extends TPage
         $action1 = new TDataGridAction([$this, 'onView'],   ['name' => '{name}'] );
         $action1->setUseButton(TRUE);
         $action1->setButtonClass('btn btn-default');
-        $action1->setImage('fa:search green');
+        $action1->setImage('ki-magnifier green');
         
-        $this->datagrid->addAction($action1, 'View', 'fa:search blue');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier blue');
         
         // creates the datagrid model
         $this->datagrid->createModel();

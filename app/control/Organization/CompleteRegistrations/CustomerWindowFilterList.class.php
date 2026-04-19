@@ -71,7 +71,7 @@ class CustomerWindowFilterList extends TPage
         $this->form->setData( TSession::getValue(__CLASS__.'_filter_data') );
         
         // add the search form actions
-        $btn = $this->form->addAction(_t('Find'), new TAction([$this, 'onSearch']), 'fa:search');
+        $btn = $this->form->addAction(_t('Find'), new TAction([$this, 'onSearch']), 'ki-magnifier');
         $btn->class = 'btn btn-sm btn-primary';
         
         // creates a Datagrid
@@ -103,8 +103,8 @@ class CustomerWindowFilterList extends TPage
         $action1 = new TDataGridAction(['CustomerFormView', 'onEdit'], ['id'=>'{id}', 'register_state' => 'false']);
         $action2 = new TDataGridAction([$this, 'onDelete'], ['id'=>'{id}', 'register_state' => 'false']);
         
-        $this->datagrid->addAction($action1, _t('Edit'),   'far:edit blue');
-        $this->datagrid->addAction($action2 ,_t('Delete'), 'far:trash-alt red');
+        $this->datagrid->addAction($action1, _t('Edit'),   'ki-pencil blue');
+        $this->datagrid->addAction($action2 ,_t('Delete'), 'ki-trash red');
         
         // create the datagrid model
         $this->datagrid->createModel();
@@ -117,17 +117,17 @@ class CustomerWindowFilterList extends TPage
         $panel->add($this->datagrid);
         $panel->addFooter($this->pageNavigation);
         
-        $panel->addHeaderActionLink(_t('New'), new TAction(['CustomerFormView', 'onEdit'], ['register_state' => 'false']), 'fa:plus green');
+        $panel->addHeaderActionLink(_t('New'), new TAction(['CustomerFormView', 'onEdit'], ['register_state' => 'false']), 'ki-plus green');
         $btn = $panel->addHeaderActionLink('Filtros', new TAction([$this, 'onShowWindowFilters']), 'fa:filter');
         $btn->class = 'btn btn-primary';
         
         
         // header actions
-        $dropdown = new TDropDown(_t('Export'), 'fa:list');
+        $dropdown = new TDropDown(_t('Export'), 'ki-burger-menu');
         $dropdown->setPullSide('right');
         $dropdown->setButtonClass('btn btn-default waves-effect dropdown-toggle');
-        $dropdown->addAction( _t('Save as CSV'), new TAction([$this, 'onExportCSV'], ['register_state' => 'false', 'static'=>'1']), 'fa:table blue' );
-        $dropdown->addAction( _t('Save as PDF'), new TAction([$this, 'onExportPDF'], ['register_state' => 'false', 'static'=>'1']), 'far:file-pdf red' );
+        $dropdown->addAction( _t('Save as CSV'), new TAction([$this, 'onExportCSV'], ['register_state' => 'false', 'static'=>'1']), 'ki-row-horizontal blue' );
+        $dropdown->addAction( _t('Save as PDF'), new TAction([$this, 'onExportPDF'], ['register_state' => 'false', 'static'=>'1']), 'ki-file red' );
         $panel->addHeaderWidget( $dropdown );
         
         // vertical box container

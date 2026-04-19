@@ -30,12 +30,12 @@ class DatagridWindowForm extends TPage
         // creates two datagrid actions
         $action = new TDataGridAction([$this, 'onDelete'], ['code'=>'{code}'] );
         $action->setUseButton(TRUE);
-        $this->datagrid->addAction($action, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action, 'Delete', 'ki-trash red');
         
         // creates the datagrid model
         $this->datagrid->createModel();
         
-        $link = new TActionLink('Add', new TAction(array('NewWindowForm', 'onLoad')), 'green', 10, null, 'fa:plus-circle');
+        $link = new TActionLink('Add', new TAction(array('NewWindowForm', 'onLoad')), 'green', 10, null, 'ki-plus-circle');
         $link->class = 'btn btn-default';
         $link->style .= ';margin-top: 4px';
         

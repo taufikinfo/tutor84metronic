@@ -39,7 +39,7 @@ class DatagridRestView extends TPage
         $action1->setUseButton(TRUE);
         
         // add the actions to the datagrid
-        $this->datagrid->addAction($action1, 'View', 'fa:search blue');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier blue');
         
         // creates the datagrid model
         $this->datagrid->createModel();

@@ -47,7 +47,7 @@ class MultiStepMultiForm2View extends TPage
 
         // add a form action
         $this->form->addAction('Back', new TAction(array($this, 'onBackForm')), 'fa:chevron-circle-left orange');
-        $this->form->addAction('Confirm', new TAction(array($this, 'onConfirm')), 'far:check-circle green');
+        $this->form->addAction('Confirm', new TAction(array($this, 'onConfirm')), 'ki-check-circle green');
         
         $vbox = new TVBox;
         $vbox->style = 'width: 100%';

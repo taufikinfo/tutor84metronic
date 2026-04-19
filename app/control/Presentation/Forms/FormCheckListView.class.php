@@ -73,8 +73,8 @@ class FormCheckListView extends TPage
         $this->form->addAction( 'Save', new TAction([$this, 'onSave']), 'fa:save green');
         $this->form->addAction( 'Disable', new TAction([$this, 'onDisable']), 'fas:toggle-off orange');
         $this->form->addAction( 'Enable', new TAction([$this, 'onEnable']), 'fas:toggle-on orange');
-        $this->form->addAction( 'Check All', new TAction([$this, 'onCheckAll']), 'fa:check');
-        $this->form->addAction( 'Check None', new TAction([$this, 'onCheckNone']), 'far:square');
+        $this->form->addAction( 'Check All', new TAction([$this, 'onCheckAll']), 'ki-check');
+        $this->form->addAction( 'Check None', new TAction([$this, 'onCheckNone']), 'ki-abstract-28');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

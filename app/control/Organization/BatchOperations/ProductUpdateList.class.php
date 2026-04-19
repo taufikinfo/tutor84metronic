@@ -40,7 +40,7 @@ class ProductUpdateList extends TPage
         $description = new TEntry('description');
         $this->form->addFields( [new TLabel('Description')], [$description] );
         
-        $this->form->addAction(_t('Find'), new TAction(array($this, 'onSearch')), 'fa:search');
+        $this->form->addAction(_t('Find'), new TAction(array($this, 'onSearch')), 'ki-magnifier');
         
         // keep the form filled with session data
         $this->form->setData( TSession::getValue('ProductUpdateList_filter_data') );

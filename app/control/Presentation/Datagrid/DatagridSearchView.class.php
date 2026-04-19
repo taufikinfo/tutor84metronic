@@ -28,7 +28,7 @@ class DatagridSearchView extends TPage
         $this->datagrid->addColumn( new TDataGridColumn('state',   'State',   'left',   '30%') );
         
         $action1 = new TDataGridAction([$this, 'onView'],   ['code'=>'{code}',  'name' => '{name}'] );
-        $this->datagrid->addAction($action1, 'View', 'fa:search blue');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier blue');
         
         // creates the datagrid model
         $this->datagrid->createModel();

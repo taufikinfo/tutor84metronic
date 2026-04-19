@@ -47,7 +47,7 @@ class WordSearchResults extends TPage
             $datagrid->addColumn( new TDataGridColumn('path', _t('Path'), 'left', '90%') );
             
             $action1 = new TDataGridAction([$this, 'onOpen'], ['controller' => '{controller}' ] );
-            $datagrid->addAction($action1, _t('Open'), 'far:folder blue');
+            $datagrid->addAction($action1, _t('Open'), 'ki-folder blue');
             
             $action1->setUseButton(true);
             $datagrid->createModel(false);

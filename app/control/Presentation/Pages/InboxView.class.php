@@ -23,7 +23,7 @@ class InboxView extends TPage
         
         $action = new TDataGridAction(array('MessageView', 'onLoad'), ['folder' => '{folder}']);
         $action->setParameter('register_state', 'false');
-        $this->datagrid->addAction($action, 'View', 'far:folder-open');
+        $this->datagrid->addAction($action, 'View', 'ki-folder-open');
         
         $this->datagrid->createModel();
         

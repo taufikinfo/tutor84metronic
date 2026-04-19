@@ -45,14 +45,21 @@ class HomeView extends TPage
                                     $label  = $this->translateLabel( (string) $option['label'] );
                                     
                                     $action = (string) $option-> action;
-                                    $icon   = str_replace('fa:', 'fa fa-', (string) $option-> icon);
-                                    $icon   = str_replace('far:', 'far fa-', $icon);
-                                    $icon   = str_replace('fas:', 'fas fa-', $icon);
+                                    $iconStr = (string) $option-> icon;
+                                    $icon_html = '';
+                                    if (strpos($iconStr, 'ki-') === 0) {
+                                        $iconName = str_replace('ki-', '', $iconStr);
+                                        $icon_html = KIcon::getIcon($iconName, 'duotone', 'fs-2');
+                                    } else {
+                                        $iconClass = str_replace(['fa:', 'far:', 'fas:'], ['fa fa-', 'far fa-', 'fas fa-'], $iconStr);
+                                        $icon_html = "<i class=\"{$iconClass}\"></i>";
+                                    }
+                                    
                                     if (!empty($label))
                                     {
                                         $items[] = array('label'  => $label,
                                                           'action' => str_replace('#', '&', $action),
-                                                          'icon'   => $icon);
+                                                          'icon_html' => $icon_html);
                                     }
                                     if ($option->menu)
                                     {
@@ -61,14 +68,22 @@ class HomeView extends TPage
                                             $optatts   = $option2->attributes();
                                             $label  = $this->translateLabel( (string) $option2['label'] );
                                             $action = (string) $option2-> action;
-                                            $icon   = str_replace('fa:', 'fa fa-', (string) $option2-> icon);
-                                            $icon   = str_replace('far:', 'far fa-', $icon);
-                                            $icon   = str_replace('fas:', 'fas fa-', $icon);
+                                            
+                                            $iconStr2 = (string) $option2-> icon;
+                                            $icon_html2 = '';
+                                            if (strpos($iconStr2, 'ki-') === 0) {
+                                                $iconName2 = str_replace('ki-', '', $iconStr2);
+                                                $icon_html2 = KIcon::getIcon($iconName2, 'duotone', 'fs-2');
+                                            } else {
+                                                $iconClass2 = str_replace(['fa:', 'far:', 'fas:'], ['fa fa-', 'far fa-', 'fas fa-'], $iconStr2);
+                                                $icon_html2 = "<i class=\"{$iconClass2}\"></i>";
+                                            }
+                                            
                                             if (!empty($label))
                                             {
                                                 $items[] = array('label'  => $label,
                                                                   'action' => str_replace('#', '&', $action),
-                                                                  'icon'   => $icon);
+                                                                  'icon_html' => $icon_html2);
                                             }
                                         }
                                     }

@@ -29,7 +29,7 @@ class PDFDesignShapesView extends TPage
         $name = new TEntry('name');
         
         $this->form->addFields( [new TLabel('Name', 'red')], [$name] );
-        $this->form->addAction('Generate', new TAction(array($this, 'onGenerate')), 'far:check-circle green');
+        $this->form->addAction('Generate', new TAction(array($this, 'onGenerate')), 'ki-check-circle green');
         
         $name->addValidation('Name', new TRequiredValidator);
         

@@ -28,8 +28,8 @@ class CompleteDataGridView extends TPage
         $name = new TEntry('name');
         $this->form->addFields( [new TLabel('Name:')], [$name] );
         
-        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'fa:search blue');
-        $this->form->addActionLink('New',  new TAction(['CompleteFormView', 'onClear']), 'fa:plus-circle green');
+        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'ki-magnifier blue');
+        $this->form->addActionLink('New',  new TAction(['CompleteFormView', 'onClear']), 'ki-plus-circle green');
 
         // keep the form filled with the search data
         $name->setValue( TSession::getValue( 'City_name' ) );
@@ -55,8 +55,8 @@ class CompleteDataGridView extends TPage
         $action1 = new TDataGridAction(['CompleteFormView', 'onEdit'],   ['key' => '{id}'] );
         $action2 = new TDataGridAction([$this, 'onDelete'],   ['key' => '{id}'] );
         
-        $this->datagrid->addAction($action1, 'Edit',   'far:edit blue');
-        $this->datagrid->addAction($action2, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'Edit',   'ki-pencil blue');
+        $this->datagrid->addAction($action2, 'Delete', 'ki-trash red');
         
         // create the datagrid model
         $this->datagrid->createModel();

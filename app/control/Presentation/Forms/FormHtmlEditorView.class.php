@@ -31,8 +31,8 @@ class FormHtmlEditorView extends TPage
         $html->disableXssProtection();
         
         $this->form->addFields( [$html] );
-        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'far:check-circle blue');
-        $this->form->addAction('Insert text', new TAction(array($this, 'onInsert')), 'fa:plus green');
+        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'ki-check-circle blue');
+        $this->form->addAction('Insert text', new TAction(array($this, 'onInsert')), 'ki-plus green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

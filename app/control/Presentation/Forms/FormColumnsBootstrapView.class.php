@@ -53,7 +53,7 @@ class FormColumnsBootstrapView extends TPage
         $description->addValidation('Description', new TRequiredValidator);
         
         // define the form action
-        $btn = $this->form->addQuickAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle');
+        $btn = $this->form->addQuickAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle');
         $btn->class = 'btn btn-success';
         
         $panel = new TPanelGroup('Bootstrap Column Form');

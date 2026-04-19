@@ -53,7 +53,7 @@ class KanbanItemForm extends TPage
         
         // define the form action
         $this->form->addAction(_t('Save'), new TAction(array($this, 'onSave')), 'fa:save green');
-        $this->form->addHeaderActionLink( _t('Close'), new TAction([$this, 'onClose']), 'fa:times red');
+        $this->form->addHeaderActionLink( _t('Close'), new TAction([$this, 'onClose']), 'ki-cross red');
         
         $this->setAfterSaveAction( new TAction( ['KanbanDatabaseView', 'onLoad'] ) );
         $this->setUseMessages(FALSE);

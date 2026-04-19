@@ -29,7 +29,7 @@ class DatagridDetailView extends TPage
         
         // creates datagrid action
         $action1 = new TDataGridAction(array($this, 'onShowDetail'), ['code' => '{code}'] );
-        $this->datagrid->addAction($action1, 'View', 'fa:search #000000');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier #000000');
         
         // creates the datagrid model
         $this->datagrid->createModel();

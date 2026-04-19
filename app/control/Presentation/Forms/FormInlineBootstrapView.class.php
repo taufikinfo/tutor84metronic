@@ -49,7 +49,7 @@ class FormInlineBootstrapView extends TPage
         $row->layout = ['col-sm-1', 'col-sm-2', 'col-sm-1', 'col-sm-2', 'col-sm-1', 'col-sm-2', 'col-sm-1', 'col-sm-2' ];
         
         // define the form action
-        $btn = $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle');
+        $btn = $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle');
         $btn->class = 'btn btn-success';
         
         // wrap the page content using vertical box

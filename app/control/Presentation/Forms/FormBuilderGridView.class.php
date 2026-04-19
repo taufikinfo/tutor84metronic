@@ -89,7 +89,7 @@ class FormBuilderGridView extends TPage
                                        [ new TEntry('field_35') ] );
         $row->layout = ['col-sm-2 control-label', 'col-sm-1', 'col-sm-1', 'col-sm-1', 'col-sm-1', 'col-sm-6' ];
         
-        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

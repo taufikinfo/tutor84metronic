@@ -34,7 +34,7 @@ class ProductCatalogView extends TPage
         $description = new TEntry('description');
         $this->form->addFields( [new TLabel('Description:')], [$description] );
         
-        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'fa:search blue');
+        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'ki-magnifier blue');
 
         // keep the form filled with the search data
         $description->setValue( TSession::getValue( 'Product_description' ) );
@@ -55,7 +55,7 @@ class ProductCatalogView extends TPage
 		                                   <img style="height:100px;float:right;margin:5px" src="{photo_path}">
 		                               </div> ');
         
-		$this->cards->addAction(new TAction([$this, 'onSelect'], ['id' => '{id}']),  'Edit', 'fa:plus green');
+		$this->cards->addAction(new TAction([$this, 'onSelect'], ['id' => '{id}']),  'Edit', 'ki-plus green');
 		
         // creates the page navigation
         $this->pageNavigation = new TPageNavigation;

@@ -39,8 +39,8 @@ class CardView extends TPage
 		$cards->setItemTemplate('<b>Content</b>: {content}');
 		$edit_action   = new TAction([$this, 'onItemEdit'], ['id'=> '{id}']);
 		$delete_action = new TAction([$this, 'onItemDelete'], ['id'=> '{id}']);
-		$cards->addAction($edit_action,   'Edit',   'far:edit blue');
-		$cards->addAction($delete_action, 'Delete', 'far:trash-alt red');
+		$cards->addAction($edit_action,   'Edit',   'ki-pencil blue');
+		$cards->addAction($delete_action, 'Delete', 'ki-trash red');
 		
         // wrap the page content using vertical box
         $vbox = new TVBox;

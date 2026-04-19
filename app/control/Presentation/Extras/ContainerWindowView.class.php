@@ -45,7 +45,7 @@ class ContainerWindowView extends TWindow
         $text->setSize(300,100);
         
         // define the form action 
-        $this->form->addAction('Save', new TAction(array($this, 'onSave')), 'far:check-circle green');
+        $this->form->addAction('Save', new TAction(array($this, 'onSave')), 'ki-check-circle green');
         
         // add the form inside the page
         parent::add($this->form);

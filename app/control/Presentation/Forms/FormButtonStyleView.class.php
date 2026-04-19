@@ -28,8 +28,8 @@ class FormButtonStyleView extends TPage
         $bt2c->setLabel('FA trash');
         
         $bt2a->setImage('fa:save red');
-        $bt2b->setImage('far:edit green');
-        $bt2c->setImage('far:trash-alt blue');
+        $bt2b->setImage('ki-pencil green');
+        $bt2c->setImage('ki-trash blue');
         
         $hbox2 = new THBox;
         $hbox2->addRowSet( $bt2a, $bt2b, $bt2c );

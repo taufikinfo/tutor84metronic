@@ -40,7 +40,7 @@ class FormWindowView extends TPage
         $this->form->addFields( [new TLabel('Date')], [$date1, new TLabel('to'), $date2]);
         
         // define the form action 
-        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle');
+        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

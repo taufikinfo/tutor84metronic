@@ -27,7 +27,7 @@ class FormEventsPanelView extends TPage
         $this->html = new TElement('div');
         $this->html->setProperty('style', 'margin:20px; font-size: 14pt;');
         
-        $al = new TActionLink(_t('Close'), new TAction([$this, 'onClose']), null, null, null, 'fa:times red' );
+        $al = new TActionLink(_t('Close'), new TAction([$this, 'onClose']), null, null, null, 'ki-cross red' );
         $al->class = 'btn btn-default';
         $al->style = 'clear:both';
         $this->html->add($al);

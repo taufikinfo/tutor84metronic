@@ -33,7 +33,7 @@ class FilesystemIconView extends TPage
                 if ($fileinfo->isDir())
                 {
                     $item->type = 'folder';
-                    $item->icon = 'far:folder blue fa-4x';
+                    $item->icon = 'ki-folder blue fa-4x';
                 }
                 else
                 {
@@ -60,9 +60,9 @@ class FilesystemIconView extends TPage
         
         $this->iconview->addContextMenuOption('Options');
         $this->iconview->addContextMenuOption('');
-        $this->iconview->addContextMenuOption('Open',   new TAction([$this, 'onOpen']),   'far:folder-open blue');
-        $this->iconview->addContextMenuOption('Rename', new TAction([$this, 'onRename']), 'far:edit green');
-        $this->iconview->addContextMenuOption('Delete', new TAction([$this, 'onDelete']), 'far:trash-alt red', $display_condition);
+        $this->iconview->addContextMenuOption('Open',   new TAction([$this, 'onOpen']),   'ki-folder-open blue');
+        $this->iconview->addContextMenuOption('Rename', new TAction([$this, 'onRename']), 'ki-pencil green');
+        $this->iconview->addContextMenuOption('Delete', new TAction([$this, 'onDelete']), 'ki-trash red', $display_condition);
         
         parent::add( $this->iconview );
     }

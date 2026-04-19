@@ -31,8 +31,8 @@ class CustomerStatusView extends TPage
         $customer_id->setMinlength(1);
         
         $this->form->addFields( [new TLabel('Customer')], [$customer_id]);
-        $this->form->addAction('Check status', new TAction(array($this, 'onCheckStatus')), 'far:check-circle green');
-        $this->form->addAction('Export to PDF', new TAction(array($this, 'onExportPDF')), 'far:file-pdf red');
+        $this->form->addAction('Check status', new TAction(array($this, 'onCheckStatus')), 'ki-check-circle green');
+        $this->form->addAction('Export to PDF', new TAction(array($this, 'onExportPDF')), 'ki-file red');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

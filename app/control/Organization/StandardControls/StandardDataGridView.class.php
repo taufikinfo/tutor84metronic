@@ -39,8 +39,8 @@ class StandardDataGridView extends TPage
         $this->form->addFields( [new TLabel('Name:')], [$name] );
         
         // add form actions
-        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'fa:search blue');
-        $this->form->addActionLink('New',  new TAction(['StandardFormView', 'onClear']), 'fa:plus-circle green');
+        $this->form->addAction('Find', new TAction([$this, 'onSearch']), 'ki-magnifier blue');
+        $this->form->addActionLink('New',  new TAction(['StandardFormView', 'onClear']), 'ki-plus-circle green');
         $this->form->addActionLink('Clear',  new TAction([$this, 'clear']), 'fa:eraser red');
         
         // keep the form filled with the search data
@@ -65,8 +65,8 @@ class StandardDataGridView extends TPage
         $action1 = new TDataGridAction(['StandardFormView', 'onEdit'],   ['key' => '{id}'] );
         $action2 = new TDataGridAction([$this, 'onDelete'],   ['key' => '{id}'] );
         
-        $this->datagrid->addAction($action1, 'Edit',   'far:edit blue');
-        $this->datagrid->addAction($action2, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'Edit',   'ki-pencil blue');
+        $this->datagrid->addAction($action2, 'Delete', 'ki-trash red');
         
         // create the datagrid model
         $this->datagrid->createModel();

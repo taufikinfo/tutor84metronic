@@ -43,7 +43,7 @@ class CompleteFormView extends TPage
         // define the form action
         $this->form->addAction('Save', new TAction([$this, 'onSave']), 'fa:save green');
         $this->form->addActionLink('Clear',  new TAction([$this, 'onClear']), 'fa:eraser red');
-        $this->form->addActionLink('Listing',  new TAction(['CompleteDataGridView', 'onReload']), 'fa:table blue');
+        $this->form->addActionLink('Listing',  new TAction(['CompleteDataGridView', 'onReload']), 'ki-row-horizontal blue');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

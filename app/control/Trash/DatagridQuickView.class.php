@@ -29,8 +29,8 @@ class DatagridQuickView extends TPage
         $this->datagrid->enablePopover('Popover', 'Hi <b> {name} </b>');
         
         // add the actions
-        $this->datagrid->addQuickAction('View',   new TDataGridAction(array($this, 'onView')),   'name', 'fa:search blue');
-        $this->datagrid->addQuickAction('Delete', new TDataGridAction(array($this, 'onDelete')), 'code', 'far:trash-alt red');
+        $this->datagrid->addQuickAction('View',   new TDataGridAction(array($this, 'onView')),   'name', 'ki-magnifier blue');
+        $this->datagrid->addQuickAction('Delete', new TDataGridAction(array($this, 'onDelete')), 'code', 'ki-trash red');
         
         // creates the datagrid model
         $this->datagrid->createModel();

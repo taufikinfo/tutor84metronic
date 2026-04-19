@@ -70,7 +70,7 @@ class FormCustomView extends TPage
         // creates the action button
         $button = new TButton('action1');
         $button->setAction(new TAction(array($this, 'onSend')), 'Send');
-        $button->setImage('far:check-circle green');
+        $button->setImage('ki-check-circle green');
         
         // define wich are the form fields
         $this->form->setFields([$field1, $field2, $field3, $field4, $field5, $button]);

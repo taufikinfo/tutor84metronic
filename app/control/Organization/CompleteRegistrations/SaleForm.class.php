@@ -33,7 +33,7 @@ class SaleForm extends TPage
         $customer_id = new TDBUniqueSearch('customer_id', 'samples', 'Customer', 'id', 'name');
         $obs         = new TText('obs');
         
-        $button = new TActionLink('', new TAction(['CustomerFormWindow', 'onEdit']), 'green', null, null, 'fa:plus-circle');
+        $button = new TActionLink('', new TAction(['CustomerFormWindow', 'onEdit']), 'green', null, null, 'ki-plus-circle');
         $button->class = 'btn btn-default inline-button';
         $button->title = _t('New');
         $customer_id->after($button);
@@ -80,7 +80,7 @@ class SaleForm extends TPage
         $this->form->addFields( [ new TLabel('Price (*)', '#FF0000') ],   [$product_detail_price],
                                 [ new TLabel('Discount')],                [$product_detail_discount] );
         
-        $add_product = TButton::create('add_product', [$this, 'onProductAdd'], 'Register', 'fa:plus-circle green');
+        $add_product = TButton::create('add_product', [$this, 'onProductAdd'], 'Register', 'ki-plus-circle green');
         $add_product->getAction()->setParameter('static','1');
         $this->form->addFields( [], [$add_product] );
         
@@ -127,8 +127,8 @@ class SaleForm extends TPage
         $action2->setField('uniqid');
         
         // add the actions to the datagrid
-        $this->product_list->addAction($action1, _t('Edit'), 'far:edit blue');
-        $this->product_list->addAction($action2, _t('Delete'), 'far:trash-alt red');
+        $this->product_list->addAction($action1, _t('Edit'), 'ki-pencil blue');
+        $this->product_list->addAction($action2, _t('Delete'), 'ki-trash red');
         
         $this->product_list->createModel();
         
@@ -148,7 +148,7 @@ class SaleForm extends TPage
         $col_disc->setTransformer( $format_value );
         $col_subt->setTransformer( $format_value );
         
-        $this->form->addHeaderActionLink( _t('Close'),  new TAction([__CLASS__, 'onClose'], ['static'=>'1']), 'fa:times red');
+        $this->form->addHeaderActionLink( _t('Close'),  new TAction([__CLASS__, 'onClose'], ['static'=>'1']), 'ki-cross red');
         $this->form->addAction( 'Save',  new TAction([$this, 'onSave'], ['static'=>'1']), 'fa:save green');
         $this->form->addAction( 'Clear', new TAction([$this, 'onClear']), 'fa:eraser red');
         

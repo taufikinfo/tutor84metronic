@@ -44,11 +44,11 @@ class KanbanCustomView extends TPage
 			$kanban->addItem($item['id'], $item['stage_id'], $item['title'], $item['content'], $item['color']);
 		}
 		
-		$kanban->addStageAction('Action 1', new TAction([$this, 'onEditStage']),   'far:edit blue fa-fw');
-		$kanban->addStageAction('Action 2', new TAction([$this, 'onDeleteStage']), 'far:trash-alt red fa-fw');
+		$kanban->addStageAction('Action 1', new TAction([$this, 'onEditStage']),   'ki-pencil blue fa-fw');
+		$kanban->addStageAction('Action 2', new TAction([$this, 'onDeleteStage']), 'ki-trash red fa-fw');
 		
-		$kanban->addItemAction('Edit',   new TAction([$this, 'onItemEdit']),   'far:edit blue fa-fw');
-		$kanban->addItemAction('Delete', new TAction([$this, 'onItemDelete']), 'far:trash-alt red fa-fw');
+		$kanban->addItemAction('Edit',   new TAction([$this, 'onItemEdit']),   'ki-pencil blue fa-fw');
+		$kanban->addItemAction('Delete', new TAction([$this, 'onItemDelete']), 'ki-trash red fa-fw');
 		
 		$kanban->setTemplatePath('app/resources/card.html');
 		$kanban->setItemDropAction(new TAction([$this, 'onUpdateItemDrop']));

@@ -52,7 +52,7 @@ class FormInteractionsView extends TPage
         $this->form->addFields( [new TLabel('Response B')], [$response_b] );
         $this->form->addFields( [new TLabel('Response C')], [$response_c] );
         
-        $this->form->addAction('View', new TAction(array($this, 'onView')), 'fa:search');
+        $this->form->addAction('View', new TAction(array($this, 'onView')), 'ki-magnifier');
         
         // set exit action for input_exit
         $exit_action = new TAction(array($this, 'onExitAction'));

@@ -69,7 +69,7 @@ class FormQuickNotebookView extends TPage
         $field10->setSize(200, 70);
         
         // define the form action 
-        $this->form->addQuickAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $this->form->addQuickAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

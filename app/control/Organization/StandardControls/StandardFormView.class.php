@@ -49,7 +49,7 @@ class StandardFormView extends TPage
         // define the form action
         $this->form->addAction('Save', new TAction(array($this, 'onSave')), 'fa:save green');
         $this->form->addActionLink('Clear',  new TAction(array($this, 'onClear')), 'fa:eraser red');
-        $this->form->addActionLink('Listing',  new TAction(array('StandardDataGridView', 'onReload')), 'fa:table blue');
+        $this->form->addActionLink('Listing',  new TAction(array('StandardDataGridView', 'onReload')), 'ki-row-horizontal blue');
 
         // wrap the page content using vertical box
         $vbox = new TVBox;

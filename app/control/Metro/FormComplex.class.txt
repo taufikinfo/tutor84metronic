@@ -1,0 +1,148 @@
+<?php
+
+use Adianti\Widget\Form\TEntry;
+use Adianti\Widget\Form\TText;
+
+class FormComplex extends TPage
+{
+    protected $form;
+
+    public function __construct()
+    {
+
+        parent::__construct();
+
+
+        $a = new TEntry('a');
+        $a->setProperty("class", "form-control form-control-solid");
+
+        $b = new TEntry('b');
+        $b->setProperty("class", "form-control form-control-solid");
+
+        $c = new TEntry('c');
+        $c->setProperty("class", "form-control form-control-solid");
+
+        $d = new TEntry('d');
+        $d->setProperty("class", "form-control form-control-solid");
+
+        $deskripsi = new TText('deskripsi');
+        $deskripsi->setProperty("class", "form-control form-control-solid");
+        $deskripsi->setSize("100%", 170);
+
+
+//        $notebook = new TNotebook(null,230);
+//        $page1 = new TElement('div');
+//        $page1->add("haloo");
+//
+//        $page2 = new TTable;
+//        $notebook->appendPage('Basic data', $page1);
+//        $notebook->appendPage('Basic Form', $page2);
+
+
+        $notebook = null;
+        $formBuilder = new FormBuilder();
+        $this->form = $formBuilder
+            ->make("form_custom")
+            ->schema([
+                Group::make()
+                    ->columnSpan("col-lg-8")
+                    ->schema([
+                        Section::make('Main')
+                            ->columns("")
+                            ->schema([
+                                Layout::make()
+                                    ->schema([
+                                        [
+                                            Field::make(new TLabel('A'))
+                                                ->maxLength()
+                                                ->required()
+                                                ->disabled()
+                                                ->columnSpan('col-sm-4'),
+                                            Field::make($a)->columnSpan('col-sm-8')
+                                        ],
+                                        [Field::make(new TLabel('B'))->columnSpan('col-sm-2'),
+                                            Field::make($b)->columnSpan('col-sm-4'),
+
+                                            Field::make(new TLabel('C'))->columnSpan('col-sm-2'),
+                                            Field::make($c)->columnSpan('col-sm-4')
+                                        ],
+                                        [Field::make('D')->columnSpan('col-sm-2'),
+                                            Field::make($d)->columnSpan('col-sm-10')
+                                        ],
+                                        [Field::make($deskripsi)->columnSpan('col-lg-12')],
+                                    ]),
+                            ]),
+                        Section::make('Images')
+                            ->collapsible('true')
+                            ->schema([
+                                Layout::make()
+                                    ->schema([
+                                        [Field::make('d'), Field::make('Z')],
+                                    ]),
+                            ]),
+                        Section::make('Description')
+                            ->collapsible('true')
+                            ->schema([
+                                Layout::make()
+                                    ->schema([
+                                        [
+                                            Field::make($notebook)
+                                        ],
+                                    ]),
+                            ]),
+                    ]),
+                Group::make()
+                    ->columnSpan("col-lg-3")
+                    ->schema([
+                        Section::make('Status')
+                            ->columns(2)
+                            ->schema([
+                                Layout::make()
+                                    ->schema([
+                                        [Field::make('e'), Field::make('EE')],
+                                    ]),
+                            ]),
+                        Section::make('Description')
+                            ->collapsible('true')
+                            ->schema([
+                                Layout::make()
+                                    ->schema([
+                                        [Field::make('f'),
+                                            Field::make("FF")
+                                        ],
+                                    ]),
+                            ]),
+                    ]),
+            ])
+            ->columns(3);
+
+
+        $out = <<<'EOD'
+<button id="tbutton_btn_save" name="btn_save" class="btn btn-primary" onclick="Adianti.waitMessage = 'Loading';__adianti_post_data('form_tickets', 'class=TicketsForm&amp;method=onSave');return false;" aria-label="Save"><span>
+		<i class="fa fa-floppy-o" style=";padding-right:4px"></i>
+		Save</span>
+</button>
+<button id="tbutton_btn_cancel" name="btn_cancel" class="btn btn-secondary" onclick="Adianti.waitMessage = 'Loading';__adianti_post_data('form_tickets', 'class=TicketsList&amp;method=onReload');return false;" aria-label="Cancel"><span>
+		<i class="fa fa-eraser red" style=";padding-right:4px"></i>
+		Cancel</span>
+		</button>
+EOD;
+
+        parent::add($this->form);
+
+    }
+
+    public function onEdit($param)
+    {
+
+        $object = new stdClass();
+        $object->a = "AA";
+        $object->b = "BB";
+        $object->c = "CC";
+        $object->d = "DDD";
+        $object->deskripsi = "Halooo";
+       // $this->form->setData($object);
+    }
+
+
+}

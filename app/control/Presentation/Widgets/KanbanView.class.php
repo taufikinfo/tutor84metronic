@@ -45,11 +45,11 @@ class KanbanView extends TPage
 		}
 		
 		//$kanban->setItemTemplate('<b>Content</b>: {content}');
-		$kanban->addStageAction('Action 1', new TAction([$this, 'onEditStage']),   'far:edit blue fa-fw');
-		$kanban->addStageAction('Action 2', new TAction([$this, 'onDeleteStage']), 'far:trash-alt red fa-fw');
+		$kanban->addStageAction('Action 1', new TAction([$this, 'onEditStage']),   'ki-pencil blue fa-fw');
+		$kanban->addStageAction('Action 2', new TAction([$this, 'onDeleteStage']), 'ki-trash red fa-fw');
 		
-		$kanban->addItemAction('Edit',   new TAction([$this, 'onItemEdit']),   'far:edit blue');
-		$kanban->addItemAction('Delete', new TAction([$this, 'onItemDelete']), 'far:trash-alt red');
+		$kanban->addItemAction('Edit',   new TAction([$this, 'onItemEdit']),   'ki-pencil blue');
+		$kanban->addItemAction('Delete', new TAction([$this, 'onItemDelete']), 'ki-trash red');
 		
 		$kanban->setItemDropAction(new TAction([$this, 'onUpdateItemDrop']));
 		$kanban->setStageDropAction(new TAction([$this, 'onUpdateStageDrop']));

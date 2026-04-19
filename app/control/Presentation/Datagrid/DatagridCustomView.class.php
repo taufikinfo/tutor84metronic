@@ -43,8 +43,8 @@ class DatagridCustomView extends TPage
         $action2 = new TDataGridAction([$this, 'onDelete'], ['code'=>'{code}'] );
         
         // add the actions to the datagrid
-        $this->datagrid->addAction($action1, 'View', 'fa:search blue');
-        $this->datagrid->addAction($action2, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier blue');
+        $this->datagrid->addAction($action2, 'Delete', 'ki-trash red');
         
         // creates the datagrid model
         $this->datagrid->createModel();

@@ -73,7 +73,7 @@ class FormConfirmationView extends TPage
         $form->addQuickField('Login (type "admin")', $login);
         $form->addQuickField('Password (type "admin")', $pass);
         
-        $form->addQuickAction('Confirm', new TAction(array($this, 'onConfirm')), 'fa:check blue');
+        $form->addQuickAction('Confirm', new TAction(array($this, 'onConfirm')), 'ki-check blue');
         
         // show the input dialog
         new TInputDialog('Confirmation dialog', $form);

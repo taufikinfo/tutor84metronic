@@ -60,8 +60,8 @@ class CompleteFormDataGridView extends TPage
         $action1 = new TDataGridAction([$this, 'onEdit'],   ['key' => '{id}'] );
         $action2 = new TDataGridAction([$this, 'onDelete'], ['key' => '{id}'] );
         
-        $this->datagrid->addAction($action1, 'Edit',   'far:edit blue');
-        $this->datagrid->addAction($action2, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'Edit',   'ki-pencil blue');
+        $this->datagrid->addAction($action2, 'Delete', 'ki-trash red');
         
         // create the datagrid model
         $this->datagrid->createModel();

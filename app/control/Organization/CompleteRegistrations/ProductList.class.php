@@ -47,8 +47,8 @@ class ProductList extends TPage
         
         $this->form->setData( TSession::getValue('ProductList_filter_data') );
         
-        $this->form->addAction( 'Find', new TAction([$this, 'onSearch']), 'fa:search blue');
-        $this->form->addActionLink( 'New',  new TAction(['ProductForm', 'onEdit']), 'fa:plus green');
+        $this->form->addAction( 'Find', new TAction([$this, 'onSearch']), 'ki-magnifier blue');
+        $this->form->addActionLink( 'New',  new TAction(['ProductForm', 'onEdit']), 'ki-plus green');
         
         // expand button
         $this->form->addExpandButton();
@@ -75,8 +75,8 @@ class ProductList extends TPage
         $action2 = new TDataGridAction([$this, 'onDelete'], ['id'=>'{id}']);
         
         // add the actions to the datagrid
-        $this->datagrid->addAction($action1, 'Edit', 'far:edit blue');
-        $this->datagrid->addAction($action2 ,'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'Edit', 'ki-pencil blue');
+        $this->datagrid->addAction($action2 ,'Delete', 'ki-trash red');
         
         // create the datagrid model
         $this->datagrid->createModel();

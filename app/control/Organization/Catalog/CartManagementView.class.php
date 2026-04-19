@@ -29,12 +29,12 @@ class CartManagementView extends TPage
         $this->datagrid->addColumn( new TDataGridColumn('sale_price', 'Price', 'right',   '30%') );
         
         $action1 = new TDataGridAction([$this, 'onDelete'],   ['id'=>'{id}' ] );
-        $this->datagrid->addAction($action1, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'Delete', 'ki-trash red');
         
         // creates the datagrid model
         $this->datagrid->createModel();
         
-        $back = new TActionLink('Close', new TAction(array($this, 'onClose')), '', null, null, 'fa:times red');
+        $back = new TActionLink('Close', new TAction(array($this, 'onClose')), '', null, null, 'ki-cross red');
         $back->addStyleClass('btn btn-default btn-sm');
         
         $panel = new TPanelGroup;

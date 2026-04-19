@@ -47,8 +47,8 @@ class ProductSeek extends TWindow
         
         $this->form->setData( TSession::getValue('ProductSeek_filter_data') );
         
-        $this->form->addAction( 'Find', new TAction([$this, 'onSearch']), 'fa:search blue');
-        $this->form->addActionLink( 'New',  new TAction(['ProductForm', 'onEdit']), 'fa:plus green');
+        $this->form->addAction( 'Find', new TAction([$this, 'onSearch']), 'ki-magnifier blue');
+        $this->form->addActionLink( 'New',  new TAction(['ProductForm', 'onEdit']), 'ki-plus green');
         
         // expand button
         $this->form->addExpandButton();

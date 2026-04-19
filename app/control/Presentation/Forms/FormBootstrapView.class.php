@@ -55,7 +55,7 @@ class FormBootstrapView extends TPage
         $color->setSize('40%');
         
         // define the form action
-        $btn = $this->form->addQuickAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $btn = $this->form->addQuickAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         
         $panel = new TPanelGroup('Bootstrap Form Wrapper');
         $panel->add($this->form);

@@ -42,7 +42,7 @@ class MultiCheckView extends TStandardList
         $this->form->addFields( [new TLabel('Description')], [$description] );
         
         $this->form->setData( TSession::getValue('Product_filter_data') );
-        $this->form->addAction( _t('Find'), new TAction(array($this, 'onSearch')), 'fa:search');
+        $this->form->addAction( _t('Find'), new TAction(array($this, 'onSearch')), 'ki-magnifier');
         
         // create the datagrid form wrapper
         $this->formDatagrid = new TForm('datagrid_form');
@@ -70,7 +70,7 @@ class MultiCheckView extends TStandardList
         $this->postAction = new TAction(array($this, 'onPost'));
         $post = new TButton('post');
         $post->setAction($this->postAction);
-        $post->setImage('far:check-circle green');
+        $post->setImage('ki-check-circle green');
         $post->setLabel('Send');
         
         $this->formDatagrid->addField($post);

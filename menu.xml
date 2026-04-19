@@ -3,6 +3,53 @@
         <icon>lucide-layout-dashboard</icon>
         <action>ShadcnShowcase</action>
     </menuitem>
+    <menuitem label='Metro Wiki'>
+        <icon>ki-book-square</icon>
+        <menu class="dropdown-menu col-wrapper">
+            <menuitem>
+                <menu class="column">
+                    <menuitem label='Base'><icon>ki-document</icon><action>MetroWikiBase</action></menuitem>
+                    <menuitem label='Utilities'><icon>ki-document</icon><action>MetroWikiUtilities</action></menuitem>
+                    <menuitem label='Helpers'><icon>ki-document</icon><action>MetroWikiHelpers</action></menuitem>
+                    <menuitem label='Forms'><icon>ki-document</icon><action>MetroWikiForms</action></menuitem>
+                    <menuitem label='Buttons'><icon>ki-document</icon><action>MetroWikiButtons</action></menuitem>
+                    <menuitem label='Accordion'><icon>ki-document</icon><action>MetroWikiAccordion</action></menuitem>
+                    <menuitem label='Alerts'><icon>ki-document</icon><action>MetroWikiAlerts</action></menuitem>
+                    <menuitem label='Badges'><icon>ki-document</icon><action>MetroWikiBadges</action></menuitem>
+                    <menuitem label='Breadcrumb'><icon>ki-document</icon><action>MetroWikiBreadcrumb</action></menuitem>
+                    <menuitem label='Bullets'><icon>ki-document</icon><action>MetroWikiBullets</action></menuitem>
+                </menu>
+            </menuitem>
+            <menuitem>
+                <menu class="column">
+                    <menuitem label='Cards'><icon>ki-document</icon><action>MetroWikiCards</action></menuitem>
+                    <menuitem label='Carousel'><icon>ki-document</icon><action>MetroWikiCarousel</action></menuitem>
+                    <menuitem label='Indicator'><icon>ki-document</icon><action>MetroWikiIndicator</action></menuitem>
+                    <menuitem label='Page Loading'><icon>ki-document</icon><action>MetroWikiPageLoading</action></menuitem>
+                    <menuitem label='Modal'><icon>ki-document</icon><action>MetroWikiModal</action></menuitem>
+                    <menuitem label='Overlay'><icon>ki-document</icon><action>MetroWikiOverlay</action></menuitem>
+                    <menuitem label='Pagination'><icon>ki-document</icon><action>MetroWikiPagination</action></menuitem>
+                    <menuitem label='Popovers'><icon>ki-document</icon><action>MetroWikiPopovers</action></menuitem>
+                    <menuitem label='Hover'><icon>ki-document</icon><action>MetroWikiHover</action></menuitem>
+                    <menuitem label='Pulse'><icon>ki-document</icon><action>MetroWikiPulse</action></menuitem>
+                </menu>
+            </menuitem>
+            <menuitem>
+                <menu class="column">
+                    <menuitem label='Rating'><icon>ki-document</icon><action>MetroWikiRating</action></menuitem>
+                    <menuitem label='Ribbon'><icon>ki-document</icon><action>MetroWikiRibbon</action></menuitem>
+                    <menuitem label='Rotate'><icon>ki-document</icon><action>MetroWikiRotate</action></menuitem>
+                    <menuitem label='Separator'><icon>ki-document</icon><action>MetroWikiSeparator</action></menuitem>
+                    <menuitem label='Symbol'><icon>ki-document</icon><action>MetroWikiSymbol</action></menuitem>
+                    <menuitem label='Tables'><icon>ki-document</icon><action>MetroWikiTables</action></menuitem>
+                    <menuitem label='Tabs'><icon>ki-document</icon><action>MetroWikiTabs</action></menuitem>
+                    <menuitem label='Toasts'><icon>ki-document</icon><action>MetroWikiToasts</action></menuitem>
+                    <menuitem label='Tooltips'><icon>ki-document</icon><action>MetroWikiTooltips</action></menuitem>
+                    <menuitem label='Underline'><icon>ki-document</icon><action>MetroWikiUnderline</action></menuitem>
+                </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
     <menuitem label='_t{Persistence}'>
         <icon>lucide-database</icon>
         <menu>

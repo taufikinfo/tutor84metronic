@@ -52,7 +52,7 @@ class PDFDesignNFEView extends TPage
         $seguro->setValue('50,00');
         $despesas->setValue('200,00');
 
-        $this->form->addAction('Generate', new TAction([$this, 'onGenerator'], ['static' => 1]), 'fa:cogs');
+        $this->form->addAction('Generate', new TAction([$this, 'onGenerator'], ['static' => 1]), 'ki-setting-2s');
 
         $product = new TDBUniqueSearch('product_id[]', 'samples', 'Product', 'id', 'description');
         $product->setMinLength(0);

@@ -38,7 +38,7 @@ class MassiveDeleteView extends TPage
         $content = new TEntry('content');
         $this->form->addFields( [new TLabel('Content')], [$content] );
         
-        $this->form->addAction( 'Search', new TAction([$this, 'onSearch']), 'fa:search');
+        $this->form->addAction( 'Search', new TAction([$this, 'onSearch']), 'ki-magnifier');
         
         // create datagrid
         $this->datagrid = new BootstrapDatagridWrapper(new TDataGrid);
@@ -60,7 +60,7 @@ class MassiveDeleteView extends TPage
         $action1->setButtonClass('btn btn-default');
         
         // add the actions to the datagrid
-        $this->datagrid->addAction($action1, 'Select', 'far:square fa-fw black');
+        $this->datagrid->addAction($action1, 'Select', 'ki-abstract-28 fa-fw black');
         
         // create datagrid structure
         $this->datagrid->createModel();
@@ -72,7 +72,7 @@ class MassiveDeleteView extends TPage
         $panel = new TPanelGroup('');
         $panel->add($this->datagrid);
         $panel->addFooter($this->pageNavigation);
-        $panel->addHeaderActionLink( 'Delete selected', new TAction([$this, 'deleteSelected']), 'far:trash-alt red' );
+        $panel->addHeaderActionLink( 'Delete selected', new TAction([$this, 'deleteSelected']), 'ki-trash red' );
         
         // vertical box container
         $container = new TVBox;

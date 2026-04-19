@@ -45,7 +45,7 @@ class CheckoutFormView extends TPage
         // creates the action button
         $button1=new TButton('find');
         $button1->setAction(new TAction(array($this, 'onSearch')), 'Find');
-        $button1->setImage('fa:search');
+        $button1->setImage('ki-magnifier');
         
         $row->addCell($button1);
         $this->form->add($table);
@@ -71,8 +71,8 @@ class CheckoutFormView extends TPage
         $action1 = new TDataGridAction([$this, 'onSelect'], ['id' => '{id}' ] );
         $action2 = new TDataGridAction([$this, 'onDelete'], ['id' => '{id}' ] );
         
-        $this->datagrid->addAction($action1, 'Select', 'far:check-circle green');
-        $this->cartgrid->addAction($action2, 'Delete', 'far:trash-alt red');
+        $this->datagrid->addAction($action1, 'Select', 'ki-check-circle green');
+        $this->cartgrid->addAction($action2, 'Delete', 'ki-trash red');
         
         // create the datagrid model
         $this->datagrid->createModel();

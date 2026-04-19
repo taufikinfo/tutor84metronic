@@ -42,7 +42,7 @@ class TabularReportQueryView extends TPage
         $output_type->setValue('pdf');
         $output_type->setLayout('horizontal');
         $city_id->addValidation( 'City', new TRequiredValidator);
-        $this->form->addAction( 'Generate', new TAction(array($this, 'onGenerate')), 'fa:download blue');
+        $this->form->addAction( 'Generate', new TAction(array($this, 'onGenerate')), 'ki-arrow-down blue');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

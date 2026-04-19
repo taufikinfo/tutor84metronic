@@ -58,7 +58,7 @@ class FormVerticalBootstrapView extends TPage
         $description->addValidation( 'Description', new TRequiredValidator);
         
         // define the form action
-        $btn = $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle');
+        $btn = $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle');
         $btn->class = 'btn btn-success';
         
         // wrap the page content using vertical box

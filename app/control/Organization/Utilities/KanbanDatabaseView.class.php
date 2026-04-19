@@ -38,12 +38,12 @@ class KanbanDatabaseView extends TPage
 		}
 		
 		
-		$kanban->addStageAction('Edit', new TAction(['KanbanStageForm', 'onEdit']),   'far:edit blue fa-fw');
-		$kanban->addStageAction('Add', new TAction(['KanbanItemForm', 'onStartEdit'], ['register_state' => 'false']),   'fa:plus green fa-fw');
-		$kanban->addStageShortcut('Add', new TAction(['KanbanItemForm', 'onStartEdit'], ['register_state' => 'false']),   'fa:plus fa-fw');
+		$kanban->addStageAction('Edit', new TAction(['KanbanStageForm', 'onEdit']),   'ki-pencil blue fa-fw');
+		$kanban->addStageAction('Add', new TAction(['KanbanItemForm', 'onStartEdit'], ['register_state' => 'false']),   'ki-plus green fa-fw');
+		$kanban->addStageShortcut('Add', new TAction(['KanbanItemForm', 'onStartEdit'], ['register_state' => 'false']),   'ki-plus fa-fw');
 		
-		$kanban->addItemAction('Edit', new TAction(['KanbanItemForm', 'onEdit'], ['register_state' => 'false']), 'far:edit blue');
-		$kanban->addItemAction('Delete', new TAction([$this, 'onDelete']), 'far:trash-alt red');
+		$kanban->addItemAction('Edit', new TAction(['KanbanItemForm', 'onEdit'], ['register_state' => 'false']), 'ki-pencil blue');
+		$kanban->addItemAction('Delete', new TAction([$this, 'onDelete']), 'ki-trash red');
 		
         //$kanban->setTemplatePath('app/resources/card.html');
 		$kanban->setItemDropAction(new TAction([__CLASS__, 'onUpdateItemDrop']));

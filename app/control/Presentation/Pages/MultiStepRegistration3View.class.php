@@ -45,7 +45,7 @@ class MultiStepRegistration3View extends TPage
 
         // add a form action
         $this->form->addAction('Back', new TAction(array($this, 'onBackForm')), 'far:arrow-alt-circle-left red');
-        $this->form->addAction('Confirm', new TAction(array($this, 'onConfirm')), 'far:check-circle green');
+        $this->form->addAction('Confirm', new TAction(array($this, 'onConfirm')), 'ki-check-circle green');
         
         $pagestep = new TPageStep;
         $pagestep->addItem('Welcome');

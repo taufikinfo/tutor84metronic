@@ -15,11 +15,11 @@ class DialogToastView extends TPage
     {
         parent::__construct();
         
-        TToast::show('show', 'Toast test 1', 'top right', 'far:check-circle' );
-        TToast::show('info', 'Toast test 2', 'top right', 'far:check-circle' );
-        TToast::show('warning', 'Toast test 3', 'top right', 'far:check-circle' );
-        TToast::show('error', 'Toast test 4', 'top right', 'far:check-circle' );
-        TToast::show('success', 'Toast test 4', 'top right', 'far:check-circle' );
+        TToast::show('show', 'Toast test 1', 'top right', 'ki-check-circle' );
+        TToast::show('info', 'Toast test 2', 'top right', 'ki-check-circle' );
+        TToast::show('warning', 'Toast test 3', 'top right', 'ki-check-circle' );
+        TToast::show('error', 'Toast test 4', 'top right', 'ki-check-circle' );
+        TToast::show('success', 'Toast test 4', 'top right', 'ki-check-circle' );
         
         parent::add(new TXMLBreadCrumb('menu.xml', __CLASS__));
     }

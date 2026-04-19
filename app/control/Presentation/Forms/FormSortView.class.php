@@ -40,7 +40,7 @@ class FormSortView extends TPage
         $list1->setChangeAction(new TAction(array($this, 'onChangeAction')));
         
         $this->form->addFields([$list1, $list2]);
-        $this->form->addAction( 'Send', new TAction(array($this, 'onSend')), 'far:check-circle');
+        $this->form->addAction( 'Send', new TAction(array($this, 'onSend')), 'ki-check-circle');
         $this->form->addAction( 'Reload', new TAction(array($this, 'onReload')), 'fa:sync');
         
         // wrap the page content using vertical box

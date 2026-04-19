@@ -28,9 +28,9 @@ class SaleSidePanelView extends TPage
         
         $this->form->setFormTitle('Sale');
         $this->form->setColumnClasses(2, ['col-sm-3', 'col-sm-9']);
-        $this->form->addHeaderActionLink( _t('Print'), new TAction([$this, 'onPrint'], ['key'=>$param['key'], 'static' => '1']), 'far:file-pdf red');
-        $this->form->addHeaderActionLink( _t('Edit'), new TAction([$this, 'onEdit'], ['key'=>$param['key'], 'register_state'=>'true']), 'far:edit blue');
-        $this->form->addHeaderActionLink( _t('Close'), new TAction([$this, 'onClose']), 'fa:times red');
+        $this->form->addHeaderActionLink( _t('Print'), new TAction([$this, 'onPrint'], ['key'=>$param['key'], 'static' => '1']), 'ki-file red');
+        $this->form->addHeaderActionLink( _t('Edit'), new TAction([$this, 'onEdit'], ['key'=>$param['key'], 'register_state'=>'true']), 'ki-pencil blue');
+        $this->form->addHeaderActionLink( _t('Close'), new TAction([$this, 'onClose']), 'ki-cross red');
         
         parent::add($this->form);
     }

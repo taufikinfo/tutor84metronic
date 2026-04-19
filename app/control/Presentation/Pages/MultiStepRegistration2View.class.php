@@ -25,7 +25,7 @@ class MultiStepRegistration2View extends TPage
         $this->datagrid->addColumn( new TDataGridColumn('description',  'Description',  'left',   '90%') );
         
         $action1 = new TDataGridAction([$this, 'onSelect'], ['code'=>'{code}', 'description' => '{description}'] );
-        $this->datagrid->addAction($action1, 'Select', 'far:check-circle fa-fw fa-lg green');
+        $this->datagrid->addAction($action1, 'Select', 'ki-check-circle fa-fw fa-lg green');
         
         // creates the datagrid model
         $this->datagrid->createModel();

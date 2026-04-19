@@ -83,7 +83,7 @@ class FormMaskView extends TPage
         $this->form->addFields( [new TLabel('Element 14 numeric mask')], [$element14] );
         $this->form->addFields( [new TLabel('Element 15 reverse numeric mask')], [$element15] );
         
-        $this->form->addAction( 'Send', new TAction([$this, 'onSend']), 'far:check-circle green');
+        $this->form->addAction( 'Send', new TAction([$this, 'onSend']), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

@@ -1,650 +1,630 @@
 <?php
+
+use App\Lib\Widget\Shadcn\Layout\SCard;
+use App\Lib\Widget\Shadcn\Layout\SAccordion;
+use App\Lib\Widget\Shadcn\Layout\STable;
+use App\Lib\Widget\Shadcn\Layout\STabs;
+use App\Lib\Widget\Shadcn\Layout\SSeparator;
+
+use App\Lib\Widget\Shadcn\Feedback\SAlert;
+use App\Lib\Widget\Shadcn\Feedback\SProgress;
+use App\Lib\Widget\Shadcn\Feedback\SSkeleton;
+use App\Lib\Widget\Shadcn\Feedback\SSpinner;
+use App\Lib\Widget\Shadcn\Feedback\SEmpty;
+use App\Lib\Widget\Shadcn\Feedback\SChart;
+use App\Lib\Widget\Shadcn\Feedback\SCollapsible;
+use App\Lib\Widget\Shadcn\Feedback\SKbd;
+use App\Lib\Widget\Shadcn\Feedback\SToggle;
+use App\Lib\Widget\Shadcn\Feedback\SToggleGroup;
+use App\Lib\Widget\Shadcn\Feedback\SAspectRatio;
+
+use App\Lib\Widget\Shadcn\Badge\SAvatar;
+use App\Lib\Widget\Shadcn\Badge\SBadge;
+
+use App\Lib\Widget\Shadcn\Button\SButton;
+use App\Lib\Widget\Shadcn\Button\SButtonGroup;
+
+use App\Lib\Widget\Shadcn\Form\SInput;
+use App\Lib\Widget\Shadcn\Form\STextarea;
+use App\Lib\Widget\Shadcn\Form\SCheckbox;
+use App\Lib\Widget\Shadcn\Form\SSwitch;
+use App\Lib\Widget\Shadcn\Form\SRadioGroup;
+use App\Lib\Widget\Shadcn\Form\SSelect;
+use App\Lib\Widget\Shadcn\Form\SDatePicker;
+use App\Lib\Widget\Shadcn\Form\SSlider;
+use App\Lib\Widget\Shadcn\Form\SField;
+use App\Lib\Widget\Shadcn\Form\SLabel;
+use App\Lib\Widget\Shadcn\Form\SInputOTP;
+use App\Lib\Widget\Shadcn\Form\SInputGroup;
+
+use App\Lib\Widget\Shadcn\Overlay\SDropdownMenu;
+use App\Lib\Widget\Shadcn\Overlay\SPopover;
+use App\Lib\Widget\Shadcn\Overlay\SHoverCard;
+use App\Lib\Widget\Shadcn\Overlay\STooltip;
+use App\Lib\Widget\Shadcn\Overlay\SContextMenu;
+
+use App\Lib\Widget\Shadcn\Modal\SAlertDialog;
+use App\Lib\Widget\Shadcn\Modal\SDialog;
+use App\Lib\Widget\Shadcn\Modal\SSheet;
+use App\Lib\Widget\Shadcn\Modal\SDrawer;
+
+use App\Lib\Widget\Shadcn\Complex\SCarousel;
+use App\Lib\Widget\Shadcn\Complex\SResizable;
+use App\Lib\Widget\Shadcn\Complex\SBreadcrumb;
+use App\Lib\Widget\Shadcn\Complex\SNavigationMenu;
+use App\Lib\Widget\Shadcn\Complex\SMenubar;
+use App\Lib\Widget\Shadcn\Complex\SPagination;
+
+use App\Lib\Widget\Shadcn\Typography\STypography;
+use Adianti\Widget\Base\TElement;
+
 class ShadcnShowcase extends TPage {
+    
     public function __construct() {
         parent::__construct();
         
-        $vbox = new TVBox;
-        $vbox->style = 'width: 100%; padding: 20px; gap: 20px;';
+        $wrapper = new TElement('div');
+        $wrapper->style = 'display: flex; height: 100vh; overflow: hidden; background: var(--s-background); color: var(--s-foreground);';
         
-        $title = new App\Lib\Widget\Shadcn\STypography('Shadcn UI Architecture Showcase');
-        $vbox->add($title);
+        // --- Sidebar ---
+        $sidebar = new TElement('div');
+        $sidebar->class = 's-border border-end';
+        $sidebar->style = 'width: 250px; flex-shrink: 0; display: flex; flex-direction: column;';
         
-        $row = new TElement('div');
-        $row->class = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6';
+        $brand = new TElement('div');
+        $brand->style = 'padding: 1.5rem; border-bottom: 1px solid var(--s-border);';
+        $brand->add(new STypography('Shadcn UI', 'h4'));
+        $brand->add(new STypography('for Adianti', 'muted'));
+        $sidebar->add($brand);
+        
+        $navOutput = new TElement('div');
+        $navOutput->style = 'overflow-y: auto; flex-grow: 1; padding: 1rem; display: flex; flex-direction: column; gap: 0.25rem;';
+        
+        $components = [
+            'typography' => 'Typography',
+            'buttons' => 'Buttons',
+            'badges' => 'Badges & Avatars',
+            'inputs' => 'Forms & Inputs',
+            'modals' => 'Modals & Dialogs',
+            'overlays' => 'Menus & Overlays',
+            'layout' => 'Layouts & Data',
+            'complex' => 'Complex Components',
+            'feedback' => 'Feedback States'
+        ];
+        
+        foreach ($components as $id => $label) {
+            $link = new TElement('a');
+            $link->href = '#' . $id;
+            $link->class = 's-btn s-btn-ghost text-start justify-content-start w-100';
+            $link->add($label);
+            $navOutput->add($link);
+        }
+        $sidebar->add($navOutput);
+        
+        // --- Main Content ---
+        $main = new TElement('div');
+        $main->style = 'flex-grow: 1; overflow-y: auto; scroll-behavior: smooth; padding: 2rem 4rem;';
+        
+        $header = new TElement('div');
+        $header->style = 'margin-bottom: 3rem;';
+        $header->add(new STypography('Component Documentation', 'h1'));
+        $header->add(new STypography('Browse all components, variants, and configurations.', 'muted'));
+        $main->add($header);
 
-        // Generic Accordion
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Accordion'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SAccordion;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        // Sections
+        $main->add($this->sectionTypography());
+        $main->add(new SSeparator());
+        $main->add($this->sectionButtons());
+        $main->add(new SSeparator());
+        $main->add($this->sectionBadges());
+        $main->add(new SSeparator());
+        $main->add($this->sectionInputs());
+        $main->add(new SSeparator());
+        $main->add($this->sectionModals());
+        $main->add(new SSeparator());
+        $main->add($this->sectionOverlays());
+        $main->add(new SSeparator());
+        $main->add($this->sectionLayout());
+        $main->add(new SSeparator());
+        $main->add($this->sectionComplex());
+        $main->add(new SSeparator());
+        $main->add($this->sectionFeedback());
+        $main->add(new SSeparator());
+        
+        $wrapper->add($sidebar);
+        $wrapper->add($main);
+        parent::add($wrapper);
+    }
+    
+    private function createSection($id, $title, $description, $content) {
+        $sec = new TElement('section');
+        $sec->id = $id;
+        $sec->style = 'padding: 4rem 0;';
+        
+        $head = new TElement('div');
+        $head->style = 'margin-bottom: 2rem;';
+        $head->add(new STypography($title, 'h2'));
+        $desc = new STypography($description, 'muted');
+        $desc->style = 'margin-top: 0.5rem; font-size: 1.125rem;';
+        $head->add($desc);
+        $sec->add($head);
+        
+        $sec->add($content);
+        return $sec;
+    }
 
-        // Alert
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Alert'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $alert = new App\Lib\Widget\Shadcn\SAlert;
-        $alert->add(new App\Lib\Widget\Shadcn\SAlertTitle('Heads up!'));
-        $alert->add(new App\Lib\Widget\Shadcn\SAlertDescription('You can add components to your app using the cli.'));
-        $content->add($alert);
-        $card->add($content);
-        $row->add($card);
+    private function sectionTypography() {
+        $wrap = new TElement('div');
+        $wrap->style = 'display: flex; flex-direction: column; gap: 2rem;';
+        
+        $wrap->add(new STypography('h1. The quick brown fox jumps over the lazy dog', 'h1'));
+        $wrap->add(new STypography('h2. The quick brown fox jumps over the lazy dog', 'h2'));
+        $wrap->add(new STypography('h3. The quick brown fox jumps over the lazy dog', 'h3'));
+        $wrap->add(new STypography('h4. The quick brown fox jumps over the lazy dog', 'h4'));
+        $wrap->add(new STypography('Paragraph text. The quick brown fox jumps over the lazy dog. It relies gracefully on the selected font family, prioritizing Inter and system sans-serif fonts.', 'p'));
+        $wrap->add(new STypography('Muted helper text used for sub-labels and hints.', 'muted'));
+        
+        return $this->createSection('typography', 'Typography', 'Styles for headings, paragraphs, lists...etc', $wrap);
+    }
 
-        // Generic AlertDialog
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('AlertDialog'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SAlertDialog;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+    private function sectionButtons() {
+        $wrap = new TElement('div');
+        $wrap->style = 'display: flex; flex-direction: column; gap: 2rem;';
+        
+        $vCard = new SCard();
+        $vCard->setHeader('Variants');
+        $vBox = new TElement('div');
+        $vBox->style = 'display: flex; flex-wrap: wrap; gap: 1rem;';
+        $vBox->add(new SButton('Default'));
+        $vBox->add(new SButton('Secondary', 'secondary'));
+        $vBox->add(new SButton('Destructive', 'destructive'));
+        $vBox->add(new SButton('Outline', 'outline'));
+        $vBox->add(new SButton('Ghost', 'ghost'));
+        $vBox->add(new SButton('Link', 'link'));
+        $vCard->setContent($vBox);
+        $wrap->add($vCard);
+        
+        $sCard = new SCard();
+        $sCard->setHeader('Sizes');
+        $sBox = new TElement('div');
+        $sBox->style = 'display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;';
+        $sBox->add(new SButton('Small', 'default', 'sm'));
+        $sBox->add(new SButton('Default'));
+        $sBox->add(new SButton('Large', 'default', 'lg'));
+        
+        $iconBtn = new SButton('', 'outline', 'icon');
+        $icon = new TElement('i');
+        $icon->class = 'fas fa-chevron-right';
+        $iconBtn->add($icon);
+        $sBox->add($iconBtn);
+        $sCard->setContent($sBox);
+        $wrap->add($sCard);
+        
+        $stCard = new SCard();
+        $stCard->setHeader('States & Groups');
+        $stBox = new TElement('div');
+        $stBox->style = 'display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;';
+        
+        $btnDis = new SButton('Disabled');
+        $btnDis->setDisabled();
+        $stBox->add($btnDis);
+        
+        $grp = new SButtonGroup();
+        $grp->add(new SButton('Left', 'outline'));
+        $grp->add(new SButton('Middle', 'outline'));
+        $grp->add(new SButton('Right', 'outline'));
+        $stBox->add($grp);
+        
+        $stCard->setContent($stBox);
+        $wrap->add($stCard);
 
-        // Generic AspectRatio
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('AspectRatio'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SAspectRatio;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('buttons', 'Buttons', 'Displays a button or a component that looks like a button.', $wrap);
+    }
+    
+    private function sectionBadges() {
+        $wrap = new TElement('div');
+        $wrap->style = 'display: flex; flex-direction: column; gap: 2rem;';
+        
+        $bCard = new SCard();
+        $bCard->setHeader('Badges');
+        $bBox = new TElement('div');
+        $bBox->style = 'display: flex; flex-wrap: wrap; gap: 1rem;';
+        $bBox->add(new SBadge('Default'));
+        $bBox->add(new SBadge('Secondary', 'secondary'));
+        $bBox->add(new SBadge('Outline', 'outline'));
+        $bBox->add(new SBadge('Destructive', 'destructive'));
+        $bCard->setContent($bBox);
+        $wrap->add($bCard);
+        
+        $aCard = new SCard();
+        $aCard->setHeader('Avatars');
+        $aBox = new TElement('div');
+        $aBox->style = 'display: flex; flex-wrap: wrap; gap: 1rem;';
+        $aBox->add(new SAvatar('https://github.com/shadcn.png', 'CN'));
+        $aBox->add(new SAvatar('', 'JD'));
+        $aCard->setContent($aBox);
+        $wrap->add($aCard);
 
-        // Avatar
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Avatar'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $content->add(new App\Lib\Widget\Shadcn\SAvatar);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('badges', 'Badges & Avatars', 'Visual identifiers and profile pictures.', $wrap);
+    }
 
-        // SBadge
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Badge'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $content->class .= ' flex gap-2 flex-wrap';
-        $content->add(new App\Lib\Widget\Shadcn\SBadge('Active'));
-        $content->add(new App\Lib\Widget\Shadcn\SBadge('Pending'));
-        $card->add($content);
-        $row->add($card);
+    private function sectionInputs() {
+        $grid = new TElement('div');
+        $grid->class = 'grid grid-cols-1 md:grid-cols-2 gap-6';
 
-        // Generic Breadcrumb
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Breadcrumb'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SBreadcrumb;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c1 = new SCard();
+        $c1->setHeader('Standard Inputs');
+        $box1 = new TElement('div');
+        $box1->class = 'd-flex flex-column gap-3';
+        
+        $f1 = new SField();
+        $f1->add(new SLabel('Email address'));
+        $f1->add(new SInput('email', 'Enter email...'));
+        $f1->add(new STypography('We will never share your email.', 'muted'));
+        $box1->add($f1);
 
-        // SButton
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Button'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $content->class .= ' flex gap-2 flex-wrap';
-        $content->add(new App\Lib\Widget\Shadcn\SButton('Default'));
-        $content->add(new App\Lib\Widget\Shadcn\SButton('Destructive', 'destructive'));
-        $content->add(new App\Lib\Widget\Shadcn\SButton('Outline', 'outline'));
-        $card->add($content);
-        $row->add($card);
+        $f2 = new SField();
+        $f2->add(new SLabel('Disabled State'));
+        $inpD = new SInput('text', 'Disabled...');
+        $inpD->setDisabled();
+        $f2->add($inpD);
+        $box1->add($f2);
+        
+        $f3 = new SField();
+        $f3->add(new SLabel('Invalid State'));
+        $inpI = new SInput('text', 'Error value...');
+        $inpI->setInvalid();
+        $f3->add($inpI);
+        $errorMessage = new STypography('This field is required.', 'p');
+        $errorMessage->class = 's-typography-destructive';
+        $f3->add($errorMessage);
+        $box1->add($f3);
+        
+        $c1->setContent($box1);
+        $grid->add($c1);
 
-        // Generic ButtonGroup
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('ButtonGroup'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SButtonGroup;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c2 = new SCard();
+        $c2->setHeader('Complex Controls');
+        $box2 = new TElement('div');
+        $box2->class = 'd-flex flex-column gap-4';
 
-        // Generic Carousel
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Carousel'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SCarousel;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $f4 = new SField();
+        $f4->add(new SLabel('Select Theme'));
+        $sel = new SSelect('theme_id');
+        $sel->addItems(['' => 'Select a theme...', 'light' => 'Light Mode', 'dark' => 'Dark Mode']);
+        $f4->add($sel);
+        $box2->add($f4);
 
-        // Generic Chart
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Chart'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SChart;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $f5 = new SField();
+        $f5->add(new SLabel('Biography'));
+        $f5->add(new STextarea('bio', 'Write a few words about yourself...'));
+        $box2->add($f5);
 
-        // Checkbox
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Checkbox'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $chk = new App\Lib\Widget\Shadcn\SCheckbox;
-        $content->add($chk);
-        $card->add($content);
-        $row->add($card);
+        $f6 = new SField();
+        $f6->add(new SLabel('Input OTP'));
+        $f6->add(new SInputOTP(6));
+        $box2->add($f6);
 
-        // Generic Collapsible
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Collapsible'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SCollapsible;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c2->setContent($box2);
+        $grid->add($c2);
 
-        // Generic Combobox
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Combobox'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SCombobox;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c3 = new SCard();
+        $c3->setHeader('Switches & Checkboxes');
+        $box3 = new TElement('div');
+        $box3->class = 'd-flex flex-column gap-4';
+        
+        $box3->add(new SCheckbox('terms', 'Accept Terms and Conditions.'));
+        $box3->add(new SSwitch('flight', 'Enable Airplane Mode'));
+        
+        $rg = new SRadioGroup('opts');
+        $rg->addItems(['1' => 'Option One', '2' => 'Option Two']);
+        $box3->add($rg);
+        
+        $c3->setContent($box3);
+        $grid->add($c3);
 
-        // Generic Command
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Command'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SCommand;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('inputs', 'Forms & Inputs', 'Form controls, selections, and user input fields.', $grid);
+    }
+    
+    private function sectionModals() {
+        $grid = new TElement('div');
+        $grid->class = 'grid grid-cols-1 gap-6';
 
-        // Generic ContextMenu
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('ContextMenu'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SContextMenu;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c1 = new SCard();
+        $c1->setHeader('Alert Dialog');
+        $alertBtn = new SButton('Trigger Alert Dialog', 'outline');
+        $alert = new SAlertDialog();
+        $alert->setTitle('Delete Project?');
+        $alert->setDescription('This cannot be undone. All project data will be wiped immediately.');
+        $alert->setTrigger($alertBtn);
+        $alert->addCancel(new SButton('Cancel', 'outline'));
+        $alert->addAction(new SButton('Confirm Delete', 'destructive'));
+        $c1->setContent($alert);
+        $grid->add($c1);
 
-        // Generic DataTable
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('DataTable'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SDataTable;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c2 = new SCard();
+        $c2->setHeader('Standard Dialog');
+        $dialogBtn = new SButton('Trigger Custom Dialog', 'outline');
+        $dialog = new SDialog();
+        $dialog->setTitle('Invite Users');
+        $dialog->setDescription("Send an invite link to your team members.");
+        $dialog->setTrigger($dialogBtn);
+        
+        $diagContent = new TElement('div');
+        $diagContent->class = 'd-flex flex-column gap-3';
+        $diagContent->add(new SInput('email', 'Email Address...'));
+        
+        $roles = new SSelect('roles');
+        $roles->addItems(['viewer' => 'Viewer', 'editor' => 'Editor']);
+        $diagContent->add($roles);
+        
+        $dialog->setContent($diagContent);
+        $dialog->setFooter(new SButton('Send Invite'));
+        $c2->setContent($dialog);
+        $grid->add($c2);
 
-        // Generic DatePicker
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('DatePicker'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SDatePicker;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c3 = new SCard();
+        $c3->setHeader('Sheets (Offcanvas)');
+        $sheetBox = new TElement('div');
+        $sheetBox->class = 'd-flex flex-wrap gap-2';
 
-        // Generic Dialog
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Dialog'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SDialog;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        foreach (['top', 'right', 'bottom', 'left'] as $side) {
+            $sheetBtn = new SButton('Slide ' . ucfirst($side), 'outline');
+            $sheet = new SSheet();
+            $sheet->setTitle(ucfirst($side) . ' Sheet');
+            $sheet->setDescription("Content sliding in from the $side edge.");
+            $sheet->setSide($side);
+            $sheet->setTrigger($sheetBtn);
+            $sheet->setContent(new STypography('Place rich form inputs or tables here.'));
+            $sheetBox->add($sheet);
+        }
+        
+        $c3->setContent($sheetBox);
+        $grid->add($c3);
 
-        // Generic Direction
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Direction'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SDirection;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c4 = new SCard();
+        $c4->setHeader('Drawer');
+        $drawerBtn = new SButton('Open Mobile Drawer', 'secondary');
+        $drawer = new SDrawer();
+        $drawer->setTitle('Activity Drawer');
+        $drawer->setDescription("Slide up from bottom to review statistics.");
+        $drawer->setDirection('bottom');
+        $drawer->setTrigger($drawerBtn);
+        $drawerContent = new TElement('div');
+        $drawerContent->class = 'p-4 text-center';
+        $drawerContent->add(new SChart()); 
+        $drawer->setContent($drawerContent);
+        $c4->setContent($drawer);
+        $grid->add($c4);
 
-        // Generic Drawer
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Drawer'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SDrawer;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('modals', 'Modals & Dialogs', 'Interactive modal surfaces, dialogs, drawers, and sheets.', $grid);
+    }
+    
+    private function sectionOverlays() {
+        $grid = new TElement('div');
+        $grid->class = 'grid grid-cols-1 md:grid-cols-2 gap-6';
 
-        // Generic DropdownMenu
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('DropdownMenu'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SDropdownMenu;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c1 = new SCard();
+        $c1->setHeader('Dropdown Menu');
+        $dd = new SDropdownMenu();
+        $dd->setTrigger(new SButton('Actions Menu', 'outline'));
+        $dd->addLabel('My Account');
+        $dd->addSeparator();
+        $dd->addItem('Profile', null, 'fas fa-user');
+        $dd->addItem('Billing', null, 'fas fa-credit-card');
+        $dd->addItem('Team', null, 'fas fa-users');
+        $dd->addSeparator();
+        $dd->addCheckboxItem('Show Status Bar', true);
+        $dd->addItem('Log out', null, 'fas fa-sign-out-alt', 'destructive');
+        $c1->setContent($dd);
+        $grid->add($c1);
 
-        // Generic Empty
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Empty'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SEmpty;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c2 = new SCard();
+        $c2->setHeader('Context Menu');
+        $ctx = new SContextMenu();
+        $ctxTrigger = new TElement('div');
+        $ctxTrigger->style = 'display:flex;align-items:center;justify-content:center;height:8rem;border:2px dashed var(--s-border);border-radius:var(--s-radius);color:var(--s-muted-foreground); background:var(--s-muted); cursor:context-menu;';
+        $ctxTrigger->add('Right click this area');
+        $ctx->setTrigger($ctxTrigger);
+        $ctx->addLabel('Navigation');
+        $ctx->addItem('Back');
+        $ctx->addItem('Forward');
+        $ctx->addSeparator();
+        $ctx->addItem('Copy', null, 'fas fa-copy');
+        $c2->setContent($ctx);
+        $grid->add($c2);
 
-        // Generic Field
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Field'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SField;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $cx = new SCard();
+        $cx->setHeader('Mini Overlays');
+        $ox = new TElement('div');
+        $ox->style = 'display:flex;gap:1rem;flex-wrap:wrap;';
+        
+        $tt = new STooltip();
+        $tt->setTrigger(new SButton('Hover Tooltip', 'outline'));
+        $tt->setContent('Add to library', 'top');
+        $ox->add($tt);
 
-        // Generic HoverCard
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('HoverCard'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SHoverCard;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $hc = new SHoverCard();
+        $hcTrigger = new TElement('span');
+        $hcTrigger->style = 'font-weight: 500; text-decoration: underline; text-underline-offset: 4px; cursor: pointer;';
+        $hcTrigger->add('@adianti');
+        $hc->setTrigger($hcTrigger);
+        $hcc = new TElement('div');
+        $hcc->add(new STypography('Adianti Framework', 'h4'));
+        $hcc->add(new STypography('The ultimate PHP framework for rapid business application development.', 'p'));
+        $hc->setContent($hcc);
+        $ox->add($hc);
 
-        // SInput
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Input'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $in = new App\Lib\Widget\Shadcn\SInput;
-        $in->placeholder = 'Email address...';
-        $content->add($in);
-        $card->add($content);
-        $row->add($card);
+        $pop = new SPopover();
+        $pop->setTrigger(new SButton('Open Popover', 'outline'));
+        $pop->setTitle('Dimensions');
+        $pop->setDescription('Set the dimensions for the layer.');
+        $popC = new TElement('div');
+        $popC->class = 'mt-3 d-flex flex-column gap-2';
+        $popC->add(new SInput('width', 'Width...', '100%'));
+        $pop->setContent($popC);
+        $ox->add($pop);
+        
+        $cx->setContent($ox);
+        $grid->add($cx);
 
-        // Generic InputGroup
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('InputGroup'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SInputGroup;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('overlays', 'Menus & Overlays', 'Interactive overlays like popovers, tooltips, and contextual menus.', $grid);
+    }
+    
+    private function sectionLayout() {
+        $grid = new TElement('div');
+        $grid->class = 'grid grid-cols-1 md:grid-cols-2 gap-6';
 
-        // Generic InputOTP
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('InputOTP'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SInputOTP;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        // Accordion
+        $c1 = new SCard();
+        $c1->setHeader('Accordion');
+        $acc = new SAccordion();
+        $acc->addItem('Is it responsive?', new STypography('Yes. It uses flexbox to automatically adjust to container sizing.'), true);
+        $acc->addItem('Is it styled?', new STypography('Yes. It completely adheres to Shadcn/UI border and font tokens.'));
+        $c1->setContent($acc);
+        $grid->add($c1);
+        
+        // Tabs
+        $c4 = new SCard();
+        $c4->setHeader('Tabs');
+        
+        $tabsWrapper = new TElement('div');
+        $tabsWrapper->class = 'd-flex flex-column gap-4';
+        
+        $tabs = new STabs();
+        $tabs->addTab('tab1', 'Account', new STypography('Make changes to your account settings here.'), true);
+        $tabs->addTab('tab2', 'Password', new STypography('Change your password here.'));
+        $tabsWrapper->add($tabs);
+        
+        $tabsLine = new STabs('line');
+        $tabsLine->addTab('l1', 'General', new STypography('General settings appear here.'), true);
+        $tabsLine->addTab('l2', 'Advanced', new STypography('Advanced options appear here.'));
+        $tabsWrapper->add($tabsLine);
+        
+        $c4->setContent($tabsWrapper);
+        $grid->add($c4);
 
-        // Generic Item
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Item'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SItem;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        // Table
+        $c3 = new SCard();
+        $c3->setHeader('Data Table');
+        $c3->class = 's-card col-span-1 md:col-span-2';
+        $tab = new STable();
+        $tab->setHeaders(['Client', 'Status', 'Payment Method', 'Amount'], ['30%', '20%', '30%', '20%']);
+        
+        $badge1 = clone new SBadge('Active');
+        $badge2 = clone new SBadge('Inactive', 'secondary');
+        
+        $tab->addRow(['Alice', clone $badge1, 'Credit Card', '$250.00']);
+        $tab->addRow(['Bob', clone $badge2, 'Bank Transfer', '$150.00']);
+        $tab->addRow(['Charlie', clone $badge1, 'PayPal', '$350.00']);
+        $c3->setContent($tab);
+        $grid->add($c3);
 
-        // Generic Kbd
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Kbd'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SKbd;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('layout', 'Layouts & Data', 'Components for structuring complex data displays.', $grid);
+    }
+    
+    private function sectionComplex() {
+        $grid = new TElement('div');
+        $grid->class = 'grid grid-cols-1 md:grid-cols-2 gap-6';
 
-        // Generic Label
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Label'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SLabel;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        // Carousel
+        $c1 = new SCard();
+        $c1->setHeader('Carousel');
+        $car = new SCarousel();
+        for($i=1; $i<=3; $i++) {
+            $el = new TElement('div');
+            $el->style = 'display:flex;align-items:center;justify-content:center;height:200px;font-size:2rem;font-weight:bold;';
+            $el->add("Slide $i");
+            $car->addItem($el);
+        }
+        $c1->setContent($car);
+        $grid->add($c1);
 
-        // Generic Menubar
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Menubar'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SMenubar;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        // Resizable
+        $c2 = new SCard();
+        $c2->setHeader('Resizable Panel');
+        $res = new SResizable('horizontal');
+        $res->addPanel(new STypography('Sidebar Menu', 'muted'), '30%');
+        $res->addPanel(new STypography('Main Content Window'), '70%');
+        $c2->setContent($res);
+        $grid->add($c2);
+        
+        // Navigation / Breadcrumbs
+        $c3 = new SCard();
+        $c3->setHeader('Breadcrumbs & Navigation');
+        $nwrap = new TElement('div');
+        $nwrap->class = 'd-flex flex-column gap-3';
+        
+        $bc = new SBreadcrumb();
+        $bc->addItem('Home', '#');
+        $bc->addItem('Library', '#');
+        $bc->addItem('Data');
+        $nwrap->add($bc);
+        
+        $nav = new SNavigationMenu();
+        $nav->addLink('Getting Started', '#');
+        $nav->addLink('Components', '#');
+        $nav->addLink('Documentation', '#');
+        $nwrap->add($nav);
+        
+        $c3->setContent($nwrap);
+        $grid->add($c3);
 
-        // Generic NativeSelect
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('NativeSelect'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SNativeSelect;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        return $this->createSection('complex', 'Complex Components', 'Feature-rich composite elements.', $grid);
+    }
+    
+    private function sectionFeedback() {
+        $grid = new TElement('div');
+        $grid->class = 'grid grid-cols-1 md:grid-cols-2 gap-6';
 
-        // Generic NavigationMenu
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('NavigationMenu'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SNavigationMenu;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c1 = new SCard();
+        $c1->setHeader('Alert Banners');
+        $awrap = new TElement('div');
+        $awrap->class = 'd-flex flex-column gap-3';
+        
+        $a1 = new SAlert();
+        $a1->add(new STypography('New Feature Available!', 'h4'));
+        $a1->add(new STypography('Check out the new wiki layout feature in ShadcnShowcase.', 'muted'));
+        $awrap->add($a1);
+        
+        $a2 = new SAlert('destructive');
+        $a2->add(new STypography('Connection Lost', 'h4'));
+        $a2->add(new STypography('Failed to connect to the database. Please try again.', 'p'));
+        $awrap->add($a2);
+        
+        $c1->setContent($awrap);
+        $grid->add($c1);
 
-        // Generic Pagination
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Pagination'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SPagination;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
+        $c2 = new SCard();
+        $c2->setHeader('Progress & Loading');
+        $lwrap = new TElement('div');
+        $lwrap->class = 'd-flex flex-column gap-4';
+        
+        $f1 = new SField();
+        $f1->add(new SLabel('File Upload (75%)'));
+        $f1->add(new SProgress(75));
+        $lwrap->add($f1);
+        
+        $f2 = new SField();
+        $f2->add(new SLabel('Loading Skeletons'));
+        $f2->add(new SSkeleton('100%', '20px'));
+        $f2->add(new SSkeleton('80%', '20px'));
+        $lwrap->add($f2);
+        
+        $f3 = new TElement('div');
+        $f3->class = 'd-flex align-items-center gap-2 text-muted';
+        $f3->add(new SSpinner());
+        $f3->add('Syncing data...');
+        $lwrap->add($f3);
+        
+        $c2->setContent($lwrap);
+        $grid->add($c2);
+        
+        $c3 = new SCard();
+        $c3->setHeader('Empty State');
+        $c3->setContent(new SEmpty('No records found in the database.'));
+        $grid->add($c3);
 
-        // Generic Popover
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Popover'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SPopover;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Progress
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Progress'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $p = new App\Lib\Widget\Shadcn\SProgress;
-        $content->add($p);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic RadioGroup
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('RadioGroup'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SRadioGroup;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Resizable
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Resizable'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SResizable;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic ScrollArea
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('ScrollArea'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SScrollArea;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Select
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Select'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SSelect;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Separator
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Separator'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SSeparator;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Sheet
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Sheet'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SSheet;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Sidebar
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Sidebar'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SSidebar;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Skeleton
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Skeleton'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $s = new App\Lib\Widget\Shadcn\SSkeleton;
-        $s->class .= ' h-[20px] w-full mb-2';
-        $content->add($s);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Slider
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Slider'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SSlider;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Sonner
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Sonner'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SSonner;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // SSpinner
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Spinner'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $content->add(new App\Lib\Widget\Shadcn\SSpinner);
-        $card->add($content);
-        $row->add($card);
-
-        // SSwitch
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Switch'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $chk = new App\Lib\Widget\Shadcn\SSwitch;
-        $content->add($chk);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Table
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Table'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\STable;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Tabs
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Tabs'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\STabs;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Textarea
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Textarea'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\STextarea;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Toast
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Toast'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SToast;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Toggle
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Toggle'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SToggle;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic ToggleGroup
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('ToggleGroup'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\SToggleGroup;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Tooltip
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Tooltip'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\STooltip;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        // Generic Typography
-        $card = new App\Lib\Widget\Shadcn\SCard;
-        $hdr = new App\Lib\Widget\Shadcn\SCardHeader;
-        $hdr->add(new App\Lib\Widget\Shadcn\SCardTitle('Typography'));
-        $card->add($hdr);
-        $content = new App\Lib\Widget\Shadcn\SCardContent;
-        $el = new App\Lib\Widget\Shadcn\STypography;
-        $content->add($el);
-        $card->add($content);
-        $row->add($card);
-
-        $vbox->add($row);
-        parent::add($vbox);
+        return $this->createSection('feedback', 'Feedback States', 'Banners, progress bars, spinners, and empty states.', $grid);
     }
 }

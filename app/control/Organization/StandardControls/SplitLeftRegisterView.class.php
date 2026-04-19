@@ -50,7 +50,7 @@ class SplitLeftRegisterView extends TPage
         $search_button = new TButton('search');
         $search_action = new TAction(array($this, 'onSearch'));
         $search_button->setAction($search_action, AdiantiCoreTranslator::translate('Search'));
-        $search_button->setImage('fa:search blue');
+        $search_button->setImage('ki-magnifier blue');
         
         $clear_button = new TButton('clear');
         $clear_action = new TAction(array($this, 'clear'));
@@ -83,13 +83,13 @@ class SplitLeftRegisterView extends TPage
         
         $action1 = new TDataGridAction(['SplitRightRegisterView', 'onEdit'], ['target_container' => 'right-panel']);
         $action1->setLabel('Edit');
-        $action1->setImage('far:edit blue');
+        $action1->setImage('ki-pencil blue');
         $action1->setFields(['id']);
         $this->datagrid->addAction($action1);
         
         $action2 = new TDataGridAction([$this, 'onDelete']);
         $action2->setLabel('Delete');
-        $action2->setImage('far:trash-alt red');
+        $action2->setImage('ki-trash red');
         $action2->setFields(['id']);
         $this->datagrid->addAction($action2);
         

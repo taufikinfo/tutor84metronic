@@ -42,10 +42,10 @@ class DatagridActionGroupView extends TPage
         $action3 = new TDataGridAction([$this, 'onViewCity'], ['city' => '{city}' ] );
         
         $action1->setLabel('View name');
-        $action1->setImage('fa:search #7C93CF');
+        $action1->setImage('ki-magnifier #7C93CF');
         
         $action2->setLabel('Try to delete');
-        $action2->setImage('far:trash-alt red');
+        $action2->setImage('ki-trash red');
         
         $action3->setLabel('View city');
         $action3->setImage('far:hand-pointer green');

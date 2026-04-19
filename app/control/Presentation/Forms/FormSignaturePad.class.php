@@ -35,7 +35,7 @@ class FormSignaturePad extends TPage
         
         $this->form->addFields( [new TLabel('Signature Pad')], [$signaturepad] );
         
-        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'far:check-circle green');
+        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

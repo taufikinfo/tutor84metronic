@@ -34,7 +34,7 @@ class FormDBSortView extends TPage
         $list2->connectTo($list1);
         
         $this->form->addFields([$list1, $list2]);
-        $this->form->addAction( 'Send', new TAction(array($this, 'onSend')), 'far:check-circle');
+        $this->form->addAction( 'Send', new TAction(array($this, 'onSend')), 'ki-check-circle');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

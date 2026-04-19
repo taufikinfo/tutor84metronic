@@ -40,6 +40,14 @@ class AdiantiMenuBuilder
      */
     public static function prepareItem($menuitem)
     {
+        $imageName = $menuitem->getImage();
+        if ($imageName && strpos($imageName, 'ki-') === 0) {
+            $menuitem->setImage(null); // Stop TImage from rendering
+            $iconName = str_replace('ki-', '', $imageName);
+            $kIcon = KIcon::make($iconName)->class("fs-2")->type("duotone");
+            $menuitem->getLink()->add($kIcon);
+        }
+
         $ini = AdiantiApplicationConfig::get();
         if (!empty($ini['template']['navbar']['allow_page_tabs']))
         {

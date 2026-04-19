@@ -39,7 +39,7 @@ class FormDBAutoSelectionView extends TPage
         $unique   = new TDBUniqueSearch('unique', 'samples', 'City', 'id', 'name');
         $autocomp = new TDBEntry('autocomplete', 'samples', 'Category', 'name');
         
-        $button = new TActionLink('', new TAction(['CityWindow', 'onClear']), 'green', null, null, 'fa:plus-circle');
+        $button = new TActionLink('', new TAction(['CityWindow', 'onClear']), 'green', null, null, 'ki-plus-circle');
         $button->class = 'btn btn-default inline-button';
         $button->title = _t('New');
         $unique->after($button);
@@ -96,7 +96,7 @@ class FormDBAutoSelectionView extends TPage
         $unique->setSize('calc(100% - 30px)');
         $autocomp->setSize('100%');
         
-        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

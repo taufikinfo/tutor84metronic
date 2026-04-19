@@ -37,7 +37,7 @@ class FormCodeReader extends TPage
         $this->form->addFields( [new TLabel('Barcode')], [$barcode, new TLabel('Only supported in HTTPS mode', 'gray')] );
         $this->form->addFields( [new TLabel('QRCode')],  [$qrcode,  new TLabel('Only supported in HTTPS mode', 'gray')] );
         
-        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'far:check-circle green');
+        $this->form->addAction('Show', new TAction(array($this, 'onShow')), 'ki-check-circle green');
         
         // wrap the page content using vertical box
         $vbox = new TVBox;

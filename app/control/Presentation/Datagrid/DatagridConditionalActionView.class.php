@@ -35,7 +35,7 @@ class DatagridConditionalActionView extends TPage
         // creates datagrid action
         $action1 = new TDataGridAction(array($this, 'onView'), ['name' => '{name}'] );
         $action1->setDisplayCondition( array($this, 'displayColumn') );
-        $this->datagrid->addAction($action1, 'View', 'fa:search blue');
+        $this->datagrid->addAction($action1, 'View', 'ki-magnifier blue');
         
         // creates the datagrid model
         $this->datagrid->createModel();

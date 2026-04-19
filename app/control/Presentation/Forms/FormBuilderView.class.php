@@ -38,7 +38,7 @@ class FormBuilderView extends TPage
         $type        = new TCombo('type');
         $text        = new TText('text');
         
-        $description->setInnerIcon(new TImage('fa:user blue'), 'left');
+        $description->setInnerIcon(new TImage('ki-user blue'), 'left');
         //$color->setOption('components', ['opacity' => false]);
         
         $id->setEditable(FALSE);
@@ -88,12 +88,12 @@ class FormBuilderView extends TPage
         $text->setSize('100%', 50);
         
         // define the form action 
-        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'far:check-circle green');
+        $this->form->addAction('Send', new TAction(array($this, 'onSend')), 'ki-check-circle green');
         $this->form->addHeaderAction('Send', new TAction(array($this, 'onSend')), 'fa:rocket orange');
         
         // extra dropdown.
         $dropdown = new TDropDown('Dropdown test', 'fa:th blue');
-        $dropdown->addPostAction( 'PostAction', new TAction(array($this, 'onSend') ), $this->form->getName(), 'far:check-circle');
+        $dropdown->addPostAction( 'PostAction', new TAction(array($this, 'onSend') ), $this->form->getName(), 'ki-check-circle');
         $dropdown->addAction( 'Shortcut to customers', new TAction(array('CustomerDataGridView', 'onReload') ), 'fa:link');
         $this->form->addFooterWidget($dropdown);
         $this->form->addHeaderWidget($dropdown);
