@@ -5,9 +5,10 @@
     </menuitem>
     <menuitem label='Metro Wiki'>
         <icon>ki-book-square</icon>
-        <menu class="dropdown-menu col-wrapper">
-            <menuitem>
-                <menu class="column">
+        <menu>
+            <menuitem label='Basics &amp; Content'>
+                <icon>ki-document</icon>
+                <menu>
                     <menuitem label='Base'><icon>ki-document</icon><action>MetroWikiBase</action></menuitem>
                     <menuitem label='Utilities'><icon>ki-document</icon><action>MetroWikiUtilities</action></menuitem>
                     <menuitem label='Helpers'><icon>ki-document</icon><action>MetroWikiHelpers</action></menuitem>
@@ -20,8 +21,9 @@
                     <menuitem label='Bullets'><icon>ki-document</icon><action>MetroWikiBullets</action></menuitem>
                 </menu>
             </menuitem>
-            <menuitem>
-                <menu class="column">
+            <menuitem label='Data &amp; Display'>
+                <icon>ki-document</icon>
+                <menu>
                     <menuitem label='Cards'><icon>ki-document</icon><action>MetroWikiCards</action></menuitem>
                     <menuitem label='Carousel'><icon>ki-document</icon><action>MetroWikiCarousel</action></menuitem>
                     <menuitem label='Indicator'><icon>ki-document</icon><action>MetroWikiIndicator</action></menuitem>
@@ -34,8 +36,9 @@
                     <menuitem label='Pulse'><icon>ki-document</icon><action>MetroWikiPulse</action></menuitem>
                 </menu>
             </menuitem>
-            <menuitem>
-                <menu class="column">
+            <menuitem label='Interactive Elements'>
+                <icon>ki-document</icon>
+                <menu>
                     <menuitem label='Rating'><icon>ki-document</icon><action>MetroWikiRating</action></menuitem>
                     <menuitem label='Ribbon'><icon>ki-document</icon><action>MetroWikiRibbon</action></menuitem>
                     <menuitem label='Rotate'><icon>ki-document</icon><action>MetroWikiRotate</action></menuitem>
@@ -1134,6 +1137,48 @@
                         <action>AgendaView</action>
                     </menuitem>
                 </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
+
+    <menuitem label='Metro Showcase'>
+        <icon>lucide-layout-grid</icon>
+        <menu>
+            <menuitem label='Custom Complex'>
+                <icon>lucide-layout-template</icon>
+                <action>CustomComplex</action>
+            </menuitem>
+            <menuitem label='Dashboard Complex'>
+                <icon>lucide-layout-dashboard</icon>
+                <action>DashboardComplex</action>
+            </menuitem>
+            <menuitem label='Form Complex'>
+                <icon>lucide-file-text</icon>
+                <action>FormComplex</action>
+            </menuitem>
+            <menuitem label='Form Detail Complex'>
+                <icon>lucide-file-text</icon>
+                <action>FormDetailComplex</action>
+            </menuitem>
+            <menuitem label='Grid Complex'>
+                <icon>lucide-table</icon>
+                <action>GridComplex</action>
+            </menuitem>
+            <menuitem label='Grid Perangkat'>
+                <icon>lucide-table</icon>
+                <action>GridPerangkat</action>
+            </menuitem>
+            <menuitem label='Inbox Complex'>
+                <icon>lucide-inbox</icon>
+                <action>InboxComplex</action>
+            </menuitem>
+            <menuitem label='Perangkat Form'>
+                <icon>lucide-file-text</icon>
+                <action>PerangkatForm</action>
+            </menuitem>
+            <menuitem label='Tickets Form'>
+                <icon>lucide-ticket</icon>
+                <action>TicketsForm</action>
             </menuitem>
         </menu>
     </menuitem>
